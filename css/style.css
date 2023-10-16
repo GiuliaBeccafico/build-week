@@ -43,6 +43,10 @@
     padding-bottom: 1%;
 }
 
+.list li b {
+    font-weight: bold;
+}
+
 .secondTitle {
     color: #d20094;
     font-weight: bold;
