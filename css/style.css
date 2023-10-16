@@ -2,9 +2,14 @@
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
     container e font 
     -------------------------------------------------------------------------------------> */
-
-        /* font-family: 'Inter', sans-serif;
-        font-family: 'Outfit', sans-serif; */
+:root{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    color:#00FFFF;
+    color: #D20094 ;
+    color: #900080;
+}
+      
     
 #container{
     background-image: url(../assets/bg.jpg);
