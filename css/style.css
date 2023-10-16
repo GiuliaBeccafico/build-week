@@ -11,7 +11,7 @@
           
         
     #container{
-        background-image: url(../assets/bg.jpg);
+        background-image: url(../assets/img/bg.jpg);
         background-repeat: no-repeat;
         width: 57rem;
         height: 46rem;
@@ -43,6 +43,13 @@
         footer feedback page 
     -------------------------------------------------------------------------------------> */
     
+    .right{
+        display: inline-block;
+    }
+    .left{
+        display: inline-block;
+    }
+
     #divButton{
         text-align: center;
         margin-top: 3rem;
