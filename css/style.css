@@ -1,0 +1,31 @@
+/* impostazioni generali mockup*/
+#container{
+    background-image: url(../assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    height: 100rem;
+    width: 100%;
+    padding: 40px 100px 100px 100px ;
+}
+/*Impostazoni header */
+.logo{
+   width: 12rem;
+}
+/* Impostazioni main*/
+
+
+
+
+
+
+
+/* impostazioni footer*/
+
+.right{
+    display: inline-block;
+    padding-left: 300px;
+
+}
+
+.left{
+    display: inline-block;
+}
