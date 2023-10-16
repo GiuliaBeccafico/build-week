@@ -4,9 +4,6 @@
     :root{
         font-family: 'Inter', sans-serif;
         font-family: 'Outfit', sans-serif;
-        color:#00FFFF;
-        color: #D20094 ;
-        color: #900080;
     }
           
         
@@ -31,8 +28,11 @@
     .welcomeTitle {
         color: white;
         font-size: 3.5rem;
-        font-family: 'Outfit', sans-serif;
-        
+        font-family: 'Outfit', sans-serif;   
+    }
+
+    b{
+        font-weight: bold;
     }
     
     .bold {
@@ -68,37 +68,30 @@
     /* <!---------------------------------------------------------------------------------------------------------------------------------------
     footer feedback page 
     -------------------------------------------------------------------------------------> */
-    
-    .check {
-        color: white;
+   
+    #checkbox {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
         appearance: none;
-        width: 15px; 
-        height: 15px;
-        border: 2px solid white;
-        cursor: pointer; 
-        background-color: transparent; 
+        border: 1px solid white;
     }
     .right{
         display: inline-block;
-       padding-left: 200px;
+        padding-left: 200px;    
     }
     .left{
         display: inline-block;
+        color: white;
     }
 
-    #divButton{
-        text-align: center;
-        margin-top: 3rem;
-        padding-bottom: 50rem;
-    }
-    
     .button{
         color: white;
         border: 2px solid white;
         background: none;
         font-size: 1.2rem;
         width: 13rem;
-        height: 4rem;
+        height: 3.5rem;
         font-weight: bold;
         background-image: url(../assets/bg.jpg);
     }
