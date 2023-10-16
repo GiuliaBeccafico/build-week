@@ -1,18 +1,20 @@
-#container{
+#container {
     background-image: url(../image/bg.jpg);
     background-repeat: no-repeat;
     height: 100rem;
     width: 100%;
-    padding: 40px 100px 100px 100px ;
+    padding: 40px 100px 100px 100px;
+    background-size: contain;
 }
-.logo{
-   width: 7rem;
-   padding-bottom: 5%;
+
+.logo {
+    width: 8rem;
+    padding-bottom: 5%;
 }
 
 .welcomeTitle {
     color: white;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-family: 'Outfit', sans-serif;
 }
 
@@ -24,33 +26,63 @@
 .caption {
     color: white;
     font-family: 'Inter', sans-serif;
-    font-size: smaller;
+    font-size: small;
     padding-bottom: 3%;
 }
 
-.list{
+.list {
     list-style-type: disc;
     color: white;
-    font-size: smaller;
+    font-size: small;
     font-family: 'Inter', sans-serif;
+    padding-left: 20px;
     padding-bottom: 7%;
+}
+
+.list li {
+    padding-bottom: 1%;
 }
 
 .secondTitle {
     color: #d20094;
     font-weight: bold;
-    font-size: 1.2rem;
-    padding-bottom: 1%;
+    font-size: 1.5rem;
+    padding-bottom: 1.2%;
     font-family: 'Outfit', sans-serif;
-    letter-spacing: 0.1rem;
 }
 
 #checkbox {
     color: white;
     appearance: none;
-    width: 15px; 
+    width: 15px;
     height: 15px;
     border: 2px solid white;
-    cursor: pointer; 
-    background-color: transparent; 
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+#divButton {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+.button {
+    color: white;
+    border: 2px solid white;
+    background: none;
+    font-size: 1.2rem;
+    width: 13rem;
+    height: 3.6rem;
+    font-weight: bold;
+
+
+}
+
+.button.blueButton {
+    background: #00FFFF;
+    box-shadow: 2px 2px 30px #00FFFF;
+    color: #0b113b;
+    border: none;
 }
