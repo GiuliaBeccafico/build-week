@@ -1,0 +1,7 @@
+#container{
+    background-image: url(../assets/bg.jpg);
+    background-repeat: no-repeat;
+    height: 100rem;
+    width: 100%;
+    padding: 40px 100px 100px 100px ;
+}
