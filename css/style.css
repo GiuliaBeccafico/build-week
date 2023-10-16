@@ -1,31 +1,69 @@
-/* impostazioni generali mockup*/
-#container{
-    background-image: url(../assets/img/bg.jpg);
-    background-repeat: no-repeat;
-    height: 100rem;
-    width: 100%;
-    padding: 40px 100px 100px 100px ;
-}
-/*Impostazoni header */
-.logo{
-   width: 12rem;
-}
-/* Impostazioni main*/
-
-
-
-
-
-
-
-/* impostazioni footer*/
-
-.right{
-    display: inline-block;
-    padding-left: 300px;
-
-}
-
-.left{
-    display: inline-block;
-}
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+    container e font 
+    -------------------------------------------------------------------------------------> */
+    :root{
+        font-family: 'Inter', sans-serif;
+        font-family: 'Outfit', sans-serif;
+        color:#00FFFF;
+        color: #D20094 ;
+        color: #900080;
+    }
+          
+        
+    #container{
+        background-image: url(../assets/bg.jpg);
+        background-repeat: no-repeat;
+        width: 57rem;
+        height: 46rem;
+        padding: 40px 100px 100px 100px ;
+    }
+    
+    /* <!---------------------------------------------------------------------------------------------------------------------------------------
+        header feedback page 
+    -------------------------------------------------------------------------------------> */
+    .logo{
+       width: 12rem;
+    }
+    /* <!---------------------------------------------------------------------------------------------------------------------------------------
+        main feedback page 
+    -------------------------------------------------------------------------------------> */
+    #main {
+     
+        text-align: center;
+        width: 90%;
+    }
+    #main p{
+        font-size: 2rem;
+    }
+    
+    
+    
+    
+    /* <!---------------------------------------------------------------------------------------------------------------------------------------
+        footer feedback page 
+    -------------------------------------------------------------------------------------> */
+    
+    #divButton{
+        text-align: center;
+        margin-top: 3rem;
+        padding-bottom: 50rem;
+    }
+    
+    
+    .button{
+        color: white;
+        border: 2px solid white;
+        background: none;
+        font-size: 1.2rem;
+        width: 13rem;
+        height: 4rem;
+        font-weight: bold;
+        background-image: url(../assets/bg.jpg);
+    }
+    
+    .button.blueButton{
+    background: #00FFFF;
+    box-shadow: 2px 2px 30px #00FFFF;
+    color: #0b113b;
+    border: none;
+    }
