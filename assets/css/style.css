@@ -2,9 +2,9 @@
    fill:#0b113b
 }
 
-.star:hover{
+.starOver {
     fill: #00FFFF;
-    transition: 0.5ms;
+    transition: 3ms;
 }
 
 #rating {

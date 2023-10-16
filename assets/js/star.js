@@ -1,8 +1,9 @@
-const target = document.getElementById(rating)
+const target = document.getElementById('rating')
 const stars = target.querySelectorAll('.star')
 
+console.dir(target, stars)
 for (let star of stars){
-    star.addEventListener('click', function (){
-    
+    star.addEventListener('mouseover', function (){
+    star.style.fill = '#00FFFF'
     })
 }
