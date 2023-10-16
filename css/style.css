@@ -6,24 +6,61 @@ body {
     font-family: 'Inter', sans-serif;
   }
 
+/*SHARED DESIGN FOR CONTAINER*/
+
 #container{
     background-image: url(../assets/bg.jpg);
     background-repeat: no-repeat;
     height: 100rem;
     background-size: 100% 100%;
     padding: 40px 100px 100px 100px ;
-  
     text-align: center;
 }
+
+/*CATEGORIA BOLD: RIUTILIZZABILE? ALTRIMENTI ELIMINARE*/
 
 .feedbackTitle, .bold{
   font-size: 60px;
   font-weight: bold;
   padding-bottom: 25px;
+  padding-top: 45px;
 }
 
 .feedbackQuestion{
   font-size: 25px;
   padding: 0px 260px;
 }
+
+#commentsBox{
+  padding-top: 35px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RATING STARS DESIGN BY DAVIDE*/
+
+.star {
+  fill:#0b113b
+}
+
+.blueStar {
+   fill: #00FFFF;
+   transition: 3ms;
+}
+
+#rating {
+   padding: 10px 0;
+}
+
 
