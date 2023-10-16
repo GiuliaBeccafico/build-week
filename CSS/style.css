@@ -1,0 +1,31 @@
+#container{
+    background-image: url(../assets/bg.jpg);
+    background-repeat: no-repeat;
+    height: 100rem;
+    width: 100%;
+    padding: 40px 100px 100px 100px ;
+}
+.logo{
+   width: 12rem;
+}
+
+.welcomeTitle{
+    color: white;
+    font-size: 3rem;
+}
+
+
+.bold{
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+
+
+
+
+
+.secondTitle{
+    color: #D20094;
+    font-weight: bold;
+}
