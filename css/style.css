@@ -1,0 +1,32 @@
+#container{
+    background-image: url(../image/bg.jpg);
+    background-repeat: no-repeat;
+    height: 100rem;
+    width: 100%;
+    padding: 40px 100px 100px 100px ;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+.logo{
+   width: 12rem;
+}
+
+.welcomeTitle {
+    color: white;
+    font-size: 3rem;
+}
+
+.bold {
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+#instructions p {
+    color: white;
+}
+
+.secondTitle {
+    color: #d20094;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
