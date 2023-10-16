@@ -69,7 +69,7 @@
     footer feedback page 
     -------------------------------------------------------------------------------------> */
     
-    #checkbox {
+    .check {
         color: white;
         appearance: none;
         width: 15px; 
@@ -80,6 +80,7 @@
     }
     .right{
         display: inline-block;
+       padding-left: 200px;
     }
     .left{
         display: inline-block;
@@ -103,10 +104,10 @@
     }
     
     .button.blueButton{
-    background: #00FFFF;
-    box-shadow: 2px 2px 30px #00FFFF;
-    color: #0b113b;
-    border: none;
+     background: #00FFFF;
+     box-shadow: 2px 2px 30px #00FFFF;
+     color: #0b113b;
+     border: none;
     }
     
     
