@@ -5,9 +5,9 @@
 :root{
     font-family: 'Inter', sans-serif;
     font-family: 'Outfit', sans-serif;
-    color:#00FFFF;
+    /* color:#00FFFF;
     color: #D20094 ;
-    color: #900080;
+    color: #900080; */
 }
       
     
@@ -17,6 +17,7 @@
     width: 57rem;
     height: 46rem;
     padding: 40px 100px 100px 100px ;
+    background-size: contain;
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
@@ -28,14 +29,38 @@
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
     main feedback page 
 -------------------------------------------------------------------------------------> */
-#main {
- 
+
+
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+    section Title results page 
+-------------------------------------------------------------------------------------> */
+.mainTitle{
+    color: white;
+    margin-bottom: 2rem;
     text-align: center;
-    width: 90%;
 }
-#main p{
+.title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.description{
     font-size: 2rem;
 }
+
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+    percentuale risultati  results page 
+-------------------------------------------------------------------------------------> */
+#threeSection{
+    height: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+
+
+
 
 
 
@@ -47,7 +72,6 @@
 #divButton{
     text-align: center;
     margin-top: 3rem;
-    padding-bottom: 50rem;
 }
 
 
@@ -57,9 +81,10 @@
     background: none;
     font-size: 1.2rem;
     width: 13rem;
-    height: 4rem;
+    height: 3.6rem;
     font-weight: bold;
-    background-image: url(../assets/bg.jpg);
+   
+  
 }
 
 .button.blueButton{
