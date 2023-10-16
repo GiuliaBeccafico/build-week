@@ -9,8 +9,8 @@
 #container{
     background-image: url(../assets/bg.jpg);
     background-repeat: no-repeat;
-    height: 100rem;
-    width: 100%;
+    width: 57rem;
+    height: 46rem;
     padding: 40px 100px 100px 100px ;
 }
 
@@ -20,12 +20,30 @@
 .logo{
    width: 12rem;
 }
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+    main feedback page 
+-------------------------------------------------------------------------------------> */
+#main {
+ 
+    text-align: center;
+    width: 90%;
+}
+#main p{
+    font-size: 2rem;
+}
+
 
 
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
     footer feedback page 
 -------------------------------------------------------------------------------------> */
+
+#divButton{
+    text-align: center;
+    margin-top: 3rem;
+    padding-bottom: 50rem;
+}
 
 
 .button{
@@ -34,7 +52,7 @@
     background: none;
     font-size: 1.2rem;
     width: 13rem;
-    height: 3rem;
+    height: 4rem;
     font-weight: bold;
     background-image: url(../assets/bg.jpg);
 }
