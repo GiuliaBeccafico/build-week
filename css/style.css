@@ -1,4 +1,8 @@
-#container{
+body{
+    color: white;
+}
+
+.bg{
     background-image: url(../assets/bg.jpg);
     background-repeat: no-repeat;
     height: 100rem;
