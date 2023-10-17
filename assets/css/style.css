@@ -3,37 +3,40 @@ body {
   width: 100vw;
   color: white;
   font-family: "Inter", sans-serif;
+  text-align: center;
 }
-
+.logo{
+  width: 12rem;
+  float: left;
+  
+}
 /*SHARED DESIGN FOR CONTAINER*/
 
 #container {
-  background-image: url(../assets/bg.jpg);
+  background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
-  height: 100rem;
-  background-size: 100% 100%;
+  width: 57rem;
+  height: 46rem;
   padding: 40px 100px 100px 100px;
-  text-align: center;
+  background-size: contain;
 }
 
 .feedbackTitle {
   font-size: 40px;
   font-weight: bolder;
-  padding-top: 45px;
-  margin-bottom: 30px;
+  
 }
 
 .feedbackQuestion {
   font-size: 20px;
-  padding: 0px 330px;
 }
 
 #commentsBox {
-  margin-top: 40px;
+  
 }
 
 .feedbackForm {
-  margin-top: 45px;
+ 
 }
 
 #commentsBox {
@@ -43,8 +46,6 @@ body {
   border-bottom: 1px solid purple;
   width: 550px;
   color: grey;
-  padding: 12px;
-  padding-left: 25px;
 }
 
 /*RATING STARS DESIGN BY DAVIDE*/
