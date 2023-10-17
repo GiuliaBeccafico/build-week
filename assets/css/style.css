@@ -4,8 +4,8 @@
 :root {
     font-family: 'Inter', sans-serif;
     font-family: 'Outfit', sans-serif;
-    --blueColor:#00FFFF;
-    --pinkColor: #D20094 ;
+    --blueColor: #00FFFF;
+    --pinkColor: #D20094;
     --violaColor: #900080;
 }
 
@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px 100px 100px 100px;
-   
+
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
@@ -26,13 +26,10 @@
     height: 40px;
 }
 
-.title{
-    padding-bottom: 40px;
-}
-
 #header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .timer {
@@ -43,10 +40,16 @@
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
         main feedback page 
-    -------------------------------------------------------------------------------------> */
-.title{
-    margin-bottom:40px;
+        -------------------------------------------------------------------------------------> */
+
+#main {
+    margin-bottom: 30px;
 }
+
+.title {
+    margin-bottom: 40px;
+}
+
 .welcomeTitle {
     height: 3rem;
     color: white;
@@ -100,7 +103,6 @@ li b {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .left {
@@ -130,7 +132,7 @@ li b {
 
 #checkbox {
     display: none;
-   
+
 }
 
 .customCheckbox {
@@ -146,6 +148,7 @@ li b {
     background-color: var(--violaColor);
     color: #fff;
 }
+
 .left p {
     font-weight: bold;
 }
