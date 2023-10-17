@@ -1,6 +1,6 @@
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
-    container e font 
+    container/ font/ timer
     -------------------------------------------------------------------------------------> */
 :root{
     --interFont: 'Inter', sans-serif;
@@ -14,13 +14,14 @@
 #container{
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
-    width: 57rem;
-    height: 46rem;
-
-    padding: 40px 100px 100px 100px ;
-    background-size: contain;
+    padding: 40px 100px 100px 100px;
+    background-size: cover;
 }
-
+.timer {
+    visibility: hidden;
+        width: 115px;
+        height: 115px
+    }
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
     header feedback page 
 -------------------------------------------------------------------------------------> */
@@ -28,6 +29,7 @@
    width: 160px;
    height: 40px;
 }
+
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
     main feedback page 
 -------------------------------------------------------------------------------------> */
@@ -36,13 +38,19 @@
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
     section Title RESUlTS page 
 -------------------------------------------------------------------------------------> */
+#header{
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+}
+
 .title{
     color: white;
    margin: 1.5rem 0;
     text-align: center;
 }
 .mainTitle{
-    font-size: 3.5rem;
+    font-size: 60px;
     font-weight: bold;
     margin-bottom: 0.8rem;
     font-family: var(--interFont);
@@ -59,7 +67,7 @@
 #section{
     display: flex;
     color: white;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .leftSection{
     display: flex;
@@ -76,6 +84,11 @@
         align-items: end;
 
 }
+.secondSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .sectionTitle{
     font-size: 3.5rem;
     font-family: var(--interFont);
@@ -91,15 +104,9 @@
     color: #cacbd4;
     font-family: 'Outfit';
 }
-
-.secondSection{
-    width: 25rem;
-    margin-top: 1.6rem;
-}
 .secondSection img{
-    width: 100%;
+    width: 70%;
 }
-
 
 
 
@@ -133,4 +140,29 @@ background: #00FFFF;
 box-shadow: 2px 2px 30px #00FFFF;
 color: #0b113b;
 border: none;
+}
+@media screen and (max-width:880px) {
+    #section{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        height: 50rem;
+           
+    }
+    .rightSection{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 27rem;
+       align-items: flex-start;
+}
+.secondSection{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+}
+.secondSection img{
+    width: 50%;
 }
