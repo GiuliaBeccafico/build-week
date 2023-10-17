@@ -3,19 +3,20 @@
     container e font 
     -------------------------------------------------------------------------------------> */
 :root{
-    font-family: 'Inter', sans-serif;
-    font-family: 'Outfit', sans-serif;
-    /* color:#00FFFF;
-    color: #D20094 ;
-    color: #900080; */
+    --interFont: 'Inter', sans-serif;
+    --outfitFont: 'Outfit', sans-serif;
+    --blueColor:#00FFFF;
+    --pinkColor: #D20094 ;
+    --violaColor: #900080;
 }
       
     
 #container{
-    background-image: url(../assets/bg.jpg);
+    background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     width: 57rem;
     height: 46rem;
+
     padding: 40px 100px 100px 100px ;
     background-size: contain;
 }
@@ -24,7 +25,8 @@
     header feedback page 
 -------------------------------------------------------------------------------------> */
 .logo{
-   width: 12rem;
+   width: 160px;
+   height: 40px;
 }
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
     main feedback page 
@@ -32,29 +34,51 @@
 
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
-    section Title results page 
+    section Title RESUlTS page 
 -------------------------------------------------------------------------------------> */
-.mainTitle{
+.title{
     color: white;
     margin-bottom: 2rem;
     text-align: center;
 }
-.title{
+.mainTitle{
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    font-family: var(--interFont);
 }
 .description{
+    font-family: var(--interFont);
     font-size: 2rem;
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
     percentuale risultati  results page 
 -------------------------------------------------------------------------------------> */
-#threeSection{
-    height: 3rem;
-    text-align: center;
-    margin: 2rem 0;
+#section{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.lateralSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 27rem;
+}
+.sectionTitle{
+  
+    font-size: 4rem;
+    font-family: var(--interFont);
+
+}
+
+.secondSection{
+    width: 25rem;
+    margin-top: 2rem;
+}
+.secondSection img{
+    width: 100%;
 }
 
 
@@ -63,10 +87,8 @@
 
 
 
-
-
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
-    footer feedback page 
+   BUTTON STYLE
 -------------------------------------------------------------------------------------> */
 
 #divButton{
