@@ -13,7 +13,6 @@
   background-repeat: no-repeat;
   padding: 40px 100px 100px 100px;
   background-size: cover;
-  text-align: center;
 }
 
 /*HEADER SECTION*/
@@ -36,7 +35,7 @@
 }
 /*MAIN BODY, MAIN DIV PROPERTIES*/
 
-.main {
+#main {
   text-align: center;
 }
 
@@ -77,6 +76,7 @@
 .blueStar {
   fill: #00ffff;
   transition: 3ms;
+
 }
 
 #rating {
