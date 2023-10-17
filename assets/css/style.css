@@ -1,7 +1,9 @@
-body {
-  color: #dedee3;
-  font-family: "Inter", sans-serif;
-  text-align: center;
+:root{
+  --interFont: 'Inter', sans-serif;
+  --outfitFont: 'Outfit', sans-serif;
+  --blueColor:#00FFFF;
+  --pinkColor: #D20094 ;
+  --violaColor: #900080;
 }
 
 #header{
@@ -20,38 +22,41 @@ body {
   height: 46rem;
   padding: 40px 100px 100px 100px;
   background-size: contain;
+  text-align: center;
 }
 
-.textbox{
-  padding: 15px 180px;
+.main{
+  height: 500px;
+  padding: 0 30px;
 }
 
 .feedbackTitle {
   color: white;
-  font-size: 40px;
-  font-weight: bolder;
+  font-size: 60px;
+  font-weight: bold;
   margin-top: 120px;
   margin-bottom: 25px;
-  
+  font-family: var(--interFont);
 }
 
 .feedbackQuestion {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 33px;
+  line-height: 45px;
+  color: #dedee3;
+  font-family: var(--outfitFont);
+  margin-bottom: 45px;
 }
 
-.feedbackForm {
-
- 
-}
 
 #commentsBox {
   border: 0;
   outline: 0;
   background: transparent;
-  border-bottom: 1px solid purple;
-  width: 550px;
+  border-bottom: 3px solid var(--violaColor);
+  width: 800px;
   color: grey;
+  padding: 10px 25px;
+  font-size: 18px;
 }
 
 /*RATING STARS DESIGN BY DAVIDE*/
@@ -66,5 +71,5 @@ body {
 }
 
 #rating {
-  padding: 30px 0;
+  margin: 30px 0px 60px 0px;
 }
