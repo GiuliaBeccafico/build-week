@@ -78,14 +78,13 @@ li b {
     font-weight: bold;
     font-size: 1.2rem;
     font-family: 'Outfit', sans-serif;
-    padding-bottom: 1%;
+    margin-bottom: 10px;
 }
 
 .list {
     list-style-type: disc;
     color: #dedee3;
     font-size: small;
-    letter-spacing: 0.02rem;
     font-family: 'Inter', sans-serif;
     padding-left: 20px;
     padding-bottom: 7%;
