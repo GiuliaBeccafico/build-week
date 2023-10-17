@@ -1,17 +1,15 @@
 body {
-  height: 100vh;
-  width: 100vw;
-  color: white;
+  color: #dedee3;
   font-family: "Inter", sans-serif;
   text-align: center;
 }
 
 #header{
   float: left;
-  margin-top: 60px;
 }
 .logo{
-  width: 12rem;
+  width: 160px;
+  height: 40px;
 }
 /*SHARED DESIGN FOR CONTAINER*/
 
@@ -24,21 +22,26 @@ body {
   background-size: contain;
 }
 
+.textbox{
+  padding: 15px 180px;
+}
+
 .feedbackTitle {
+  color: white;
   font-size: 40px;
   font-weight: bolder;
+  margin-top: 120px;
+  margin-bottom: 25px;
   
 }
 
 .feedbackQuestion {
   font-size: 20px;
-}
-
-#commentsBox {
-  
+  line-height: 28px;
 }
 
 .feedbackForm {
+
  
 }
 
