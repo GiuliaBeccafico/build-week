@@ -37,6 +37,7 @@
 
 #main {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .mainTitle {
@@ -60,11 +61,12 @@
   outline: 0;
   background: transparent;
   border-bottom: 3px solid var(--violaColor);
-  width: 650px;
+  width: 100%;
   color: grey;
-  padding: 10px 25px;
   font-size: 18px;
-  margin-bottom: 50px;
+}
+#commentsBox::placeholder{
+  padding: 0 0 10px 15px;
 }
 
 /*RATING STARS DESIGN BY DAVIDE*/
@@ -86,6 +88,9 @@
 
 /*RATING STARS DESIGN BY SAMUELE*/
 
+#footer{
+  text-align: center;
+}
 
 .button {
   color: white;
