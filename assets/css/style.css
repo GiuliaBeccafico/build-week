@@ -43,10 +43,15 @@
             main feedback page 
         -------------------------------------------------------------------------------------> */
 
+.title {
+    padding-bottom: 3%;
+}
+
 .welcomeTitle {
     color: white;
-    font-size: 3.5rem;
+    font-size: 60px;
     font-family: 'Outfit', sans-serif;
+    height: 3rem;
 }
 
 li b {
@@ -56,14 +61,12 @@ li b {
 
 .bold {
     font-weight: bold;
-    padding-bottom: 3%;
 }
 
 .caption {
     color: #dedee3;
     font-family: 'Inter', sans-serif;
     font-size: smaller;
-    letter-spacing: 0.02rem;
     padding-bottom: 6%;
 }
 
@@ -71,7 +74,6 @@ li b {
     color: #dedee3;
     font-size: smaller;
     font-family: 'Inter', sans-serif;
-    letter-spacing: 0.02rem;
     padding-bottom: 7%;
 }
 
@@ -81,7 +83,6 @@ li b {
     font-size: 1.2rem;
     padding-bottom: 1%;
     font-family: 'Outfit', sans-serif;
-    letter-spacing: 0.1rem;
 }
 
 .list {
@@ -135,7 +136,6 @@ li b {
 
 #checkbox {
     display: none;
-
 }
 
 .customCheckbox {
@@ -150,4 +150,8 @@ li b {
 #checkbox:checked+.customCheckbox {
     background-color: var(--violaColor);
     color: #fff;
+}
+
+.left p {
+    font-weight: bold;
 }
