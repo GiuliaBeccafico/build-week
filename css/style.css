@@ -1,66 +1,63 @@
 body {
-    height: 100vh;
-    width: 100vw;
-    color: white;
-    font-family: 'Outfit', sans-serif;
-    font-family: 'Inter', sans-serif;
-  }
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
 
 /*SHARED DESIGN FOR CONTAINER*/
 
-#container{
-    background-image: url(../assets/bg.jpg);
-    background-repeat: no-repeat;
-    height: 100rem;
-    background-size: 100% 100%;
-    padding: 40px 100px 100px 100px ;
-    text-align: center;
+#container {
+  background-image: url(../assets/bg.jpg);
+  background-repeat: no-repeat;
+  height: 100rem;
+  background-size: 100% 100%;
+  padding: 40px 100px 100px 100px;
+  text-align: center;
 }
 
-/*CATEGORIA BOLD: RIUTILIZZABILE? ALTRIMENTI ELIMINARE*/
-
-.feedbackTitle, .bold{
-  font-size: 60px;
-  font-weight: bold;
-  padding-bottom: 25px;
+.feedbackTitle {
+  font-size: 40px;
+  font-weight: bolder;
   padding-top: 45px;
+  margin-bottom: 30px;
 }
 
-.feedbackQuestion{
-  font-size: 25px;
-  padding: 0px 260px;
+.feedbackQuestion {
+  font-size: 20px;
+  padding: 0px 330px;
 }
 
-#commentsBox{
-  padding-top: 35px;
-  
+#commentsBox {
+  margin-top: 40px;
 }
 
+.feedbackForm {
+  margin-top: 45px;
+}
 
-
-
-
-
-
-
-
-
-
-
+#commentsBox {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid purple;
+  width: 550px;
+  color: grey;
+  padding: 12px;
+  padding-left: 25px;
+}
 
 /*RATING STARS DESIGN BY DAVIDE*/
 
 .star {
-  fill:#0b113b
+  fill: #0b113b;
 }
 
 .blueStar {
-   fill: #00FFFF;
-   transition: 3ms;
+  fill: #00ffff;
+  transition: 3ms;
 }
 
 #rating {
-   padding: 10px 0;
+  padding: 30px 0;
 }
-
-
