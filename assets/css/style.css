@@ -13,11 +13,20 @@
     background-repeat: no-repeat;
     padding: 40px 100px 100px 100px;
     background-size: cover;
+    text-align: center;
 }
-/*LOGO*/
+/*HEADER SECTION*/
 
 #header {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 50px;
+}
+
+.timer {
+  visibility: hidden;
+  width: 115px;
+  height: 115px
 }
 
 .logo {
@@ -28,10 +37,11 @@
 
 .main {
   height: 500px;
-  padding: 0 30px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.feedbackTitle {
+.mainTitle {
   color: white;
   font-size: 60px;
   font-weight: bold;
