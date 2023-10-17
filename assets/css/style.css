@@ -5,6 +5,11 @@ body {
   font-family: "Inter", sans-serif;
   text-align: center;
 }
+
+#header{
+  float: left;
+  margin-top: 60px;
+}
 .logo{
   width: 12rem;
 }
