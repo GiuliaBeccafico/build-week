@@ -26,6 +26,10 @@
     height: 40px;
 }
 
+.title{
+    padding-bottom: 40px;
+}
+
 #header {
     display: flex;
     justify-content: space-between;
