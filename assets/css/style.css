@@ -6,8 +6,7 @@
     --interFont: 'Inter', sans-serif;
     --outfitFont: 'Outfit', sans-serif;
     --blueColor:#00FFFF;
-    --pinkColor: #D20094 ;
-    --violaColor: #900080;
+    --gradientColor: linear-gradient( #D20094 #D20094);
 }
       
     
@@ -17,11 +16,7 @@
     padding: 40px 100px 100px 100px;
     background-size: cover;
 }
-.timer {
-    visibility: hidden;
-        width: 115px;
-        height: 115px
-    }
+
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
     header feedback page 
 -------------------------------------------------------------------------------------> */
@@ -29,17 +24,24 @@
    width: 160px;
    height: 40px;
 }
+.timer {
+    width: 115px;
+    height: 115px
+}
 
+.hidden{
+    visibility: hidden;
+}
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
  margin delle macroaree
 -------------------------------------------------------------------------------------> */
 #header{
     display: flex;
     justify-content: space-between;
-    margin: 30px;
+    margin-bottom: 15px;
 }
 #main{
-margin: 30px
+margin-bottom: 30px;
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
@@ -50,7 +52,7 @@ margin: 30px
 
 .title{
     color: white;
-   
+   margin-bottom: 30px;
     text-align: center;
 }
 .mainTitle{
@@ -68,7 +70,7 @@ margin: 30px
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
     percentuale risultati  results page 
 -------------------------------------------------------------------------------------> */
-#section{
+#results{
     display: flex;
     color: white;
     justify-content: space-evenly;
@@ -83,15 +85,10 @@ margin: 30px
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 27rem;
         align-items: end;
 
 }
-.secondSection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .sectionTitle{
     font-size: 3.5rem;
