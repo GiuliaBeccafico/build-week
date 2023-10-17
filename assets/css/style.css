@@ -1,19 +1,12 @@
-:root{
-  --interFont: 'Inter', sans-serif;
-  --outfitFont: 'Outfit', sans-serif;
-  --blueColor:#00FFFF;
-  --pinkColor: #D20094 ;
+:root {
+  --interFont: "Inter", sans-serif;
+  --outfitFont: "Outfit", sans-serif;
+  --blueColor: #00ffff;
+  --pinkColor: #d20094;
   --violaColor: #900080;
 }
 
-#header{
-  float: left;
-}
-.logo{
-  width: 160px;
-  height: 40px;
-}
-/*SHARED DESIGN FOR CONTAINER*/
+/*SHARED DESIGN FOR CONTAINER, BG IMG, WIDTH/HEIGHT*/
 
 #container {
   background-image: url(../img/bg.jpg);
@@ -24,8 +17,19 @@
   background-size: contain;
   text-align: center;
 }
+/*LOGO*/
 
-.main{
+#header {
+  float: left;
+}
+
+.logo {
+  width: 160px;
+  height: 40px;
+}
+/*MAIN BODY, MAIN DIV PROPERTIES*/
+
+.main {
   height: 500px;
   padding: 0 30px;
 }
@@ -47,7 +51,6 @@
   margin-bottom: 45px;
 }
 
-
 #commentsBox {
   border: 0;
   outline: 0;
@@ -58,6 +61,10 @@
   padding: 10px 25px;
   font-size: 18px;
 }
+
+
+
+
 
 /*RATING STARS DESIGN BY DAVIDE*/
 
