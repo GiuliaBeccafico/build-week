@@ -59,7 +59,7 @@
   border: 0;
   outline: 0;
   background: transparent;
-  border-bottom: 3px solid var(--violaColor);
+  border-bottom: 2px solid var(--pinkColor);
   width: 100%;
   color: grey;
   font-size: 18px;
