@@ -36,12 +36,12 @@
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
  margin delle macroaree
 -------------------------------------------------------------------------------------> */
-#header{
+.header{
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
 }
-#main{
+.main{
 margin-bottom: 30px;
 }
 
@@ -169,7 +169,7 @@ border: none;
 
 
 /* checkbox css */
-#footer {
+.footer {
     background-color: red;
     display: flex;
     justify-content: space-between;

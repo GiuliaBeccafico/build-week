@@ -2,7 +2,8 @@
 
     let areaCheckbox = document.getElementById('checkbox');
     let areaButton = document.querySelector('.button');
-
+    let firstPage = document.getElementById('page1')
+    let secondPage = document.getElementById ('page2')
     
     areaButton.addEventListener('click', function() {
         if (areaCheckbox.checked) {
@@ -17,5 +18,4 @@
             });
         }
     });
-    let firstPage = document.getElementById('page1')
-    let secondPage = document.getElementById ('page2')
+  
