@@ -17,7 +17,7 @@
 /*LOGO*/
 
 #header {
-  float: left;
+  margin-bottom: 50px;
 }
 
 .logo {
@@ -35,8 +35,6 @@
   color: white;
   font-size: 60px;
   font-weight: bold;
-  margin-top: 120px;
-  margin-bottom: 25px;
   font-family: var(--interFont);
 }
 
@@ -45,7 +43,6 @@
   line-height: 45px;
   color: #dedee3;
   font-family: var(--outfitFont);
-  margin-bottom: 45px;
 }
 
 #commentsBox {
