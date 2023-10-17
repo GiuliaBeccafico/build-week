@@ -61,10 +61,17 @@
 
 .answers {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
 }
 
+.answerContainer {
+    margin: 8px 15px;
+}
+
+
 .answer{
-    
     background: rgba(255,255,255,0.1);
     color: white;
     padding: 25px 60px;
