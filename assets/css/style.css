@@ -24,7 +24,6 @@
 .logo {
     width: 160px;
     height: 40px;
-    padding-bottom: 70px;
 }
 
 #header {
@@ -64,14 +63,12 @@ li b {
     color: #dedee3;
     font-family: 'Inter', sans-serif;
     font-size: smaller;
-    padding-bottom: 6%;
 }
 
 .secondTitle {
     color: var(--pinkColor);
     font-weight: bold;
     font-size: 1.2rem;
-    padding-bottom: 1%;
     font-family: 'Outfit', sans-serif;
 }
 
@@ -82,7 +79,6 @@ li b {
     letter-spacing: 0.02rem;
     font-family: 'Inter', sans-serif;
     padding-left: 20px;
-    padding-bottom: 7%;
 }
 
 .list li {
