@@ -8,7 +8,6 @@
 
 /*SHARED DESIGN FOR CONTAINER, BG IMG, WIDTH/HEIGHT*/
 
-#container {
   #container{
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
