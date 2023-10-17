@@ -1,0 +1,126 @@
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+    container e font 
+    -------------------------------------------------------------------------------------> */
+:root {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+#container {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    padding: 40px 100px 100px 100px;
+    width:46rem;
+    height:57rem;
+}
+
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+        header feedback page 
+    -------------------------------------------------------------------------------------> */
+.logo {
+    width: 160px;
+    height: 40px;
+    padding-bottom: 70px;
+}
+#header{
+display: flex;
+justify-content: space-between;
+}
+
+.timer{
+    visibility: hidden;
+}
+
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+        main feedback page 
+    -------------------------------------------------------------------------------------> */
+
+.welcomeTitle {
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+ li b {
+    font-size: O.6rem;
+   font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+.caption {
+    color: #dedee3;
+    font-family: 'Inter', sans-serif;
+    font-size: smaller;
+    letter-spacing: 0.02rem;
+    padding-bottom: 6%;
+}
+
+.list {
+    color: #dedee3;
+    font-size: smaller;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.02rem;
+    padding-bottom: 7%;
+}
+
+.secondTitle {
+    color: #d20094;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 1%;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.list {
+    list-style-type: disc;
+    color: white;
+    font-size: small;
+    font-family: 'Inter', sans-serif;
+    padding-left: 20px;
+    padding-bottom: 7%;
+}
+
+.list li {
+    padding-bottom: 1%;
+}
+
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+    footer feedback page 
+    -------------------------------------------------------------------------------------> */
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.left {
+    color: #dedee3;
+    font-size: 0.9rem;
+}
+
+.button {
+    color: white;
+    border: 2px solid white;
+    background: none;
+    font-size: 1.2rem;
+    width: 13rem;
+    height: 3.5rem;
+    font-weight: bold;
+    background-image: url(../assets/bg.jpg);
+}
+
+.button.blueButton {
+    background: #00FFFF;
+    box-shadow: 2px 2px 30px #00FFFF;
+    color: #0b113b;
+    border: none;
+}
