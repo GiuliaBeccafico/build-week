@@ -38,14 +38,20 @@
 #header{
     display:flex;
     justify-content: space-between;
-
+    margin-bottom: 70px;
 }
 
 .questions{
     text-align: center;
     color: white;
+    margin-bottom: 70px;
 }
 
 .mainTitle{
-    font-size: 3.5rem;
+    font-size: 60px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.bold {
+    font-weight: 600;
 }
