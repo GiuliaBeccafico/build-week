@@ -13,10 +13,9 @@
 #container {
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     padding: 40px 100px 100px 100px;
-    width: 57rem;
-    height: 46rem;
+   
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
@@ -143,4 +142,7 @@ li b {
 #checkbox:checked+.customCheckbox {
     background-color: var(--violaColor);
     color: #fff;
+}
+.left p {
+    font-weight: bold;
 }
