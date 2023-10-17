@@ -56,9 +56,37 @@
     font-weight: 600;
 }
 
+/****************************** ANSWERS BUTTONS **************************/
+
+
+.answers {
+    display: flex;
+}
+
 .answer{
+    
     background: rgba(255,255,255,0.1);
     color: white;
     padding: 25px 60px;
     border-radius: 50px;
+    border: 3px solid rgba(255,255,255,0.5);
+    border-bottom-style: solid;
+    border-bottom-style: hidden;
+    border-inline-width: thin;
+    width: 300px;
+}
+
+
+.answer:hover {
+    background-color: #D20094;
+}
+
+/************************************************ Footer ******************************/
+
+#footer{
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+.pink{
+    color: #D20094;
 }
