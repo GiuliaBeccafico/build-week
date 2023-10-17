@@ -1,3 +1,6 @@
+/**************************** settings per le stelle feedback page *******************************/
+
+
 .star {
    fill:#0b113b
 }
@@ -11,6 +14,9 @@
     padding: 10px 0;
 }
 
+
+/********************************* settings del main **/
+
 #container{
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
@@ -18,4 +24,28 @@
     height: 46rem;
     padding: 40px 100px 100px 100px ;
     background-size: contain;
+}
+
+.logo {
+    width:160;
+    height:40px;
+}
+
+.timer {
+    width: 115px;
+    height: 115px
+}
+#header{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.questions{
+    text-align: center;
+    color: white;
+}
+
+.mainTitle{
+    font-size: 3.5rem;
 }
