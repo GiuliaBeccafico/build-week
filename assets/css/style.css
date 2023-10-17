@@ -1,23 +1,51 @@
-#container{
-    background-image: url(../image/bg.jpg);
-    background-repeat: no-repeat;
-    width: 57rem;
-    height: 46rem;
-
-    padding: 40px 100px 100px 100px ;
-    background-size: contain;
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+    container e font 
+    -------------------------------------------------------------------------------------> */
+:root {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
+
+#container {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    padding: 40px 100px 100px 100px;
+    width: 46rem;
+    height: 57rem;
+}
+
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+            header feedback page 
+        -------------------------------------------------------------------------------------> */
 .logo {
     width: 160px;
     height: 40px;
     padding-bottom: 70px;
 }
 
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer {
+    visibility: hidden;
+}
+
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+            main feedback page 
+        -------------------------------------------------------------------------------------> */
+
 .welcomeTitle {
     color: white;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: 'Outfit', sans-serif;
+}
+
+li b {
+    font-size: O.6rem;
+    font-weight: bold;
 }
 
 .bold {
@@ -28,13 +56,31 @@
 .caption {
     color: #dedee3;
     font-family: 'Inter', sans-serif;
-    font-size: small;
+    font-size: smaller;
+    letter-spacing: 0.02rem;
     padding-bottom: 6%;
 }
 
 .list {
-    list-style-type: disc;
     color: #dedee3;
+    font-size: smaller;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.02rem;
+    padding-bottom: 7%;
+}
+
+.secondTitle {
+    color: #d20094;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 1%;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.list {
+    list-style-type: disc;
+    color: white;
     font-size: small;
     font-family: 'Inter', sans-serif;
     padding-left: 20px;
@@ -45,39 +91,20 @@
     padding-bottom: 1%;
 }
 
-.list li b {
-    font-weight: bold;
-}
-
-.secondTitle {
-    color: #d20094;
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding-bottom: 1.2%;
-    font-family: 'Outfit', sans-serif;
-}
-
-#checkbox {
-    color: white;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border: 2px solid white;
-    cursor: pointer;
-    background-color: transparent;
-}
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+        footer feedback page 
+        -------------------------------------------------------------------------------------> */
 
 #footer {
     display: flex;
     justify-content: space-between;
-}
+    align-items: center;
 
-.right {
-    padding-right: 70px;
 }
 
 .left {
     color: #dedee3;
+    font-size: 0.9rem;
 }
 
 .button {
