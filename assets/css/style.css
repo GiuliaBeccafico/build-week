@@ -13,7 +13,13 @@
 #rating {
     padding: 10px 0;
 }
-
+/************************************************** GENERAL SETTINGS ******************************************/
+:root {
+    --interFont: "Inter", sans-serif;
+    --outfitFont: "Outfit", sans-serif;
+    --blueColor: #00ffff;
+    --pinkColor: #d20094;
+  }
 
 /********************************* settings del main **/
 
@@ -54,7 +60,7 @@
 
 .mainTitle {
     font-size: 60px;
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--outfitFont);
 }
 
 .bold {
@@ -95,19 +101,20 @@
 .answer:hover {
     background: rgb(210,0,148);
     background: linear-gradient(144deg, rgba(210,0,148,1) 0%, rgba(144,0,128,1) 52%);
+    transition: 0.5ms;
 }
 
 /************************************************ Footer ******************************/
 
 #footer {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--interFont);
     color: white;
     display: flex;
     justify-content: space-between;
 }
 
 .pink {
-    color: #D20094;
+    color: var(--pinkColor);
 }
 
 .button {
