@@ -1,49 +1,119 @@
-#container{
-    background-image: url(../assets/bg.jpg);
-    background-repeat: no-repeat;
-    height: 100rem;
-    width: 100%;
-    padding: 40px 100px 100px 100px ;
-    font-family: 'Outfit', sans-serif;
-    font-family: 'Inter', sans-serif;
-}
-.logo{
-   width: 12rem;
-}
-
-.welcomeTitle{
-    color: white;
-    font-size: 3rem;
-}
+/**************************** settings per le stelle feedback page *******************************/
 
 
-.bold{
-    font-weight: bold;
-    padding-bottom: 3%;
+.star {
+    fill:#0b113b
+ }
+ 
+ .blueStar {
+     fill: #00FFFF;
+     transition: 3ms;
+ }
+ 
+ #rating {
+     padding: 10px 0;
+ }
+ 
+ 
+ /********************************* settings del main **/
+ 
+ @media screen and (min-width: 500px) {
+     
+     
+     #container{
+         background-image: url(../img/bg.jpg);
+     background-repeat: no-repeat;
+     width: 80vw;
+     height: 100%;
+     padding: 40px 100px 100px 100px ;
+     background-size: 100%;
+ }
+ 
+ .logo {
+     width:160;
+     height:40px;
+ }
+ 
+ .timer {
+     width: 115px;
+     height: 115px
+ }
+ #header{
+     display:flex;
+     justify-content: space-between;
+     margin-bottom: 70px;
+ }
+ 
+ .questions{
+     text-align: center;
+     color: white;
+     margin-bottom: 70px;
+ }
+ 
+ .mainTitle{
+     font-size: 60px;
+     font-family: 'Outfit', sans-serif;
+ }
+ 
+ .bold {
+     font-weight: 600;
+ }
+ 
+ /****************************** ANSWERS BUTTONS **************************/
+ 
+ 
+ .answers {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     padding-top: 50px;
+ }
+ 
+ .answerContainer {
+     margin: 8px 15px;
+ }
+ 
+ 
+ .answer{
+     background: rgba(255,255,255,0.1);
+     color: white;
+     padding: 25px 60px;
+     border-radius: 50px;
+     border: 3px solid rgba(255,255,255,0.5);
+     border-bottom-style: solid;
+     border-bottom-style: hidden;
+     border-inline-width: thin;
+     width: 300px;
+ }
+ 
+ 
+ .answer:hover {
+     background-color: #D20094;
+ }
+ 
+ /************************************************ Footer ******************************/
+ 
+ #footer{
+     font-family: 'Inter', sans-serif;
+     color: white;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .pink{
+     color: #D20094;
+ }
+ 
+ .button {
+     color: white;
+     border: 2px solid white;
+     background: none;
+     font-size: 1.2rem;
+     width: 13rem;
+     height: 3.5rem;
+     font-weight: bold;
+     background-image: url(../assets/bg.jpg);
+ }
+ }
     
-}
-
-#instruction p{
-    color: white;
-}
-
-
-
-.secondTitle{
-    color: #D20094;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.left{
-    font-family: 'Inter', sans-serif;
-    color: white;
-    padding-top: 50%;
-    
-}
-
-.pink{
-    color: #D20094;
-    
-}
 
