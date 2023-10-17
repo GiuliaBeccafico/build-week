@@ -8,13 +8,14 @@
 
 /*SHARED DESIGN FOR CONTAINER, BG IMG, WIDTH/HEIGHT*/
 
-  #container{
-    background-image: url(../img/bg.jpg);
-    background-repeat: no-repeat;
-    padding: 40px 100px 100px 100px;
-    background-size: cover;
-    text-align: center;
+#container {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  padding: 40px 100px 100px 100px;
+  background-size: cover;
+  text-align: center;
 }
+
 /*HEADER SECTION*/
 
 #header {
@@ -26,7 +27,7 @@
 .timer {
   visibility: hidden;
   width: 115px;
-  height: 115px
+  height: 115px;
 }
 
 .logo {
@@ -64,11 +65,8 @@
   color: grey;
   padding: 10px 25px;
   font-size: 18px;
+  margin-bottom: 50px;
 }
-
-
-
-
 
 /*RATING STARS DESIGN BY DAVIDE*/
 
@@ -83,5 +81,25 @@
 
 #rating {
   margin-bottom: 55px;
+}
 
+
+/*RATING STARS DESIGN BY SAMUELE*/
+
+
+.button {
+  color: white;
+  border: 2px solid white;
+  background: none;
+  font-size: 1.2rem;
+  width: 13rem;
+  height: 3rem;
+  font-weight: bold;
+}
+
+.button.blueButton {
+  background: #00ffff;
+  box-shadow: 2px 2px 30px #00ffff;
+  color: #0b113b;
+  border: none;
 }
