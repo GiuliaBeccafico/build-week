@@ -93,7 +93,21 @@
 #footer{
     font-family: 'Inter', sans-serif;
     color: white;
+    display: flex;
+    justify-content: space-between;
 }
+
 .pink{
     color: #D20094;
+}
+
+.button {
+    color: white;
+    border: 2px solid white;
+    background: none;
+    font-size: 1.2rem;
+    width: 13rem;
+    height: 3.5rem;
+    font-weight: bold;
+    background-image: url(../assets/bg.jpg);
 }
