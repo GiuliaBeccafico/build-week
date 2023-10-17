@@ -72,9 +72,12 @@ li b {
 }
 
 .list {
+    list-style-type: disc;
     color: #dedee3;
-    font-size: smaller;
+    font-size: small;
+    letter-spacing: 0.02rem;
     font-family: 'Inter', sans-serif;
+    padding-left: 20px;
     padding-bottom: 7%;
 }
 
@@ -84,15 +87,6 @@ li b {
     font-size: 1.2rem;
     padding-bottom: 1%;
     font-family: 'Outfit', sans-serif;
-}
-
-.list {
-    list-style-type: disc;
-    color: white;
-    font-size: small;
-    font-family: 'Inter', sans-serif;
-    padding-left: 20px;
-    padding-bottom: 7%;
 }
 
 .list li {
