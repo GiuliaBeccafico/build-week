@@ -4,6 +4,9 @@
 :root {
     font-family: 'Inter', sans-serif;
     font-family: 'Outfit', sans-serif;
+    --blueColor:#00FFFF;
+    --pinkColor: #D20094 ;
+    --violaColor: #900080;
 }
 
 
@@ -105,6 +108,10 @@ li b {
 .left {
     color: #dedee3;
     font-size: 0.9rem;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
 }
 
 .button {
