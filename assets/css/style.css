@@ -44,7 +44,7 @@
   color: #ffffff;
   font-size: 55px;
   font-weight: bold;
-  font-family: var(--interFont);
+  font-family: var(--outfitFont);
   margin-bottom: 30px;
 }
 
@@ -52,7 +52,7 @@
   font-size: 23px;
   line-height: 35px;
   color: #dedee3;
-  font-family: var(--outfitFont);
+  font-family: var(--interFont);
   margin-bottom: 30px;
 }
 
@@ -102,4 +102,5 @@
   box-shadow: 2px 2px 30px #00ffff;
   color: #0b113b;
   border: none;
+  font-family: var(--outfitFont);
 }
