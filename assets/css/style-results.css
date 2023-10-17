@@ -141,30 +141,6 @@ box-shadow: 2px 2px 30px #00FFFF;
 color: #0b113b;
 border: none;
 }
-/* @media screen and (max-width:880px) {
-    #section{
-        display: flex;
-        flex-direction: column;
-        color: white;
-        height: 50rem;
-           
-    }
-    .rightSection{
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 27rem;
-       align-items: flex-start;
-}
-.secondSection{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-} */
 
 
 
