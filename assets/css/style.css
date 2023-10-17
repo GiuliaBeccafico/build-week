@@ -9,13 +9,11 @@
 /*SHARED DESIGN FOR CONTAINER, BG IMG, WIDTH/HEIGHT*/
 
 #container {
-  background-image: url(../img/bg.jpg);
-  background-repeat: no-repeat;
-  width: 57rem;
-  height: 46rem;
-  padding: 40px 100px 100px 100px;
-  background-size: contain;
-  text-align: center;
+  #container{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    padding: 40px 100px 100px 100px;
+    background-size: cover;
 }
 /*LOGO*/
 
