@@ -10,3 +10,12 @@
 #rating {
     padding: 10px 0;
 }
+
+#container{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    width: 57rem;
+    height: 46rem;
+    padding: 40px 100px 100px 100px ;
+    background-size: contain;
+}
