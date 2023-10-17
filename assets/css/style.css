@@ -50,6 +50,7 @@
 .description{
     font-family: var(--interFont);
     font-size: 2rem;
+    color:#dedee3;;
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
@@ -90,7 +91,6 @@
     color: #cacbd4;
     font-family: 'Outfit';
 }
-
 
 .secondSection{
     width: 25rem;
