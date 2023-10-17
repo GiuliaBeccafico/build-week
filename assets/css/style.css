@@ -46,7 +46,7 @@
     height: 115px
 }
 
-#header {
+.header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
@@ -106,7 +106,7 @@
 
 /************************************************ Footer ******************************/
 
-#footer {
+.footer {
     font-family: var(--interFont);
     color: white;
     display: flex;

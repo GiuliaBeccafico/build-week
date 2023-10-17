@@ -8,7 +8,7 @@
   
   /*SHARED DESIGN FOR CONTAINER, BG IMG, WIDTH/HEIGHT*/
   
-  #container {
+  .container {
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     padding: 40px 100px 100px 100px;
@@ -17,7 +17,7 @@
   
   /*HEADER SECTION*/
   
-  #header {
+  .header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
@@ -35,7 +35,7 @@
   }
   /*MAIN BODY, MAIN DIV PROPERTIES*/
   
-  #main {
+  .main {
     text-align: center;
   }
   
@@ -73,10 +73,10 @@
     fill: #0b113b;
   }
   
-  /* .blueStar {
+    .active {
     fill: #00ffff;
     transition: 3ms;
-  } */
+  }
   
   #rating {
     margin-bottom: 55px;
