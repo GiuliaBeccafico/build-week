@@ -75,6 +75,7 @@ li b {
     font-weight: bold;
     font-size: 1.2rem;
     font-family: 'Outfit', sans-serif;
+    padding-bottom: 1%;
 }
 
 .list {
@@ -84,6 +85,7 @@ li b {
     letter-spacing: 0.02rem;
     font-family: 'Inter', sans-serif;
     padding-left: 20px;
+    padding-bottom: 7%;
 }
 
 .list li {
