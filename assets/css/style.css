@@ -2,7 +2,7 @@
 
 
 .star {
-   fill:#0b113b
+    fill: #0b113b
 }
 
 .blueStar {
@@ -18,39 +18,41 @@
 /********************************* settings del main **/
 
 
-    body {
-        height: 100%;
-    }
-    
-    #container{
-        background-image: url(../img/bg.jpg);
-        background-repeat: no-repeat;
-        padding: 40px 100px 100px 100px;
-        background-size: cover;
+
+#container {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    padding: 40px 100px 100px 100px;
+    background-size: cover;
+}
+
+.main {
+    margin-bottom: 70px;
 }
 
 .logo {
-    width:160;
-    height:40px;
+    width: 160;
+    height: 40px;
 }
 
 .timer {
     width: 115px;
     height: 115px
 }
-#header{
-    display:flex;
+
+#header {
+    display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
 }
 
-.questions{
+.questions {
     text-align: center;
     color: white;
-    margin-bottom: 70px;
+
 }
 
-.mainTitle{
+.mainTitle {
     font-size: 60px;
     font-family: 'Outfit', sans-serif;
 }
@@ -74,12 +76,12 @@
 }
 
 
-.answer{
-    background: rgba(255,255,255,0.1);
+.answer {
+    background: rgba(255, 255, 255, 0.1);
     color: white;
     padding: 25px 60px;
     border-radius: 50px;
-    border: 3px solid rgba(255,255,255,0.5);
+    border: 3px solid rgba(255, 255, 255, 0.5);
     border-bottom-style: solid;
     border-bottom-style: hidden;
     border-inline-width: thin;
@@ -93,14 +95,14 @@
 
 /************************************************ Footer ******************************/
 
-#footer{
+#footer {
     font-family: 'Inter', sans-serif;
     color: white;
     display: flex;
     justify-content: space-between;
 }
 
-.pink{
+.pink {
     color: #D20094;
 }
 
