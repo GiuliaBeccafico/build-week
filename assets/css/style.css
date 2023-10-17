@@ -55,3 +55,10 @@
 .bold {
     font-weight: 600;
 }
+
+.answer{
+    background: rgba(255,255,255,0.1);
+    color: white;
+    padding: 25px 60px;
+    border-radius: 50px;
+}
