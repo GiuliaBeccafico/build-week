@@ -38,13 +38,13 @@
 -------------------------------------------------------------------------------------> */
 .title{
     color: white;
-    margin-bottom: 2rem;
+   margin: 1.5rem 0;
     text-align: center;
 }
 .mainTitle{
     font-size: 3.5rem;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     font-family: var(--interFont);
 }
 .description{
@@ -60,22 +60,41 @@
     color: white;
     justify-content: space-between;
 }
-.lateralSection{
+.leftSection{
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 27rem;
 }
-.sectionTitle{
-  
-    font-size: 4rem;
-    font-family: var(--interFont);
+.rightSection{
+   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 27rem;
+        align-items: end;
 
 }
+.sectionTitle{
+    font-size: 3.5rem;
+    font-family: var(--interFont);
+}
+
+.valueTitle{
+    font-size: 3.5rem;
+    font-family: var(--outfitFont);
+    font-weight: bold;
+}
+.correctQuestions{
+    font-size: 1.2rem;
+    color: #cacbd4;
+    font-family: 'Outfit';
+}
+
 
 .secondSection{
     width: 25rem;
-    margin-top: 2rem;
+    margin-top: 1.6rem;
 }
 .secondSection img{
     width: 100%;
