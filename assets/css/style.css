@@ -1,16 +1,17 @@
-#container {
+#container{
     background-image: url(../image/bg.jpg);
     background-repeat: no-repeat;
-    height: 100rem;
-    width: 100%;
-    padding: 40px 100px 100px 100px;
+    width: 57rem;
+    height: 46rem;
+
+    padding: 40px 100px 100px 100px ;
     background-size: contain;
 }
 
 .logo {
     width: 160px;
     height: 40px;
-    padding-bottom: 5%;
+    padding-bottom: 70px;
 }
 
 .welcomeTitle {
@@ -25,15 +26,15 @@
 }
 
 .caption {
-    color: white;
+    color: #dedee3;
     font-family: 'Inter', sans-serif;
     font-size: small;
-    padding-bottom: 3%;
+    padding-bottom: 6%;
 }
 
 .list {
     list-style-type: disc;
-    color: white;
+    color: #dedee3;
     font-size: small;
     font-family: 'Inter', sans-serif;
     padding-left: 20px;
@@ -66,12 +67,18 @@
     background-color: transparent;
 }
 
-
-#divButton {
-    text-align: center;
-    margin-top: 3rem;
+#footer {
+    display: flex;
+    justify-content: space-between;
 }
 
+.right {
+    padding-right: 70px;
+}
+
+.left {
+    color: #dedee3;
+}
 
 .button {
     color: white;
@@ -79,10 +86,9 @@
     background: none;
     font-size: 1.2rem;
     width: 13rem;
-    height: 3.6rem;
+    height: 3.5rem;
     font-weight: bold;
-
-
+    background-image: url(../assets/bg.jpg);
 }
 
 .button.blueButton {
