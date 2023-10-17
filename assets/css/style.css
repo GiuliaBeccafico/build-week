@@ -76,7 +76,6 @@ li b {
     list-style-type: disc;
     color: #dedee3;
     font-size: small;
-    letter-spacing: 0.02rem;
     font-family: 'Inter', sans-serif;
     padding-left: 20px;
     padding-bottom: 7%;
@@ -86,7 +85,7 @@ li b {
     color: var(--pinkColor);
     font-weight: bold;
     font-size: 1.2rem;
-    padding-bottom: 1%;
+    margin-bottom: 10px;
     font-family: 'Outfit', sans-serif;
 }
 
