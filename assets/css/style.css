@@ -2,8 +2,6 @@
     container e font 
     -------------------------------------------------------------------------------------> */
 :root {
-    font-family: 'Inter', sans-serif;
-    font-family: 'Outfit', sans-serif;
     --blueColor: #00FFFF;
     --pinkColor: #D20094;
     --violaColor: #900080;
@@ -29,13 +27,16 @@
 #header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .timer {
-    visibility: hidden;
     width: 115px;
     height: 115px
+}
+
+.timer.hidden{
+    visibility: hidden;
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
