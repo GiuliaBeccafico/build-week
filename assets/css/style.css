@@ -4,15 +4,19 @@
 :root {
     font-family: 'Inter', sans-serif;
     font-family: 'Outfit', sans-serif;
+    --blueColor:#00FFFF;
+    --pinkColor: #D20094 ;
+    --violaColor: #900080;
 }
 
 
 #container {
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
+    background-size: contain;
     padding: 40px 100px 100px 100px;
-    width:46rem;
-    height:57rem;
+    width: 57rem;
+    height: 46rem;
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
@@ -23,13 +27,16 @@
     height: 40px;
     padding-bottom: 70px;
 }
-#header{
-display: flex;
-justify-content: space-between;
+
+#header {
+    display: flex;
+    justify-content: space-between;
 }
 
-.timer{
+.timer {
     visibility: hidden;
+    width: 115px;
+    height: 115px
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
@@ -42,9 +49,9 @@ justify-content: space-between;
     font-family: 'Outfit', sans-serif;
 }
 
- li b {
+li b {
     font-size: O.6rem;
-   font-weight: bold;
+    font-weight: bold;
 }
 
 .bold {
@@ -69,7 +76,7 @@ justify-content: space-between;
 }
 
 .secondTitle {
-    color: #d20094;
+    color: var(--pinkColor);
     font-weight: bold;
     font-size: 1.2rem;
     padding-bottom: 1%;
@@ -98,13 +105,14 @@ justify-content: space-between;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-}
 
+}
 
 .left {
     color: #dedee3;
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
 }
 
 .button {
@@ -123,4 +131,23 @@ justify-content: space-between;
     box-shadow: 2px 2px 30px #00FFFF;
     color: #0b113b;
     border: none;
+}
+
+#checkbox {
+    display: none;
+   
+}
+
+.customCheckbox {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#checkbox:checked+.customCheckbox {
+    background-color: var(--violaColor);
+    color: #fff;
 }
