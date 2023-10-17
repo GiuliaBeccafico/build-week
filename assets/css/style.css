@@ -24,7 +24,7 @@
     height: 40px;
 }
 
-#header {
+.header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
@@ -43,7 +43,7 @@
             main feedback page 
         -------------------------------------------------------------------------------------> */
 
-#main {
+.main {
     margin-bottom: 30px;
 }
 
@@ -99,7 +99,7 @@ li b {
         footer feedback page 
         -------------------------------------------------------------------------------------> */
 
-#footer {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
