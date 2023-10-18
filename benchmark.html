@@ -18,8 +18,28 @@
 
     <div class="header">
       <img class="logo" src="assets/img/epicode_logo.png" alt="Logo-Epicode">
-      <img class="timer hidden" src="https://www.freeiconspng.com/thumbs/timer-icon/timer-icon-15.png">
-      <div class="demo timer hidden" data-date="2013-12-25 00:00:00"></div>
+      <!-- Timer -->
+      <img class="timer hidden">
+      <div class="demo timer hidden" data-date="2013-12-25 00:00:00">
+        <div id="app">
+          <div class="baseTimer">
+            <svg class="baseTimerSvg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <g class="baseTimerCircle">
+                <circle class="baseTimerPathElapsed" cx="50" cy="50" r="45" />
+                <path id="baseTimerPathRemaining" stroke-dasharray="283" class="baseTimerPathRemaining" d="
+                    M 50, 50
+                    m -45, 0
+                    a 45,45 0 1,0 90,0
+                    a 45,45 0 1,0 -90,0
+                  "></path>
+              </g>
+            </svg>
+            <span id="baseTimerLabel" class="baseTimerLabel">
+              <!-- Remaining time label -->
+            </span>
+          </div>
+        </div>
+      </div>
 
     </div>
 
