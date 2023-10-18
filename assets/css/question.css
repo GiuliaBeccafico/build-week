@@ -34,7 +34,7 @@
 }
 
 .logo {
-    width: 160;
+    width: 160px;
     height: 40px;
 }
 
@@ -43,7 +43,7 @@
     height: 115px
 }
 
-#header {
+.header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
@@ -52,15 +52,14 @@
 .questions {
     text-align: center;
     color: white;
-
 }
 
-.mainTitle {
+.mainTitle{
     font-size: 60px;
     font-family: var(--outfitFont);
 }
 
-.bold {
+.question p:last-of-type{
     font-weight: 600;
 }
 
