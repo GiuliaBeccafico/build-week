@@ -1,36 +1,12 @@
-let areaCheckbox = document.getElementById('checkbox');
-let areaButton = document.querySelector('.button');
-
-let firstPage = document.getElementById('page1')
-let secondPage = document.getElementById('page2')
-
-let timer = document.querySelector('.demo')
-areaButton.addEventListener('click', function () {
-    if (areaCheckbox.checked) {
-        firstPage.remove()
-        secondPage.classList.remove('hidden')
-        timer.classList.remove('hidden')
-
-    } else {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Please accept the agreement to proceed'
-        });
-    }
-});
-//
-// Timer //
-//
 let cerchio = document.getElementById("app").innerHTML;
 
-let span = document.getElementById("baseTimerLabel");
+let span = document.getElementById("base-timer-label");
 let PercorsoSecondoCerchio = document.getElementById(
-    "baseTimerPathRemaining"
+    "base-timer-path-remaining"
 );
 const raggio = 45;
 const lunghezzaCirconferenza = 2 * Math.PI * raggio;
-const FullDashArray = lunghezzaCirconferenza;
+const FULL_DASH_ARRAY = lunghezzaCirconferenza;
 
 const TIME_LIMIT = 60;
 let timePassed = 0;
@@ -70,6 +46,8 @@ function startTimer() {
         }
     }, 1000);
 }
+
+
 startTimer();
 
 function calculateTimeFraction() {
@@ -78,9 +56,9 @@ function calculateTimeFraction() {
 
 function setCircleDasharray() {
     const circleDasharray = `${(
-        calculateTimeFraction() * FullDashArray
+        calculateTimeFraction() * FULL_DASH_ARRAY
     ).toFixed(0)} 283`;
-    PercorsoSecondoCerchio.setAttribute("strokeDasharray", circleDasharray);
+    PercorsoSecondoCerchio.setAttribute("stroke-dasharray", circleDasharray);
 }
 
 function calculateTimeFraction() {
@@ -88,4 +66,3 @@ function calculateTimeFraction() {
     return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
 }
 calculateTimeFraction();
-

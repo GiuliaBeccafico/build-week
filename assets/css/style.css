@@ -6,19 +6,17 @@
     --pinkColor: #D20094;
 }
 
-
 #container {
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     padding: 40px 100px 100px 100px;
-
+    background-size: cover;
 }
 
-/* <!---------------------------------------------------------------------------------------------------------------------------------------
-            header feedback page 
-        -------------------------------------------------------------------------------------> */
 
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+                header feedback page 
+            -------------------------------------------------------------------------------------> */
 .logo {
     width: 160px;
     height: 40px;
@@ -30,82 +28,14 @@
     margin-bottom: 50px;
 }
 
-/* <!---------------------------------------------------------------------------------------------------------------------------------------
-        timer
-    -------------------------------------------------------------------------------------> */
-    
-.timer {
-    width: 115px;
-    height: 115px
-}
 
 .hidden {
     visibility: hidden;
 }
 
-.baseTimer {
-    position: relative;
-    height: 1000px;
-    width: 200px;
-}
-
-/* Removes SVG styling that would hide the time label */
-.baseTimerCircle {
-    fill: none;
-    stroke: none;
-}
-
-/* The SVG path that displays the timer's progress */
-.baseTimerPathElapsed {
-    stroke-width: 8px;
-    stroke: grey
-}
-
-.baseTimerLabel {
-    position: absolute;
-
-    /* Size should match the parent container */
-    width: 200px;
-    height: 200px;
-
-    /* Keep the label aligned to the top */
-    top: 0;
-
-    /* Create a flexible box that centers content vertically and horizontally */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* Sort of an arbitrary number; adjust to your liking */
-    font-size: 100px;
-}
-
-.baseTimerPathRemaining {
-    /* Just as thick as the original ring */
-    stroke-width: 7px;
-
-    /* Rounds the line endings to create a seamless circle */
-    stroke-linecap: round;
-
-    /* Makes sure the animation starts at the top of the circle */
-    transform: rotate(90deg);
-    transform-origin: center;
-
-    /* One second aligns with the speed of the countdown timer */
-    /* transition: 1s linear all;
-   */
-    /* Allows the ring to change color when the color value updates */
-    stroke: #d20094;
-}
-
-.baseTimerSvg {
-    /* Flips the svg and makes the animation to move left-to-right */
-    transform: scaleX(1);
-}
-
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
-            main feedback page 
-            -------------------------------------------------------------------------------------> */
+                main feedback page 
+                -------------------------------------------------------------------------------------> */
 
 .main {
     margin-bottom: 30px;
@@ -160,8 +90,8 @@ li b {
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
-        footer feedback page 
-        -------------------------------------------------------------------------------------> */
+            footer feedback page 
+            -------------------------------------------------------------------------------------> */
 
 .footer {
     display: flex;
@@ -214,4 +144,65 @@ li b {
 
 .left p {
     font-weight: bold;
+}
+
+/* timer css */
+.base-timer {
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+/* Removes SVG styling that would hide the time label */
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+/* The SVG path that displays the timer's progress */
+.base-timer__path-elapsed {
+    stroke-width: 8px;
+    stroke: grey
+}
+
+.base-timer__label {
+    position: absolute;
+
+    /* Size should match the parent container */
+    width: 200px;
+    height: 200px;
+
+    /* Keep the label aligned to the top */
+    top: 0;
+
+    /* Create a flexible box that centers content vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Sort of an arbitrary number; adjust to your liking */
+    font-size: 100px;
+}
+
+.base-timer__path-remaining {
+    /* Just as thick as the original ring */
+    stroke-width: 7px;
+
+    /* Rounds the line endings to create a seamless circle */
+    stroke-linecap: round;
+
+    /* Makes sure the animation starts at the top of the circle */
+    transform: rotate(90deg);
+    transform-origin: center;
+
+    /* One second aligns with the speed of the countdown timer */
+    /* transition: 1s linear all;
+       */
+    /* Allows the ring to change color when the color value updates */
+    stroke: #d20094;
+}
+
+.base-timer__svg {
+    /* Flips the svg and makes the animation to move left-to-right */
+    transform: scaleX(1);
 }
