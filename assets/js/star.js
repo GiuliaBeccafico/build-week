@@ -1,19 +1,24 @@
-const stars = document.querySelectorAll(".star");
-const rating = {
-  value: 0,
-};
+const stars = document.querySelectorAll("img.star");
+const divStars = document.getElementById("stars");
+let rating = 0;
 
 stars.forEach((star) => {
   star.addEventListener("mouseover", (event) => {
     const hoveredStarIndex = parseInt(event.target.getAttribute("data-index"));
-    updateStars(hoveredStarIndex);
+    if (hoveredStarIndex > rating - 1) {
+      updateStars(hoveredStarIndex);
+    }
   });
 
   star.addEventListener("click", (event) => {
     const clickedStarIndex = parseInt(event.target.getAttribute("data-index"));
-    rating.value = clickedStarIndex + 1;
+    rating = clickedStarIndex + 1;
     updateStars(clickedStarIndex);
   });
+});
+
+divStars.addEventListener("mouseout", function() {
+    updateStars(rating - 1);
 });
 
 function updateStars(hoveredStarIndex) {
