@@ -76,7 +76,7 @@
 
 .ratingStars svg path{
   fill: var(--emptyStar);
-  outline: 1px solid wheat;
+  
 }
 
 
