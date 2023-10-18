@@ -65,7 +65,8 @@
           }
           timePassed = 0;
           timeLeft = TIME_LIMIT;
-          span.innerHTML = timeLeft;
+          span.innerHTML = `${timeLeft} secondi`;
+        
           setCircleDasharray();
         
           timerInterval = setInterval(() => {
@@ -100,6 +101,13 @@
       return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
     }
     calculateTimeFraction();
+
+let template = document.getElementsByTagName('template')[0];
+let copia = template.content.firstElementChild.cloneNode(true)
+let answres = copia.childNodes[5]
+
+
+console.dir(copia);
 
 //domande easy 
 fetch ('https://opentdb.com/api.php?amount=10&category=18&difficulty=easy')
