@@ -74,23 +74,14 @@
     display: none;
   }
 
-  /* .emptyStar{
+
+  .emptyStar{
     fill: var(--emptyStar);  
-  } */
-
-  .activeStar {
-    fill: var(--blueColor);
-    transition: .5s;
   }
 
- 
-  label:hover ~ label.star,
-  svg.star:hover,
-  input[name='rating']:focus ~ label .star,
-  input[name='rating']:checked ~ label .star{
-    color: red;
+  .activeStar{
+    fill:var(--blueColor)
   }
-  
   /*RATING STARS DESIGN BY SAMUELE*/
   
   
