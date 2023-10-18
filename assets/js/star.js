@@ -7,13 +7,11 @@ radio.forEach(el => {
     el.classList.add('hidden')
 })
 
-<<<<<<< HEAD
 starsPath.forEach(star => {
     star.addEventListener('click', () => {
         star.classList.toggle('activeStar')
     })
 })
-=======
 
     for (let i = 0; i <starsPath.length; i++){
         starsPath[i].addEventListener('click', () => {
@@ -33,4 +31,3 @@ starsPath.forEach(star => {
         })
     }
 
->>>>>>> f86400a (prove star filling)
