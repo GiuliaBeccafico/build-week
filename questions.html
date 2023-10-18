@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/question.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@400;600&display=swap"
@@ -15,34 +15,31 @@
 
 <body>
     <div id="container">
-        <div id="page2" class="hidden">
+        <button id="proceed" class="button blueButton">PROCEED</button>
+        <template>
+
             <div class="header">
                 <img class='logo' src="assets/img/epicode_logo.png" alt="Epicode Logo">
                 <img class="timer" src="https://www.freeiconspng.com/thumbs/timer-icon/timer-icon-15.png">
             </div>
             <div class="main">
                 <div class="questions">
-                    <p class="mainTitle">How can i create a</p>
-                    <p class="mainTitle bold">checkbox in HTML?</p>
+                    <p class="mainTitle"></p>
+                    <p class="mainTitle bold"></p>
                     <div class="answers">
-                        <div class="answerContainer"><button class="answer" id="1">risposta 1</button></div>
-                        <div class="answerContainer"><button class="answer">risposta 1</button></div>
-                        <div class="answerContainer"><button class="answer">risposta 1</button></div>
-                        <div class="answerContainer"><button class="answer">risposta 1</button></div>
+                      
                     </div>
                 </div>
             </div>
             <div class="footer">
-                <div class="left">
                     <p>Question 1<span class="pink"> / 10</span></p>
-                </div>
-                <div class="right">
                     <button class="button" disabled>Prossima →</button>
-                </div>
             </div>
 
         </div>
     </div>
+    </template>
+    <script src="assets/js/questionTemplate.js"></script>
 </body>
 
 </html>

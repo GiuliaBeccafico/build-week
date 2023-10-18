@@ -37,7 +37,7 @@
 }
 
 .logo {
-    width: 160;
+    width: 160px;
     height: 40px;
 }
 
@@ -94,7 +94,7 @@
     border-bottom-style: hidden;
     border-inline-width: thin;
     width: 300px;
-    
+    margin-bottom: 10px;
 }
 
 
@@ -170,7 +170,6 @@
 .mainTitle {
   color: #ffffff;
   font-size: 55px;
-  font-weight: bold;
   font-family: var(--outfitFont);
   margin-bottom: 30px;
 }

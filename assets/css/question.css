@@ -72,6 +72,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 50px;
+    margin-bottom: 70px;
 }
 
 .answerContainer {
@@ -91,7 +92,7 @@
     border-bottom-style: hidden;
     border-inline-width: thin;
     width: 300px;
-    
+    margin-bottom: 10px;
 }
 
 
@@ -103,7 +104,7 @@
 
 /************************************************ Footer ******************************/
 
-#footer {
+.footer {
     font-family: var(--interFont);
     color: white;
     display: flex;
@@ -124,6 +125,15 @@
     font-weight: bold;
     background-image: url(../assets/bg.jpg);
 }
+
+.button.blueButton {
+    background: #00ffff;
+    box-shadow: 2px 2px 30px #00ffff;
+    color: #0b113b;
+    border: none;
+    font-family: var(--outfitFont);
+  }
+  
 /* timer css */
 .base-timer {
     position: relative;
