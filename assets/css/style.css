@@ -79,11 +79,15 @@
   transition: 3ms;
 }
 
+.emptyStar{
+  visibility: hidden;
+}
+
 #rating {
   margin-bottom: 55px;
 }
 
-/*RATING STARS DESIGN BY SAMUELE*/
+/*MORE INFO BUTTON DESIGN BY SAMUELE*/
 
 .footer {
   text-align: center;
