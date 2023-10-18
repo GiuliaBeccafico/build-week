@@ -2,47 +2,53 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Benchmark</title>
-  <link rel="stylesheet" href="assets/css/reset.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam-Epicode</title>
+  <link rel="stylesheet" href="assets/css/reset.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="inc/TimeCircles.css" />
 </head>
 
 <body>
+  <!-- container ed header univoci per tutte le pagine -->
   <div id="container">
 
     <div class="header">
       <img class="logo" src="assets/img/epicode_logo.png" alt="Logo-Epicode">
-      <img class="timer hidden" src="https://www.freeiconspng.com/thumbs/timer-icon/timer-icon-15.png">
-      <!-- Timer -->
-      <div class="demo timer hidden" data-date="2013-12-25 00:00:00">
-        <div id="app">
-          <div class="baseTimer">
-            <svg class="baseTimerSvg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-              <g class="baseTimerCircle">
-                <circle class="baseTimerPathElapsed" cx="50" cy="50" r="45" />
-                <path id="baseTimerPathRemaining" stroke-dasharray="283" class="baseTimerPathRemaining" d="
-                    M 50, 50
-                    m -45, 0
-                    a 45,45 0 1,0 90,0
-                    a 45,45 0 1,0 -90,0
-                  "></path>
-              </g>
-            </svg>
-            <span id="baseTimerLabel" class="baseTimer__label">
-              <!-- Remaining time label -->
-            </span>
-          </div>
-          `;
+      <div id="app">
+
+        <div class="base-timer">
+
+          <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <g class="base-timer__circle">
+
+              <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
+              <path id="base-timer-path-remaining" stroke-dasharray="283" class="base-timer__path-remaining" d="
+                      M 50, 50
+                      m -45, 0
+                      a 45,45 0 1,0 90,0
+                      a 45,45 0 1,0 -90,0
+                    "></path>
+            </g>
+          </svg>
+          <span id="base-timer-label" class="base-timer__label">
+            <div class="base-timer__text-wrapper">
+                <div class="base-timer__seconds">SECONDI</div>
+                <div class="base-timer__remaining">RIMANENTI</div>
+            </div>
+        </span>
+        
         </div>
+
       </div>
 
     </div>
+
+
+    <!-- page 1 -->
 
     <div id="page1">
 
@@ -78,7 +84,7 @@
       </div>
     </div>
 
-
+    <!-- page 2 -->
     <div id="page2" class="hidden">
 
       <div class="main">
@@ -103,12 +109,52 @@
       </div>
 
     </div>
-
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="assets/js/benchmark.js"></script>
-</body>
 
+  <!---------------------------------------------------------------------------------------------------------------------------------------
+    Insteazione RESULTS pagee   
+    ------------------------------------------------------------------------------------->
+  <!-- page 3 -->
+
+  <!-- da qui sotto inizia il titolo   -->
+  <div id="page3" class="hidden">
+    <div class="main">
+      <div class="title">
+        <p class="mainTitle"> Results</p>
+        <p class="description"> The summary of your answers:</p>
+      </div>
+      <!-- da qui sotto inizia la parte centrale dei risultati -->
+      <div id="results">
+        <div class="leftSection">
+          <p class="sectionTitle"> Correct </p>
+          <p class="valueTitle"> 66.7% </p>
+          <p class="correctQuestions"> 4/6 questions</p>
+        </div>
+        <div class="secondSection">
+          <img src="assets/img/circle-png.webp" alt="" class="">
+        </div>
+        <div class="rightSection">
+          <p class="sectionTitle"> Wrong </p>
+          <p class="valueTitle"> 33.3% </p>
+          <p class="correctQuestions"> 2/6 questions</p>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------
+footer RESULTS page 
+------------------------------------------------------------------------------------->
+    <div class="footer">
+
+      <div id="divButton">
+        <button class="button">RATE US </button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="assets/js/benchmark.js">
+  </script>
+</body>
 
 </html>

@@ -8,7 +8,7 @@ const raggio = 45;
 const lunghezzaCirconferenza = 2 * Math.PI * raggio;
 const FULL_DASH_ARRAY = lunghezzaCirconferenza;
 
-const TIME_LIMIT = 60;
+const TIME_LIMIT = 60`secondi 60 rimanenti`;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 span.innerHTML = timeLeft;
