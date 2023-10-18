@@ -25,9 +25,3 @@ function updateStars(hoveredStarIndex) {
     }
   });
 }
-
-
-function clearPlaceholder() {
-  var input = document.getElementById("commentsBox");
-  input.placeholder = "";
-}

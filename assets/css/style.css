@@ -63,8 +63,20 @@
   width: 100%;
   color: grey;
   font-size: 18px;
-  padding: 0 0 5px 15px;
 }
+
+#commentsBox::placeholder{
+  text-indent: 20px;
+}
+
+input[type="text"]::placeholder {
+  transition: opacity 0.1s;
+}
+
+input[type="text"]:focus::placeholder {
+  opacity: 0;
+}
+
 
 
 /*RATING STARS DESIGN BY ADRIANO - WORKING FOR NOW*/
