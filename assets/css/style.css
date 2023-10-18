@@ -63,13 +63,9 @@
   width: 100%;
   color: grey;
   font-size: 18px;
+  padding: 0 0 5px 15px;
 }
-#commentsBox::placeholder {
-  padding: 0 0 10px 15px;
-}
-input:focus::placeholder {
-  color: transparent;
-}
+
 
 /*RATING STARS DESIGN BY ADRIANO - WORKING FOR NOW*/
 
