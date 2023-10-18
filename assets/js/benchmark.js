@@ -105,7 +105,7 @@ let copia = template.content.firstElementChild.cloneNode(true)
 let answres = copia.childNodes[5]
 
 
-console.dir(copia);
+
 
 //domande easy 
 fetch ('https://opentdb.com/api.php?amount=10&category=18&difficulty=easy')
