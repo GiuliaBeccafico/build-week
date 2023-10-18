@@ -74,9 +74,13 @@
     display: none;
   }
 
-  .ratingStars svg path{
-    fill: var(--emptyStar);
-    outline: 1px solid wheat;
+  .emptyStar{
+    fill: var(--emptyStar);  
+  }
+
+  .activeStar {
+    fill: var(--blueColor);
+    transition: .5s;
   }
 
 
