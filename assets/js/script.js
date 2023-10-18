@@ -6,7 +6,7 @@
     let firstPage = document.getElementById('page1')
     let secondPage = document.getElementById ('page2')
 
-    let timer = document.querySelector('#app')    
+    let timer = document.querySelector('.base-timer')    
     areaButton.addEventListener('click', function() {
         if (areaCheckbox.checked) {
           firstPage.remove()
@@ -30,11 +30,13 @@
 
 
 
+let timerContent = document.getElementById('timer')
+
 
 
     let cerchio = document.getElementById("app").innerHTML;
 
-    let span = document.getElementById("base-timer-label");
+   
     let PercorsoSecondoCerchio = document.getElementById(
       "base-timer-path-remaining"
     );
@@ -45,8 +47,7 @@
     const TIME_LIMIT = 60;
     let timePassed = 0;
     let timeLeft = TIME_LIMIT;
-    span.innerHTML = timeLeft;
-    
+    timerContent.innerText = timeLeft;
     let timerInterval = null;
     
     function formatTimeLeft(time) {
@@ -65,7 +66,7 @@
           }
           timePassed = 0;
           timeLeft = TIME_LIMIT;
-          span.innerHTML = `${timeLeft} secondi`;
+          timerContent.innerText = timeLeft;
         
           setCircleDasharray();
         
@@ -73,7 +74,8 @@
             timePassed = timePassed += 1;
             timeLeft = TIME_LIMIT - timePassed;
         
-            span.innerHTML = timeLeft;
+            timerContent.innerText = timeLeft;
+        
             setCircleDasharray();
         
             if (timeLeft <= 0) {
@@ -101,6 +103,10 @@
       return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
     }
     calculateTimeFraction();
+
+
+
+
 
 let template = document.getElementsByTagName('template')[0];
 let copia = template.content.firstElementChild.cloneNode(true)
