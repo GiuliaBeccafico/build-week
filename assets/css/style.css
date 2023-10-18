@@ -126,4 +126,145 @@
     height: 3.5rem;
     font-weight: bold;
     background-image: url(../assets/bg.jpg);
+}:root {
+  --interFont: "Inter", sans-serif;
+  --outfitFont: "Outfit", sans-serif;
+  --blueColor: #00ffff;
+  --pinkColor: #d20094;
+}
+
+/*SHARED DESIGN FOR CONTAINER, BG IMG, WIDTH/HEIGHT*/
+
+#container {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  padding: 40px 100px 100px 100px;
+  background-size: cover;
+}
+
+/*HEADER SECTION*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.timer {
+  visibility: hidden;
+  width: 115px;
+  height: 115px;
+}
+
+.logo {
+  width: 160px;
+  height: 40px;
+}
+/*MAIN BODY, MAIN DIV PROPERTIES*/
+
+.main {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mainTitle {
+  color: #ffffff;
+  font-size: 55px;
+  font-weight: bold;
+  font-family: var(--outfitFont);
+  margin-bottom: 30px;
+}
+
+.feedbackQuestion {
+  font-size: 23px;
+  line-height: 35px;
+  color: #dedee3;
+  font-family: var(--interFont);
+  margin-bottom: 30px;
+}
+
+#commentsBox {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid var(--pinkColor);
+  width: 100%;
+  color: grey;
+  font-size: 18px;
+}
+
+#commentsBox::placeholder{
+  text-indent: 20px;
+}
+
+input[type="text"]::placeholder {
+  transition: opacity 0.1s;
+}
+
+input[type="text"]:focus::placeholder {
+  opacity: 0;
+}
+
+
+
+/*RATING STARS DESIGN BY ADRIANO - WORKING FOR NOW*/
+
+.rating {
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+}
+
+.star {
+  width: 30px; 
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease; 
+}
+
+.star:hover {
+  transform: scale(1.2); 
+}
+
+/*RATING STARS DESIGN BY DAVIDE*/
+
+/* .star {
+  fill: #0b113b;
+}
+
+.blueStar {
+  fill: #00ffff;
+  transition: 3ms;
+}
+
+.emptyStar{
+  visibility: hidden;
+} */
+
+#rating {
+  margin-bottom: 55px;
+}
+
+/*MORE INFO BUTTON DESIGN BY SAMUELE*/
+
+.footer {
+  text-align: center;
+}
+
+.button {
+  color: white;
+  border: 2px solid white;
+  background: none;
+  font-size: 1.2rem;
+  width: 13rem;
+  height: 3rem;
+  font-weight: bold;
+}
+
+.button.blueButton {
+  background: #00ffff;
+  box-shadow: 2px 2px 30px #00ffff;
+  color: #0b113b;
+  border: none;
+  font-family: var(--outfitFont);
 }
