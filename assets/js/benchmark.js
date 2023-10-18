@@ -55,7 +55,7 @@ let areaCheckbox = document.getElementById('checkbox');
       }
       return `${minutes}:${seconds}`;
     }
-    console.log(formatTimeLeft(60));
+    
     
     function startTimer() {
         if (timerInterval !== null) { // Controlla se il timer non è già in esecuzione
@@ -102,7 +102,9 @@ let areaCheckbox = document.getElementById('checkbox');
 
 let template = document.getElementsByTagName('template')[0];
 let copia = template.content.firstElementChild.cloneNode(true)
-let answres = copia.childNodes[5]
+let answres = copia.childNodes[1].innerText 
+
+
 
 
 
@@ -114,6 +116,9 @@ fetch ('https://opentdb.com/api.php?amount=10&category=18&difficulty=easy')
 let easy = domande.results //tutte le domande in questo array
 console.log(easy);
 })
+
+
+
 
 //domande hard
 fetch ('https://opentdb.com/api.php?amount=10&category=18&difficulty=hard')
