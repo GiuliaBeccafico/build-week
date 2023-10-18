@@ -1,35 +1,24 @@
 const target = document.getElementById('rating')
-const stars = target.querySelectorAll('svg')
-const starsPath = target.querySelectorAll('path')
+const stars = target.querySelectorAll('.star')
+const starPath = target.querySelectorAll('path')
 const radio = target.querySelectorAll('input[type=radio]')
+const node1 = stars.item(0)
+
 
 radio.forEach(el => {
     el.classList.add('hidden')
 })
 
-starsPath.forEach(star => {
-    star.addEventListener('click', () => {
-        star.classList.toggle('activeStar')
-    })
-})
 
 
+for (let i = 0; i < starPath.length; i++){
+    starPath[i].index = i
+    starPath[i].addEventListener('click', )
+}
 
-    // for (let i = 0; i <starsPath.length; i++){
-    //     starsPath[i].addEventListener('click', () => {
-    //         for (let j = 0; j <= i; j++){
-    //             starsPath[j].classList.add('activeStar')
-    //             //     starsPath[j].classList.add('activeStar')
-    //             // if (starsPath[j].classList.value == 'emptyStar'){
-    //             //     starsPath[j].classList.remove('emptyStar')
-    //             //     starsPath[j].classList.add('activeStar')
-    //             // } 
-    //             //     else if (starsPath[j].classList.value == 'activeStar'){
-    //             //     starsPath[j].classList.add('emptyStar')
-    //             //     starsPath[j].classList.remove('activeStar')
-    //             // }
-    //             console.log(starsPath[j]);
-    //         }
-    //     })
-    // }
-
+function starFiller (index) {
+    for (let j = 0; j < starPath.length; j++)
+    if (j <= index){
+        starPath[j].classList.remove('emptyStar')
+    } else starPath[j].classList.add('emptyStar')
+}
