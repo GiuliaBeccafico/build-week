@@ -9,8 +9,8 @@
 
 .base-timer {
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: 1000px;
+    width: 200px;
   }
   
   /* Removes SVG styling that would hide the time label */
@@ -29,8 +29,8 @@
     position: absolute;
     
     /* Size should match the parent container */
-    width:300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     
     /* Keep the label aligned to the top */
     top: 0;
@@ -41,7 +41,7 @@
     justify-content: center;
   
     /* Sort of an arbitrary number; adjust to your liking */
-    font-size: 48px;
+    font-size: 100px;
   }
 
   .base-timer__path-remaining {
@@ -56,14 +56,14 @@
     transform-origin: center;
   
     /* One second aligns with the speed of the countdown timer */
-    transition: 1s linear all;
-  
+    /* transition: 1s linear all;
+   */
     /* Allows the ring to change color when the color value updates */
     stroke: #d20094;
   }
   
   .base-timer__svg {
     /* Flips the svg and makes the animation to move left-to-right */
-    transform: scaleX(-1);
+    transform: scaleX(1);
   }
 
