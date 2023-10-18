@@ -4,7 +4,7 @@ let areaButton = document.querySelector('.button');
 let firstPage = document.getElementById('page1')
 let secondPage = document.getElementById('page2')
 
-let timer = document.querySelector('.timer')
+let timer = document.querySelector('.demo')
 areaButton.addEventListener('click', function () {
     if (areaCheckbox.checked) {
         firstPage.remove()
@@ -30,7 +30,7 @@ let PercorsoSecondoCerchio = document.getElementById(
 );
 const raggio = 45;
 const lunghezzaCirconferenza = 2 * Math.PI * raggio;
-const FULL_DASH_ARRAY = lunghezzaCirconferenza;
+const FullDashArray = lunghezzaCirconferenza;
 
 const TIME_LIMIT = 60;
 let timePassed = 0;
@@ -78,7 +78,7 @@ function calculateTimeFraction() {
 
 function setCircleDasharray() {
     const circleDasharray = `${(
-        calculateTimeFraction() * FULL_DASH_ARRAY
+        calculateTimeFraction() * FullDashArray
     ).toFixed(0)} 283`;
     PercorsoSecondoCerchio.setAttribute("strokeDasharray", circleDasharray);
 }
