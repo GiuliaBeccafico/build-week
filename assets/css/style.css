@@ -67,6 +67,9 @@
 #commentsBox::placeholder {
   padding: 0 0 10px 15px;
 }
+input:focus::placeholder {
+  color: transparent;
+}
 
 /*RATING STARS DESIGN BY ADRIANO - WORKING FOR NOW*/
 
@@ -84,7 +87,7 @@
 }
 
 .star:hover {
-  transform: scale(1.4); 
+  transform: scale(1.2); 
 }
 
 /*RATING STARS DESIGN BY DAVIDE*/

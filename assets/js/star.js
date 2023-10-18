@@ -19,9 +19,9 @@ stars.forEach((star) => {
 function updateStars(hoveredStarIndex) {
   stars.forEach((star, index) => {
     if (index <= hoveredStarIndex) {
-      star.src = "../assets/img/star.svg";
+      star.src = "assets/img/star.svg";
     } else {
-      star.src = "../assets/img/emptyStar.svg";
+      star.src = "assets/img/emptyStar.svg";
     }
   });
 }
