@@ -34,7 +34,7 @@ let timerContent = document.getElementById('timer')
 
 
 
-    let cerchio = document.getElementById("app").innerHTML;
+    let cerchio = document.querySelector(".base-timer").innerHTML;
 
    
     let PercorsoSecondoCerchio = document.getElementById(
