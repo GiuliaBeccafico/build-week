@@ -1,0 +1,207 @@
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+    container e font 
+    -------------------------------------------------------------------------------------> */
+    :root {
+        --blueColor: #00FFFF;
+        --pinkColor: #D20094;
+    }
+    #container{
+        background-image: url(../img/bg.jpg);
+        background-repeat: no-repeat;
+        padding: 40px 100px 100px 100px;
+        background-size: cover;
+    }
+  
+    
+    /* <!---------------------------------------------------------------------------------------------------------------------------------------
+                header feedback page 
+            -------------------------------------------------------------------------------------> */
+    .logo {
+        width: 160px;
+        height: 40px;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    
+    .hidden {
+        visibility: hidden;
+    }
+    
+    /* <!---------------------------------------------------------------------------------------------------------------------------------------
+                main feedback page 
+                -------------------------------------------------------------------------------------> */
+    
+    .main {
+        margin-bottom: 30px;
+    }
+    
+    .title {
+        margin-bottom: 40px;
+    }
+    
+    .welcomeTitle {
+        height: 3rem;
+        color: white;
+        font-size: 60px;
+        font-family: 'Outfit', sans-serif;
+    }
+    
+    li b {
+        font-size: O.6rem;
+        font-weight: bold;
+    }
+    
+    .bold {
+        font-weight: bold;
+    }
+    
+    .caption {
+        color: #dedee3;
+        font-family: 'Inter', sans-serif;
+        font-size: smaller;
+        padding-bottom: 6%;
+    }
+    
+    .secondTitle {
+        color: var(--pinkColor);
+        font-weight: bold;
+        font-size: 1.2rem;
+        font-family: 'Outfit', sans-serif;
+        margin-bottom: 10px;
+    }
+    
+    .list {
+        list-style-type: disc;
+        color: #dedee3;
+        font-size: small;
+        font-family: 'Inter', sans-serif;
+        padding-left: 20px;
+        padding-bottom: 7%;
+    }
+    
+    .list li {
+        padding-bottom: 1%;
+    }
+    
+    /* <!---------------------------------------------------------------------------------------------------------------------------------------
+            footer feedback page 
+            -------------------------------------------------------------------------------------> */
+    
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .left {
+        color: #dedee3;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .button {
+        color: white;
+        border: 2px solid white;
+        background: none;
+        font-size: 1.2rem;
+        width: 13rem;
+        height: 3.5rem;
+        font-weight: bold;
+        background-image: url(../assets/bg.jpg);
+    }
+    
+    .button.blueButton {
+        background: #00FFFF;
+        box-shadow: 2px 2px 30px #00FFFF;
+        color: #0b113b;
+        border: none;
+    }
+    
+    #checkbox {
+        display: none;
+    }
+    
+    .customCheckbox {
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+        border: 2px solid white;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    #checkbox:checked+.customCheckbox {
+        background-color: white;
+        color: #fff;
+    }
+    
+    .left p {
+        font-weight: bold;
+    }
+    /* timer css */
+    .base-timer {
+        position: relative;
+        height: 200px;
+        width: 200px;
+      }
+      
+      /* Removes SVG styling that would hide the time label */
+      .base-timer__circle {
+        fill: none;
+        stroke: none;
+      }
+      
+      /* The SVG path that displays the timer's progress */
+      .base-timer__path-elapsed {
+        stroke-width: 8px;
+        stroke: grey
+      }
+    
+      .base-timer__label {
+        position: absolute;
+        
+        /* Size should match the parent container */
+        width: 200px;
+        height: 200px;
+        
+        /* Keep the label aligned to the top */
+        top: 0;
+        
+        /* Create a flexible box that centers content vertically and horizontally */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        /* Sort of an arbitrary number; adjust to your liking */
+        font-size: 100px;
+      }
+    
+      .base-timer__path-remaining {
+        /* Just as thick as the original ring */
+        stroke-width: 7px;
+      
+        /* Rounds the line endings to create a seamless circle */
+        stroke-linecap: round;
+      
+        /* Makes sure the animation starts at the top of the circle */
+        transform: rotate(90deg);
+        transform-origin: center;
+      
+        /* One second aligns with the speed of the countdown timer */
+        /* transition: 1s linear all;
+       */
+        /* Allows the ring to change color when the color value updates */
+        stroke: #d20094;
+      }
+      
+      .base-timer__svg {
+        /* Flips the svg and makes the animation to move left-to-right */
+        transform: scaleX(1);
+      }
+    
