@@ -4,6 +4,7 @@
     --blueColor: #00ffff;
     --pinkColor: #d20094;
     --violaColor: #900080;
+    --emptyStar: #06083a;
   }
   
   /*SHARED DESIGN FOR CONTAINER, BG IMG, WIDTH/HEIGHT*/
@@ -72,6 +73,13 @@
   .hidden {
     display: none;
   }
+
+  .ratingStars svg path{
+    fill: var(--emptyStar);
+    outline: 1px solid wheat;
+  }
+
+
 
   
   /*RATING STARS DESIGN BY SAMUELE*/
