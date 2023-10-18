@@ -59,6 +59,10 @@
     font-family: var(--outfitFont);
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .question p:last-of-type{
     font-weight: 600;
 }
