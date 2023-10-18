@@ -8,7 +8,7 @@ radio.forEach(el => {
 })
 
 starsPath.forEach(star => {
-    star.addEventListener('mouseover', () => {
+    star.addEventListener('click', () => {
         star.classList.toggle('activeStar')
     })
 })
