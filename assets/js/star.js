@@ -13,21 +13,23 @@ starsPath.forEach(star => {
     })
 })
 
-    for (let i = 0; i <starsPath.length; i++){
-        starsPath[i].addEventListener('click', () => {
-            for (let j = 0; j <= i; j++){
-                starsPath[j].classList.add('activeStar')
-                //     starsPath[j].classList.add('activeStar')
-                // if (starsPath[j].classList.value == 'emptyStar'){
-                //     starsPath[j].classList.remove('emptyStar')
-                //     starsPath[j].classList.add('activeStar')
-                // } 
-                //     else if (starsPath[j].classList.value == 'activeStar'){
-                //     starsPath[j].classList.add('emptyStar')
-                //     starsPath[j].classList.remove('activeStar')
-                // }
-                console.log(starsPath[j]);
-            }
-        })
-    }
+
+
+    // for (let i = 0; i <starsPath.length; i++){
+    //     starsPath[i].addEventListener('click', () => {
+    //         for (let j = 0; j <= i; j++){
+    //             starsPath[j].classList.add('activeStar')
+    //             //     starsPath[j].classList.add('activeStar')
+    //             // if (starsPath[j].classList.value == 'emptyStar'){
+    //             //     starsPath[j].classList.remove('emptyStar')
+    //             //     starsPath[j].classList.add('activeStar')
+    //             // } 
+    //             //     else if (starsPath[j].classList.value == 'activeStar'){
+    //             //     starsPath[j].classList.add('emptyStar')
+    //             //     starsPath[j].classList.remove('activeStar')
+    //             // }
+    //             console.log(starsPath[j]);
+    //         }
+    //     })
+    // }
 
