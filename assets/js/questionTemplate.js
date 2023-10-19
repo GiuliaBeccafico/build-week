@@ -1,9 +1,7 @@
 const proceedButton = document.getElementById('proceed')
 
 proceedButton.addEventListener('click', showQuestions)
-
 const main = document.querySelector('.main')
-
 function showQuestions () {
     let temp = document.getElementsByTagName('template')[0]
     let container = document.getElementById('container')
@@ -12,8 +10,24 @@ function showQuestions () {
     cloneSection(2, container, temp)
     questionTitles()
     answerMaker(4)
+    const button = document.getElementById('nextButton')
+    button.addEventListener('click', ()=> {
+    nextQuestion(document.querySelector('.questions', container, temp))
+    
+})
 }
 
+
+
+function nextQuestion (target, container, temp){
+    console.log(target, document.querySelector('.main'));
+   target.innerHTML = ''
+//    cloneSection(0, container, temp)
+//    cloneSection(1, container, temp)
+//    cloneSection(2, container, temp)
+//    questionTitles()
+//    answerMaker(2)
+}
 
 function cloneSection (index, target, temp){
     const children = temp.content.children[index].cloneNode(true)
@@ -39,3 +53,13 @@ function answerMaker (n){
     }
 
 }
+
+
+// function disableButton (){
+//     document.getElementById('nextButton').disabled = true
+// }
+
+// function enableButton (target){
+//     if
+//     ldocument.getElementById('nextButton').disableButton = true
+// }
