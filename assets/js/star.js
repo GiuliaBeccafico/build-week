@@ -3,6 +3,7 @@ const starPath = target.querySelectorAll('path')
 const radio = target.querySelectorAll('input[type=radio]')
 const salvaButton = document.getElementById('salvaButton');
 const commentsBox = document.getElementById('commentsBox');
+const ratingContainer = document.getElementById('rating');
 
 
 
@@ -56,12 +57,20 @@ salvaButton.addEventListener('click', () => {
         
         Swal.fire('La tua valutazione è stata inviata!');
         commentsBox.value = '';// Pulisci il campo di commento
+        resetStelle();
 
 
         
         salvaButton.disabled = true; // Disabilita il pulsante "Salva commento" dopo l'invio
     }
 });
+
+function resetStelle() {
+    // Deseleziona tutte le stelle
+    starPath.forEach(star => {
+        star.classList.add('emptyStar');
+    });
+}
 
 commentsBox.addEventListener('input', () => {
     if (commentsBox.value.trim() !== '' && document.querySelector('input[name="rating"]:checked')) {
