@@ -65,13 +65,6 @@ salvaButton.addEventListener('click', () => {
     }
 });
 
-function resetStelle() {
-    // Deseleziona tutte le stelle
-    starPath.forEach(star => {
-        star.classList.add('emptyStar');
-    });
-}
-
 commentsBox.addEventListener('input', () => {
     if (commentsBox.value.trim() !== '' && document.querySelector('input[name="rating"]:checked')) {
         salvaButton.disabled = false;

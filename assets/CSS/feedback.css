@@ -85,6 +85,9 @@
   }
   /*RATING STARS DESIGN BY SAMUELE*/
   
+  #rating {
+    padding-bottom: 80px;
+  }
   
   .button {
     color: white;
