@@ -110,9 +110,9 @@ calculateTimeFraction();
 
 
 
-let copia = template.content.firstElementChild.cloneNode(true)
+/*let copia = template.content.firstElementChild.cloneNode(true)
 let answer = copia.firstElementChild.firstElementChild.innerText;
-let firstAnswer = answer = easy[0].question 
+let firstAnswer = answer = easy[0].question */
 
 
 
@@ -122,7 +122,7 @@ fetch('https://opentdb.com/api.php?amount=10&category=18&difficulty=easy')
   .then(domande => {
     let easy = domande.results //tutte le domande in questo array
     let template = document.getElementsByTagName('template')[0];
-    console.log(easy);
+    console.table(easy);
   })
 
 
@@ -131,7 +131,7 @@ fetch('https://opentdb.com/api.php?amount=10&category=18&difficulty=hard')
   .then(res => res.json())
   .then(domande => {
     let hard = domande.results //tutte le domande in questo array
-    console.log(hard);
+    console.table(hard);
   })
 
 
