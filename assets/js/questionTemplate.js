@@ -27,7 +27,7 @@ areaButton.addEventListener('click', function () {
 
 
 
-const proceedButton = document.querySelector('.right .button')
+const proceedButton = document.querySelector('.footer .button')
 console.log(proceedButton);
 proceedButton.addEventListener('click', showQuestions)
 const main = document.querySelector('.main')
@@ -42,6 +42,7 @@ function showQuestions () {
     cloneSection(1, container, temp)
     cloneSection(2, container, temp)
     questionTitles(easy)
+    console.log(easy);
 
     // questionTitles()
     // answerMaker(4)
@@ -69,8 +70,8 @@ function nextQuestion (target, container, temp){
 
 function cloneSection (index, target, temp){
     const children = temp.content.children[index].cloneNode(true)
-    target.append(children)
-    console.log(children);
+    target.append(children)//main
+   
 }
 
 function questionTitles (questions){
