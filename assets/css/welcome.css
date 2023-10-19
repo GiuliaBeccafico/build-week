@@ -1,94 +1,101 @@
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
     container e font 
     -------------------------------------------------------------------------------------> */
-    :root {
-        --blueColor: #00FFFF;
-        --pinkColor: #D20094;
-    }
-    #container{
-        background-image: url(../img/bg.jpg);
-        background-repeat: no-repeat;
-        padding: 40px 100px 100px 100px;
-        background-size: cover;
-    }
-  
-    
-    /* <!---------------------------------------------------------------------------------------------------------------------------------------
+:root {
+    --interFont: "Inter", sans-serif;
+    --outfitFont: "Outfit", sans-serif;
+    --blueColor: #00ffff;
+    --pinkColor: #d20094;
+    --violaColor: #9b1d8d;
+    --grigioColor: #d7d2df;
+}
+
+#container {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    padding: 40px 100px 100px 100px;
+    background-size: cover;
+}
+
+
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
                 header feedback page 
             -------------------------------------------------------------------------------------> */
-    .logo {
-        width: 160px;
-        height: 40px;
-    }
-    
-    .header {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 50px;
-    }
+.logo {
+    width: 160px;
+    height: 40px;
+}
 
-    
-    .hidden {
-        visibility: hidden;
-    }
-    
-    /* <!---------------------------------------------------------------------------------------------------------------------------------------
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
                 main feedback page 
                 -------------------------------------------------------------------------------------> */
-    
-    .main {
-        margin-bottom: 30px;
-    }
-    
-    .title {
-        margin-bottom: 40px;
-    }
-    
-    .welcomeTitle {
-        height: 3rem;
-        color: white;
-        font-size: 60px;
-        font-family: 'Outfit', sans-serif;
-    }
-    
-    li b {
-        font-size: O.6rem;
-        font-weight: bold;
-    }
-    
-    .bold {
-        font-weight: bold;
-    }
-    
-    .caption {
-        color: #dedee3;
-        font-family: 'Inter', sans-serif;
-        font-size: smaller;
-        padding-bottom: 6%;
-    }
-    
-    .secondTitle {
-        color: var(--pinkColor);
-        font-weight: bold;
-        font-size: 1.2rem;
-        font-family: 'Outfit', sans-serif;
-        margin-bottom: 10px;
-    }
-    
-    .list {
-        list-style-type: disc;
-        color: #dedee3;
-        font-size: small;
-        font-family: 'Inter', sans-serif;
-        padding-left: 20px;
-        padding-bottom: 7%;
-    }
-    
-    .list li {
-        padding-bottom: 1%;
-    }
-    
-    /* <!---------------------------------------------------------------------------------------------------------------------------------------
+
+.main {
+    margin-bottom: 30px;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+.welcomeTitle {
+    height: 3rem;
+    color: white;
+    font-size: 60px;
+    font-family: 'Outfit', sans-serif;
+}
+
+li b {
+    font-size: O.6rem;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+
+.caption {
+    color: #dedee3;
+    font-family: 'Inter', sans-serif;
+    font-size: smaller;
+    padding-bottom: 6%;
+}
+
+.secondTitle {
+    color: var(--pinkColor);
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 10px;
+}
+
+.list {
+    list-style-type: disc;
+    color: #dedee3;
+    font-size: small;
+    font-family: 'Inter', sans-serif;
+    padding-left: 20px;
+    padding-bottom: 7%;
+}
+
+.list li {
+    padding-bottom: 1%;
+}
+
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
             footer feedback page 
             -------------------------------------------------------------------------------------> */
     
@@ -196,12 +203,11 @@
         /* One second aligns with the speed of the countdown timer */
         /* transition: 1s linear all;
        */
-        /* Allows the ring to change color when the color value updates */
-        stroke: #d20094;
-      }
-      
-      .base-timer__svg {
-        /* Flips the svg and makes the animation to move left-to-right */
-        transform: scaleX(1);
-      }
-    
+    /* Allows the ring to change color when the color value updates */
+    stroke: var(--violaColor)
+}
+
+.base-timer__svg {
+    /* Flips the svg and makes the animation to move left-to-right */
+    transform: scaleX(1);
+}

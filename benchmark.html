@@ -18,9 +18,9 @@
 
       <div class="header">
           <img class="logo" src="assets/img/epicode_logo.png" alt="Logo-Epicode">
-          <div id ="app" class="hidden">
-
-            <div class="base-timer">
+          <div id ="app" >
+ 
+            <div class="base-timer hidden">
               
                 <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                   <g class="base-timer__circle">
@@ -42,89 +42,92 @@
                
         
                 <span id="base-timer-label" class="base-timer__label">
-                  <!-- Remaining time label -->
+                    <p class="timerText bold">SECONDI </p>
+                      <div id="timer"></div>
+                    <p class="timerText"> RIMANENTI</p>                
                 </span>
               </div>
               `;
         
-          </div>
+          </div> 
           
         </div>
       
       
-<!-- page 1 -->
+<!-- <-- page 1 --> 
+      <div id="page1" >
 
-      <div id="page1">
-
-          <div class="main">
-              <div class="title">
-                  <p class="welcomeTitle">Welcome to</p>
-                  <p class="welcomeTitle bold">your exam</p>
-              </div>
-              <div id="instructions">
-                  <p class="secondTitle">Instructions</p>
-                  <p class="caption">We don't expect most engineers to know the answers to all of these <br>questions,
-                      so
-                      don't worry if
-                      you're unsure of a few of them. </p>
-                  <ul class="list">
-                      <li>Each question is <b>timed</b> and can only be <b>ansewered once.</b></li>
-                      <li>Changing browser tab or opening other windows will <b>invalidate the question.</b></li>
-                      <li>This exam will take approx. <b>0-5 minutes.</b></li>
-                  </ul>
-              </div>
-          </div>
-
-          
-          <div class="footer">
-              <div class="left">
-                  <input type="checkbox" id="checkbox">
-                  <label for="checkbox" class="customCheckbox"> </label>
-                  <p> I promise to answer myself without help from anyone</p>
-              </div>
-              <div class="right">
-                  <button class="button blueButton">PROCEED</button>
-              </div>
-          </div>
+      <div class="main">
+        <div class="title">
+          <p class="welcomeTitle">Welcome to</p>
+          <p class="welcomeTitle bold">your exam</p>
+        </div>
+        <div id="instructions">
+          <p class="secondTitle">Instructions</p>
+          <p class="caption">We don't expect most engineers to know the answers to all of these <br>questions,
+            so
+            don't worry if
+            you're unsure of a few of them. </p>
+          <ul class="list">
+            <li>Each question is <b>timed</b> and can only be <b>ansewered once.</b></li>
+            <li>Changing browser tab or opening other windows will <b>invalidate the question.</b></li>
+            <li>This exam will take approx. <b>0-5 minutes.</b></li>
+          </ul>
+        </div>
       </div>
 
 <!-- page 2 -->
       <!-- <div id="page2" class="hidden"> -->
+
+      <div class="footer">
+        <div class="left">
+          <input type="checkbox" id="checkbox">
+          <label for="checkbox" class="customCheckbox"> </label>
+          <p> I promise to answer myself without help from anyone</p>
+        </div>
+        <div class="right">
+          <button class="button blueButton">PROCEED</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- page 2 -->
+    <div id="page2" class="hidden">
       <template>
         <div class="main">
           <div class="questions">
-                <p class="mainTitle"> nome domanda </p>
-                <p class="mainTitle bold">nome domanda </p>
-                <div class="answers">
-                    <div class="answerContainer"><button class="answer" id="1">risposta 1</button></div>
-                    <div class="answerContainer"><button class="answer">risposta 1</button></div>
-                    <div class="answerContainer"><button class="answer">risposta 1</button></div>
-                    <div class="answerContainer"><button class="answer">risposta 1</button></div>
-                </div>
+            <p class="mainTitle"> nome domanda </p>
+            <p class="mainTitle bold">nome domanda </p>
+            <div class="answers">
+              <div class="answerContainer"><button class="answer" id="1">risposta 1</button></div>
+              <div class="answerContainer"><button class="answer">risposta 1</button></div>
+              <div class="answerContainer"><button class="answer">risposta 1</button></div>
+              <div class="answerContainer"><button class="answer">risposta 1</button></div>
             </div>
           </div>
-        <div id="footer">
-            <div class="left">
-              <p>Question 1<span class="pink"> / 10</span></p>
-            </div>
-          </template>
-
-            <div class="right">
-              <button class="button" disabled>Prossima →</button>
-            </div>
-          </div>
-
         </div>
-      </div>
-        
+        <div id="footer">
+          <div class="left">
+            <p>Question 1<span class="pink"> / 10</span></p>
+          </div>
+      </template>
 
-   <!---------------------------------------------------------------------------------------------------------------------------------------
+      <div class="right">
+        <button class="button" disabled>Prossima →</button>
+      </div>
+    </div>
+
+  </div>
+  
+
+
+  <!---------------------------------------------------------------------------------------------------------------------------------------
     Insteazione RESULTS pagee   
     ------------------------------------------------------------------------------------->
-<!-- page 3 -->
+  <!-- page 3 -->
 
   <!-- da qui sotto inizia il titolo   -->
-  <div id="page3" class="hidden">
+  <div id="page3" class="hidden" >
   <div class="main">
     <div class="title">
       <p class="mainTitle"> Results</p>
@@ -138,7 +141,21 @@
         <p class="correctQuestions"> 4/6 questions</p>
      </div>
      <div class="secondSection">
-        <img src="assets/img/circle-png.webp" alt="" class="">
+      <!-- start chart donuts -->
+      <div class="programmingStats">
+        <div class="chartContainer">
+          <canvas class="myChart"></canvas>
+      </div>
+        <div class="details">
+          <span class="chartHeading">Congratulations!</span>
+          <span class="chartPassed">You passed the exam</span>
+          <span class="chartFooter">
+            We'll send you the certificate in few minutes. <p> (Check your email
+            including promotions /spam folder) </p>
+          </span>
+        </div>
+      </div>
+       <!-- finish chart donuts -->
      </div>
       <div class="rightSection">
         <p class="sectionTitle"> Wrong </p>
@@ -150,20 +167,22 @@
   <!---------------------------------------------------------------------------------------------------------------------------------------
 footer RESULTS page 
 ------------------------------------------------------------------------------------->
-  <div class="footer">
-   
-    <div id="divButton">
+    <div class="footer">
+
+      <div id="divButton">
         <button class="button">RATE US </button>
-    </div>
+      </div>
     </div>
   </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="js/script.js">
-</script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

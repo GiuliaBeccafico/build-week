@@ -1,0 +1,108 @@
+:root {
+  --interFont: "Inter", sans-serif;
+  --outfitFont: "Outfit", sans-serif;
+  --blueColor: #00ffff;
+  --pinkColor: #d20094;
+  --violaColor: #900080;
+  --emptyStar: #06083a;
+}
+
+/*SHARED DESIGN FOR CONTAINER, BG IMG, WIDTH/HEIGHT*/
+
+#container {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  padding: 40px 100px 100px 100px;
+  background-size: cover;
+}
+
+/*HEADER SECTION*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.timer {
+  visibility: hidden;
+  width: 115px;
+  height: 115px;
+}
+
+.logo {
+  width: 160px;
+  height: 40px;
+}
+/*MAIN BODY, MAIN DIV PROPERTIES*/
+
+.main {
+  text-align: center;
+}
+
+.mainTitle {
+  color: #ffffff;
+  font-size: 55px;
+  font-weight: bold;
+  font-family: var(--outfitFont);
+  margin-bottom: 30px;
+}
+
+.feedbackQuestion {
+  font-size: 23px;
+  line-height: 35px;
+  color: #dedee3;
+  font-family: var(--interFont);
+  margin-bottom: 30px;
+}
+
+#commentsBox {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 3px solid var(--violaColor);
+  width: 650px;
+  color: grey;
+  padding: 10px 25px;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+/*RATING STARS DESIGN BY DAVIDE*/
+
+.hidden {
+  display: none;
+}
+
+.ratingStars svg path{
+  fill: var(--emptyStar);
+  
+}
+
+
+
+
+/*RATING STARS DESIGN BY SAMUELE*/
+
+
+.button {
+  color: white;
+  border: 2px solid white;
+  background: none;
+  font-size: 1.2rem;
+  width: 13rem;
+  height: 3rem;
+  font-weight: bold;
+}
+
+.button.blueButton {
+  background: #00ffff;
+  box-shadow: 2px 2px 30px #00ffff;
+  color: #0b113b;
+  border: none;
+  font-family: var(--outfitFont);
+}
+
+.footer {
+  text-align: center;
+}

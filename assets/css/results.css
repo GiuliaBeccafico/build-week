@@ -1,107 +1,118 @@
-
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
     container/ font/ timer
     -------------------------------------------------------------------------------------> */
-  :root{ 
-     --interFont: "Inter", sans-serif;
+:root {
+    --interFont: "Inter", sans-serif;
     --outfitFont: "Outfit", sans-serif;
     --blueColor: #00ffff;
     --pinkColor: #d20094;
-  }
-#container{
+}
+
+#container {
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     padding: 40px 100px 100px 100px;
     background-size: cover;
 }
-.center{
+
+.center {
     text-align: center;
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
-    header feedback page 
--------------------------------------------------------------------------------------> */
-.logo{
-   width: 160px;
-   height: 40px;
+       header feedback page 
+   -------------------------------------------------------------------------------------> */
+.logo {
+    width: 160px;
+    height: 40px;
 }
+
 .timer {
     width: 115px;
     height: 115px
 }
 
-.hidden{
+.hidden {
     visibility: hidden;
 }
+
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
- margin delle macroaree
--------------------------------------------------------------------------------------> */
-.header{
+    margin delle macroaree
+   -------------------------------------------------------------------------------------> */
+.header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
 }
-.main{
-margin-bottom: 30px;
+
+.main {
+    margin-bottom: 30px;
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
-    section Title RESUlTS page 
--------------------------------------------------------------------------------------> */
+       section Title RESUlTS page 
+   -------------------------------------------------------------------------------------> */
 
 
 
-.title{
+.title {
     color: white;
-   margin-bottom: 30px;
-   
+    margin-bottom: 30px;
+
 }
-.mainTitle{
+
+.mainTitle {
     font-size: 60px;
     font-weight: bold;
     margin-bottom: 0.8rem;
     font-family: var(--interFont);
+    text-align: center;
 }
-.description{
+
+.description {
     font-family: var(--interFont);
     font-size: 2rem;
     color:#dedee3;;
+    text-align: center;
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
-    percentuale risultati  results page 
--------------------------------------------------------------------------------------> */
-#results{
+       percentuale risultati  results page 
+   -------------------------------------------------------------------------------------> */
+#results {
     display: flex;
     color: white;
     justify-content: space-evenly;
 }
-.leftSection{
+
+.leftSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.rightSection{
-   
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: end;
+
+.rightSection {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
 
 }
 
 
-.sectionTitle{
+.sectionTitle {
     font-size: 3.5rem;
     font-family: var(--interFont);
 }
 
-.valueTitle{
+.valueTitle {
     font-size: 3.5rem;
     font-family: var(--outfitFont);
     font-weight: bold;
 }
-.correctQuestions{
+
+.correctQuestions {
     font-size: 1.2rem;
     color: #cacbd4;
     font-family: 'Outfit';
@@ -114,16 +125,16 @@ margin-bottom: 30px;
 
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
-   BUTTON STYLE
--------------------------------------------------------------------------------------> */
+      BUTTON STYLE
+   -------------------------------------------------------------------------------------> */
 
-#divButton{
+.footer #divButton{
     text-align: center;
     margin-top: 3rem;
 }
 
 
-.button{
+.button {
     color: white;
     border: 2px solid white;
     background: none;
@@ -131,8 +142,8 @@ margin-bottom: 30px;
     width: 13rem;
     height: 3.6rem;
     font-weight: bold;
-   
-  
+
+
 }
 
 .button.blueButton{
@@ -142,58 +153,50 @@ color: #0b113b;
 border: none;
 }
 
-
-
-/* checkbox css */
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* start chart donuts css */
+.chartContainer{
+    width: 400px;
+    z-index: 999
 }
-
-.left {
-    color: #dedee3;
-    font-size: 0.9rem;
+.programmingStats{
+   font-family: "Inter", sans-serif;;
+  
+}
+.details {
+    /* position: absolute;
+    width: 1000px;
+    height: 800px; */
+    /* top: 109px;
+    left: 100px; */
     display: flex;
     align-items: center;
-}
-
-.button {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
     color: white;
-    border: 2px solid white;
-    background: none;
-    font-size: 1.2rem;
-    width: 13rem;
-    height: 3.5rem;
+    font-family: var(--outfitFont);
+}
+.chartHeading{
+    font-size: 20px;
     font-weight: bold;
-    background-image: url(../assets/bg.jpg);
+    font-family: "Outfit", sans-serif;
 }
-
-.button.blueButton {
-    background: #00FFFF;
-    box-shadow: 2px 2px 30px #00FFFF;
-    color: #0b113b;
-    border: none;
-}
-
-#checkbox {
-    display: none;
-}
-
-.customCheckbox {
-    width: 10px;
-    height: 10px;
-    background-color: transparent;
-    border: 2px solid white;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-#checkbox:checked +.customCheckbox {
-    background-color: white;
-    color: #fff;
-}
-
-.left p {
+.chartPassed{
+    font-size: 22px;
     font-weight: bold;
+    font-family: "Outfit", sans-serif;
+color: #00ffff;;
+
 }
+.chartFooter{
+    margin-top: 25px;
+    color: #ebd2d2;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.chartFooter span{
+    display: block;
+}
+/* finish chart donuts css */
