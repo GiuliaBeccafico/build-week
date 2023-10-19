@@ -143,63 +143,58 @@
     position: relative;
     height: 200px;
     width: 200px;
-}
-
-/* Removes SVG styling that would hide the time label */
-.base-timer__circle {
+  }
+  
+  /* Removes SVG styling that would hide the time label */
+  .base-timer__circle {
     fill: none;
     stroke: none;
-}
-
-/* The SVG path that displays the timer's progress */
-.base-timer__path-elapsed {
+  }
+  
+  /* The SVG path that displays the timer's progress */
+  .base-timer__path-elapsed {
     stroke-width: 8px;
-    stroke: var(--grigioColor)
-}
+    stroke: grey
+  }
 
-.base-timer__label {
+  .base-timer__label {
     position: absolute;
+    
+    /* Size should match the parent container */
     width: 200px;
     height: 200px;
-    top: -2px;
-    left: -1px;
+    
+    /* Keep the label aligned to the top */
+    top: 0;
+    
+    /* Create a flexible box that centers content vertically and horizontally */
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: center;
-    flex-direction: column;
-    font-size: 14px;
-    color: white;
-    font-family: var(--outfitFont);
-}
+  
+    /* Sort of an arbitrary number; adjust to your liking */
+    font-size: 100px;
+  }
 
-.timerText {
-    font-family: 'Outfit';
-}
-
-#timer {
-    font-size: 6rem;
-}
-
-.base-timer__path-remaining {
+  .base-timer__path-remaining {
     /* Just as thick as the original ring */
     stroke-width: 7px;
-
+  
     /* Rounds the line endings to create a seamless circle */
     stroke-linecap: round;
-
+  
     /* Makes sure the animation starts at the top of the circle */
     transform: rotate(90deg);
     transform-origin: center;
-
+  
     /* One second aligns with the speed of the countdown timer */
     /* transition: 1s linear all;
-       */
+   */
     /* Allows the ring to change color when the color value updates */
-    stroke: var(--violaColor)
-}
-
-.base-timer__svg {
+    stroke: #d20094;
+  }
+  
+  .base-timer__svg {
     /* Flips the svg and makes the animation to move left-to-right */
     transform: scaleX(1);
-}
+  }
