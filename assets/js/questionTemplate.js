@@ -1,11 +1,34 @@
 
 
 
+let areaCheckbox = document.getElementById('checkbox');
+let areaButton = document.querySelector('.button');
+
+let firstPage = document.getElementById('page1')
+let secondPage = document.getElementById('page2')
+
+let timer = document.querySelector('.base-timer')
+areaButton.addEventListener('click', function () {
+  if (areaCheckbox.checked) {
+    firstPage.remove()
+    secondPage.classList.remove('hidden')
+    timer.classList.remove('hidden')
+    startTimer()
+  } else {
+    // L'utente non ha selezionato la casella di controllo, mostra un messaggio di avviso
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please accept the agreement to proceed'
+    });
+  }
+});
 
 
 
-const proceedButton = document.getElementById('proceed')
 
+const proceedButton = document.querySelector('.right .button')
+console.log(proceedButton);
 proceedButton.addEventListener('click', showQuestions)
 const main = document.querySelector('.main')
 function showQuestions () {
@@ -19,6 +42,7 @@ function showQuestions () {
     cloneSection(1, container, temp)
     cloneSection(2, container, temp)
     questionTitles(easy)
+
     // questionTitles()
     // answerMaker(4)
     // const button = document.getElementById('nextButton')
@@ -46,6 +70,7 @@ function nextQuestion (target, container, temp){
 function cloneSection (index, target, temp){
     const children = temp.content.children[index].cloneNode(true)
     target.append(children)
+    console.log(children);
 }
 
 function questionTitles (questions){
@@ -61,6 +86,7 @@ function questionTitles (questions){
 
 function answerMaker (n){
     const target = document.querySelector('.main').children[0].lastElementChild
+    console.log(target);
     for (let i = 1; i <= n; i++){
     let answer = document.createElement('button')
     answer.classList.add('answer')
