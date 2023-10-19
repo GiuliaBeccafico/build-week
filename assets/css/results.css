@@ -128,7 +128,7 @@
       BUTTON STYLE
    -------------------------------------------------------------------------------------> */
 
-.footer #divButton{
+ #divButton{
     text-align: center;
     margin-top: 3rem;
 }
@@ -159,13 +159,13 @@ border: none;
     z-index: 999
 }
 .programmingStats{
-   font-family: "Inter", sans-serif;;
+   font-family: "Inter", sans-serif;
   
 }
 .details {
-    position: absolute;
-    bottom: 204px;
-    left: 469px;
+    position: relative;
+    bottom: 264px;
+    /* left: 0px; */
     display: flex;
     align-items: center;
     text-align: center;
@@ -198,18 +198,4 @@ border: none;
     display: block;
 }
 /* finish chart donuts css */
-@media screen and (max-width: 768px) {
-    .details {
-        position: static; /* Torna al posizionamento predefinito */
-        margin-top: 15px; /* Aggiungi spazio in alto invece di posizionamento assoluto */
-        text-align: center; /* Riposiziona il testo al centro */
-    }
-}
-@media screen and (min-width: 1000px) {
-    .details {
-        position: absolute; /* Riporta al posizionamento assoluto */
-        bottom: 330px; /* Regola il valore di 'bottom' in base alle dimensioni dello schermo */
-        left: 50.5%; /* Posiziona il contenuto al centro orizzontalmente */
-        transform: translateX(-50%); /* Centra orizzontalmente il contenuto */
-    }
-}
+

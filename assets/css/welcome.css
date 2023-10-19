@@ -99,11 +99,6 @@ li b {
             footer feedback page 
             -------------------------------------------------------------------------------------> */
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .left {
     color: #dedee3;
