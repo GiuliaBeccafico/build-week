@@ -1,6 +1,8 @@
 const target = document.getElementById('rating')
 const starPath = target.querySelectorAll('path')
 const radio = target.querySelectorAll('input[type=radio]')
+const salvaButton = document.getElementById('salvaButton');
+const commentsBox = document.getElementById('commentsBox');
 
 
 
@@ -10,50 +12,46 @@ radio.forEach(el => {
 
 
 /*********** funzionante */
-for (let i = 0; i < starPath.length; i++){
+for (let i = 0; i < starPath.length; i++) {
     starPath[i].index = i
     starPath[i].addEventListener('click', () => {
-        for (let j = 0; j < starPath.length; j++)
-        if (j <= starPath[i].index){
-            starPath[j].classList.remove('emptyStar')
-        } else starPath[j].classList.add('emptyStar')
+        starFiller(i, starPath)
+    })
+    starPath[i].addEventListener('mouseover', () => {
+        starFiller(i, starPath)
     })
 }
 
 
-window.onload = function() {
-    const saveButton = document.querySelector(".right button");
-    const commentsBox = document.getElementById("commentsBox");
-    const stars = document.querySelectorAll('input[type="radio"]');
-    saveButton.addEventListener("click", function() {
-        let isRatingSelected = false;
-        let ratingValue = 0;
-        stars.forEach(function(star) {
-            if (star.checked) {
-                isRatingSelected = true;
-                ratingValue = star.value;
-            }
-        });
-        if (isRatingSelected && commentsBox.value) {
-            window.alert("Il tuo testo è stato salvato");
-        } else {
-            window.alert("Inserisci la tua valutazione");
-        }
-    });
-};
 
+function starFiller(index, arr) {
+    for (let j = 0; j < arr.length; j++)
+        if (j <= arr[index].index) {
+            arr[j].classList.remove('emptyStar')
+        } else arr[j].classList.add('emptyStar')
+}
 
+/********** Salvataggio valori nel bottone a sinistra */
 
+// Gestisci l'evento click del pulsante "Salva commento"
+salvaButton.addEventListener('click', () => {
+    const selectedRating = document.querySelector('input[name="rating"]:checked');
+    const comment = commentsBox.value.trim();
+    if (!selectedRating) {
+        alert('Inserisci la tua valutazione.');
+    } else if (comment === '') {
+        alert('Inserisci il tuo commento.');
+    } else {
+        // Salva i dati nel tuo sistema o esegui altre azioni necessarie
+        Swal.fire('La tua valutazione è stata inviata!');
+    }
+});
 
-// for (let i = 0; i < starPath.length; i++){
-//     starPath[i].index = i
-//     starPath[i].addEventListener('click', starFiller)
-// }
-
-// function starFiller (){
-//     for (let j = 0; j < this.length; j++)
-//         console.log(this.index, this.classList.value());
-//         if (j <= this.index){
-//             this.classList.remove('emptyStar')
-//         } else this.classList.add('emptyStar')
-// }
+// Abilita/disabilita il pulsante "Salva commento" in base allo stato del commento
+commentsBox.addEventListener('input', () => {
+    if (commentsBox.value.trim() !== '' && document.querySelector('input[name="rating"]:checked')) {
+        salvaButton.disabled = false;
+    } else {
+        salvaButton.disabled = true;
+    }
+});
