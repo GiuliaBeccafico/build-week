@@ -4,6 +4,7 @@ fetch('https://opentdb.com/api.php?amount=10&category=18&difficulty=easy')
     let easy = domande.results //tutte le domande in questo array
     let template = document.getElementsByTagName('template')[0];
     console.table(easy);
+    console.log(easy);
   })
 
 
