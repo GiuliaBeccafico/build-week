@@ -11,7 +11,7 @@ radio.forEach(el => {
 })
 
 
-/*********** funzionante */
+/** funzionante/
 for (let i = 0; i < starPath.length; i++) {
     starPath[i].index = i
     starPath[i].addEventListener('click', () => {
@@ -31,7 +31,7 @@ function starFiller(index, arr) {
         } else arr[j].classList.add('emptyStar')
 }
 
-/********** Salvataggio valori nel bottone a sinistra */
+/** Salvataggio valori nel bottone a sinistra */
 
 // Gestisci l'evento click del pulsante "Salva commento"
 salvaButton.addEventListener('click', () => {
