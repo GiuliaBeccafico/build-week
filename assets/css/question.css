@@ -1,6 +1,3 @@
-/**************************** settings per le stelle feedback page *******************************/
-
-
 .star {
     fill: #0b113b
 }
@@ -13,13 +10,14 @@
 #rating {
     padding: 10px 0;
 }
+
 /************************************************** GENERAL SETTINGS ******************************************/
 :root {
     --interFont: "Inter", sans-serif;
     --outfitFont: "Outfit", sans-serif;
     --blueColor: #00ffff;
     --pinkColor: #d20094;
-  }
+}
 
 /********************************* settings del main **/
 
@@ -36,7 +34,6 @@
     margin-bottom: 70px;
 }
 
-
 .logo {
     width: 160;
     height: 40px;
@@ -47,7 +44,7 @@
     height: 115px
 }
 
-.header {
+#header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
@@ -95,19 +92,19 @@
     border-bottom-style: hidden;
     border-inline-width: thin;
     width: 300px;
-    
+
 }
 
 
 .answer:hover {
-    background: rgb(210,0,148);
-    background: linear-gradient(144deg, rgba(210,0,148,1) 0%, rgba(144,0,128,1) 52%);
+    background: rgb(210, 0, 148);
+    background: linear-gradient(144deg, rgba(210, 0, 148, 1) 0%, rgba(144, 0, 128, 1) 52%);
     transition: 0.5ms;
 }
 
 /************************************************ Footer ******************************/
 
-.footer {
+#footer {
     font-family: var(--interFont);
     color: white;
     display: flex;
