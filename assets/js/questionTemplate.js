@@ -21,7 +21,7 @@ function showQuestions () {
 
 function nextQuestion (target, container, temp){
     console.log(target, document.querySelector('.main'));
-   target.innerHTML = ''
+    target.innerHTML = ''
 //    cloneSection(0, container, temp)
 //    cloneSection(1, container, temp)
 //    cloneSection(2, container, temp)
