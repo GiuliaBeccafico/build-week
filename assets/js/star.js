@@ -4,7 +4,7 @@ const radio = target.querySelectorAll('input[type=radio]')
 const salvaButton = document.getElementById('salvaButton');
 const commentsBox = document.getElementById('commentsBox');
 const ratingContainer = document.getElementById('rating');
-
+const moreInfoButton = document.getElementById('moreInfo')
 
 
 radio.forEach(el => {
@@ -44,12 +44,7 @@ let data = {
 salvaButton.addEventListener('click', () => {
     const selectedRating = document.querySelector('input[name="rating"]:checked');
     const comment = commentsBox.value.trim();
-    if (!selectedRating) {
-        alert('Inserisci la tua valutazione.');
-    } else if (comment === '') {
-        alert('Inserisci il tuo commento.');
-    } else {
-        
+     
         data.rating = selectedRating.value;
         data.comment = comment;// Converte l'oggetto data in una stringa JSON e salvala
         
@@ -58,12 +53,11 @@ salvaButton.addEventListener('click', () => {
         Swal.fire('La tua valutazione è stata inviata!');
         commentsBox.value = '';// Pulisci il campo di commento
         resetStelle();
+        salvaButton.classList.add('hidden')
+        moreInfoButton.classList.remove('hidden')
 
-
-        
-        salvaButton.disabled = true; // Disabilita il pulsante "Salva commento" dopo l'invio
     }
-});
+);
 
 function resetStelle() {
     // Deseleziona tutte le stelle

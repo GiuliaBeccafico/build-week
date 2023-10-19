@@ -76,13 +76,13 @@ function internoChart(rispCorr) {
         mainChart.innerText = 'You passed the exam.'
         footerChart.innerHTML = `Well send you the certificate <br> in few minutes. <br> (Check your email
             <br> including promotions /spam folder)` 
-            myChart.data.datasets[0].backgroundColor = customColors
+           
     } else if (rispCorr <6 && rispCorr>= 0){
         headerChart.innerText = 'Fail!'
         mainChart.innerText = 'You failed the exam.'
         mainChart.style.color = 'red'
         footerChart.innerHTML = ` We invite you to try the exam next week.`
-        myChart.data.datasets[0].backgroundColor = customColors2
+        
 
     }
 }
@@ -176,8 +176,13 @@ buttonFeedback.addEventListener('click', function () {
 })
 
 // passaggio dalla result page alla feedback page
-let resultPage= document.querySelector()
-let buttonResult= document.querySelector()
+let resultPage= document.getElementById('page3')
+let buttonResult= document.getElementById('rateUs')
+let feedbackPage = document.getElementById('page4')
 
-buttonResult.addEventListener
+console.log(resultPage, buttonResult);
+buttonResult.addEventListener('click', ()=> {
+ resultPage.remove()
+feedbackPage.classList.remove('hidden')
+})
 
