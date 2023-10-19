@@ -39,7 +39,7 @@ let data = {
     comment: ""
 };
 
-// Gestisci l'evento click del pulsante "Salva commento" e l'evento di input nel campo di commento
+// gestisce l'evento click del pulsante "Salva commento" e l'evento di input nel campo di commento
 salvaButton.addEventListener('click', () => {
     const selectedRating = document.querySelector('input[name="rating"]:checked');
     const comment = commentsBox.value.trim();
@@ -57,11 +57,6 @@ salvaButton.addEventListener('click', () => {
         Swal.fire('La tua valutazione è stata inviata!');
         commentsBox.value = '';// Pulisci il campo di commento
 
-        
-        const stars = document.querySelectorAll('input[name="rating"]'); // Pulisci la selezione delle stelle
-        stars.forEach(star => {
-            star.checked = false;
-        });
 
         
         salvaButton.disabled = true; // Disabilita il pulsante "Salva commento" dopo l'invio
