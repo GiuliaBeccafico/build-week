@@ -20,15 +20,30 @@ for (let i = 0; i < starPath.length; i++){
     })
 }
 
-for (let i = 0; i < starPath.length; i++){
-    starPath[i].index = i
-    starPath[i].addEventListener('mouseover', () => {
-        for (let j = 0; j < starPath.length; j++)
-        if (j <= starPath[i].index){
-            starPath[j].classList.remove('emptyStar')
-        } else starPath[j].classList.add('emptyStar')
-    })
-}
+
+window.onload = function() {
+    const saveButton = document.querySelector(".right button");
+    const commentsBox = document.getElementById("commentsBox");
+    const stars = document.querySelectorAll('input[type="radio"]');
+    saveButton.addEventListener("click", function() {
+        let isRatingSelected = false;
+        let ratingValue = 0;
+        stars.forEach(function(star) {
+            if (star.checked) {
+                isRatingSelected = true;
+                ratingValue = star.value;
+            }
+        });
+        if (isRatingSelected && commentsBox.value) {
+            window.alert("Il tuo testo è stato salvato");
+        } else {
+            window.alert("Inserisci la tua valutazione");
+        }
+    });
+};
+
+
+
 
 // for (let i = 0; i < starPath.length; i++){
 //     starPath[i].index = i
