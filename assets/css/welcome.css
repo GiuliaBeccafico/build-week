@@ -162,7 +162,7 @@ li b {
 
 /* The SVG path that displays the timer's progress */
 .base-timer__path-elapsed {
-    stroke-width: 8px;
+    stroke-width:5px;
     stroke: var(--grigioColor)
 }
 
@@ -177,7 +177,7 @@ li b {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 11px;
     color: white;
     font-family: var(--outfitFont);
 }

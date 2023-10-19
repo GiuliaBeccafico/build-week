@@ -137,7 +137,8 @@
     border: none;
     font-family: var(--outfitFont);
   }
-  /* timer css */
+  
+/* timer css */
 .base-timer {
     position: relative;
     height: 200px;
