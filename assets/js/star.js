@@ -3,6 +3,7 @@ const starPath = target.querySelectorAll('path')
 const radio = target.querySelectorAll('input[type=radio]')
 const salvaButton = document.getElementById('salvaButton');
 const commentsBox = document.getElementById('commentsBox');
+const ratingContainer = document.getElementById('rating');
 
 
 
@@ -11,7 +12,7 @@ radio.forEach(el => {
 })
 
 
-/** funzionante/
+/*********** funzionante */
 for (let i = 0; i < starPath.length; i++) {
     starPath[i].index = i
     starPath[i].addEventListener('click', () => {
@@ -31,9 +32,15 @@ function starFiller(index, arr) {
         } else arr[j].classList.add('emptyStar')
 }
 
-/** Salvataggio valori nel bottone a sinistra */
+/********** Salvataggio valori nel bottone a sinistra */
 
-// Gestisci l'evento click del pulsante "Salva commento"
+// Definisci un oggetto per salvare i dati
+let data = {
+    rating: null,
+    comment: ""
+};
+
+// gestisce l'evento click del pulsante "Salva commento" e l'evento di input nel campo di commento
 salvaButton.addEventListener('click', () => {
     const selectedRating = document.querySelector('input[name="rating"]:checked');
     const comment = commentsBox.value.trim();
@@ -42,12 +49,29 @@ salvaButton.addEventListener('click', () => {
     } else if (comment === '') {
         alert('Inserisci il tuo commento.');
     } else {
-        // Salva i dati nel tuo sistema o esegui altre azioni necessarie
+        
+        data.rating = selectedRating.value;
+        data.comment = comment;// Converte l'oggetto data in una stringa JSON e salvala
+        
+        const jsonData = JSON.stringify(data);// Salva la stringa JSON
+        
         Swal.fire('La tua valutazione è stata inviata!');
+        commentsBox.value = '';// Pulisci il campo di commento
+        resetStelle();
+
+
+        
+        salvaButton.disabled = true; // Disabilita il pulsante "Salva commento" dopo l'invio
     }
 });
 
-// Abilita/disabilita il pulsante "Salva commento" in base allo stato del commento
+function resetStelle() {
+    // Deseleziona tutte le stelle
+    starPath.forEach(star => {
+        star.classList.add('emptyStar');
+    });
+}
+
 commentsBox.addEventListener('input', () => {
     if (commentsBox.value.trim() !== '' && document.querySelector('input[name="rating"]:checked')) {
         salvaButton.disabled = false;
