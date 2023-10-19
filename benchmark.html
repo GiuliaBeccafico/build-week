@@ -18,7 +18,7 @@
 
       <div class="header">
           <img class="logo" src="assets/img/epicode_logo.png" alt="Logo-Epicode">
-          <div id ="app" >
+          <!-- <div id ="app" >
 
             <div class="base-timer hidden">
               
@@ -49,14 +49,14 @@
               </div>
               `;
         
-          </div>
+          </div> -->
           
         </div>
       
       
 <!-- page 1 -->
 
-      <div id="page1">
+      <!-- <div id="page1" class="hidden">
 
           <div class="main">
               <div class="title">
@@ -88,10 +88,10 @@
                   <button class="button blueButton">PROCEED</button>
               </div>
           </div>
-      </div>
+      </div> -->
 
 <!-- page 2 -->
-      <div id="page2" class="hidden">
+      <!-- <div id="page2" class="hidden">
       <template>
         <div class="main">
           <div class="questions">
@@ -118,7 +118,7 @@
 
         </div>
       </div>
-        
+         -->
 
    <!---------------------------------------------------------------------------------------------------------------------------------------
     Insteazione RESULTS pagee   
@@ -126,7 +126,7 @@
 <!-- page 3 -->
 
   <!-- da qui sotto inizia il titolo   -->
-  <div id="page3" class="hidden">
+  <div id="page3" >
   <div class="main">
     <div class="title">
       <p class="mainTitle"> Results</p>
@@ -140,7 +140,21 @@
         <p class="correctQuestions"> 4/6 questions</p>
      </div>
      <div class="secondSection">
-        <img src="assets/img/circle-png.webp" alt="" class="">
+      <!-- start chart donuts -->
+      <div class="programmingStats">
+        <div class="chartContainer">
+          <canvas class="myChart"></canvas>
+      </div>
+        <div class="details">
+          <span class="chartHeading">Congratulations!</span>
+          <span class="chartPassed">You passed the exam</span>
+          <span class="chartFooter">
+            We'll send you the certificate in few minutes. <p> (Check your email
+            including promotions /spam folder) </p>
+          </span>
+        </div>
+      </div>
+       <!-- finish chart donuts -->
      </div>
       <div class="rightSection">
         <p class="sectionTitle"> Wrong </p>
@@ -165,7 +179,7 @@ footer RESULTS page
 </script>
 </body>
 </html>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
