@@ -1,6 +1,6 @@
 // // start chart donuts js
 let maxPunteggio = 10;
-let punteggio = 7; //sarà dato dall'accumulo delle domande
+let punteggio = 8; //sarà dato dall'accumulo delle domande
 let risposteCorrette = punteggio * 10; //punteggio in centesimi
 let rispSbagliate = maxPunteggio - punteggio; //calcolo risposte sbalgiate
 let percentualeSbagliate = rispSbagliate * 10;//risposte sbagliate in percentuale
@@ -159,3 +159,25 @@ function calculateTimeFraction() {
   return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
 }
 calculateTimeFraction();
+
+
+
+let buttonFeedback = document.querySelector('.footer .blueButton')
+
+buttonFeedback.addEventListener('click', function () {
+    Swal.fire({
+        title: 'La Build-Week non è per niente stressante.Lo afferma Davide, 30 anni',
+        text: 'Scherziamo, dai!! Ne ha 25',
+        imageUrl: 'https://i.imgflip.com/2jsesx.jpg',
+        imageWidth: 480,
+        imageHeight: 414,
+        imageAlt: 'Custom image',
+      })
+})
+
+// passaggio dalla result page alla feedback page
+let resultPage= document.querySelector()
+let buttonResult= document.querySelector()
+
+buttonResult.addEventListener
+

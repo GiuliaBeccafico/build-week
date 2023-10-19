@@ -207,15 +207,15 @@ border: none;
     width: 200px;
 }
 
-
+/* Removes SVG styling that would hide the time label */
 .base-timer__circle {
     fill: none;
     stroke: none;
 }
 
-
+/* The SVG path that displays the timer's progress */
 .base-timer__path-elapsed {
-    stroke-width: 8px;
+    stroke-width:5px;
     stroke: var(--grigioColor)
 }
 
@@ -230,7 +230,7 @@ border: none;
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 11px;
     color: white;
     font-family: var(--outfitFont);
 }
@@ -265,3 +265,4 @@ border: none;
     /* Flips the svg and makes the animation to move left-to-right */
     transform: scaleX(1);
 }
+   
