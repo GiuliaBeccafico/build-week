@@ -13,11 +13,14 @@ function showQuestions () {
     const button = document.getElementById('nextButton')
     button.addEventListener('click', ()=> {
     nextQuestion(document.querySelector('.questions', container, temp))
-    
+    answerCheck
 })
 }
 
-
+function answerCheck (){
+    const target = document.querySelectorAll('.answer')
+    console.log('.answer');
+}
 
 function nextQuestion (target, container, temp){
     console.log(target, document.querySelector('.main'));
