@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,30 +16,26 @@
 <body>
     <div id="container">
         <button id="proceed" class="button blueButton">PROCEED</button>
+        <div class="header">
+            <img class='logo' src="assets/img/epicode_logo.png" alt="Epicode Logo">
+            <img class="timer" src="https://www.freeiconspng.com/thumbs/timer-icon/timer-icon-15.png">
+        </div>
+        <div class="main" id="contentWrap">
+        </div>
+        <div class="footer">
+            <p>Question 1<span class="pink"> / 10</span></p>
+            <button id="nextButton" class="button">Prossima →</button>
+        </div>
         <template id="questionsTemplate">
-            <div class="header">
-                <img class='logo' src="assets/img/epicode_logo.png" alt="Epicode Logo">
-                <img class="timer" src="https://www.freeiconspng.com/thumbs/timer-icon/timer-icon-15.png">
-            </div>
-            <div class="main">
-                <div class="questions">
-                    <p class="mainTitle"></p>
-                    <p class="mainTitle bold"></p>
-                    <div class="answers">
-                    </div>
+            <div class="questions">
+                <p class="mainTitle"></p>
+                <p class="mainTitle bold"></p>
+                <div class="answers">
                 </div>
             </div>
-            <div class="footer">
-                <p>Question 1<span class="pink"> / 10</span></p>
-                <button id="nextButton" class="button">Prossima →</button>
-            </div>
-        
-            </div>
-            </div>
         </template>
-    </body>
-    <script src="assets/js/question.js"></script>
-    <script src="assets/js/questionTemplate.js"></script>
+        <script src="assets/js/question.js"></script>
+        <script src="assets/js/questionTemplate.js"></script>
 </body>
 
 </html>
