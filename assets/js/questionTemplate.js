@@ -29,7 +29,7 @@ areaButton.addEventListener('click', function () {
 
 const proceedButton = document.querySelector('.footer .button')
 console.log(proceedButton);
-proceedButton.addEventListener('click', showQuestions)
+proceedButton.addEventListener('click', showQuestions())
 const main = document.querySelector('.main')
 function showQuestions () {
     fetch('https://opentdb.com/api.php?amount=10&category=18&difficulty=easy')
@@ -50,7 +50,9 @@ function showQuestions () {
     // button.addEventListener('click', ()=> {
     // nextQuestion(document.querySelector('.questions', container, temp))
   })
-    
+   .catch(error =>{
+    console.error('erorre nella richiesta Fetch', error);
+   }) 
 }
 
 
