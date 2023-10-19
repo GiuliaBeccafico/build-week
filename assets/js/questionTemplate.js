@@ -6,7 +6,7 @@ let areaButton = document.querySelector('.button');
 
 let firstPage = document.getElementById('page1')
 let secondPage = document.getElementById('page2')
-
+console.log(firstPage, secondPage);
 let timer = document.querySelector('.base-timer')
 areaButton.addEventListener('click', function () {
   if (areaCheckbox.checked) {
