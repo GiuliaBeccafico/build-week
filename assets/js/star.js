@@ -48,23 +48,23 @@ salvaButton.addEventListener('click', () => {
     } else if (comment === '') {
         alert('Inserisci il tuo commento.');
     } else {
-        // Salva i dati nel tuo sistema o esegui altre azioni necessarie
+        
         data.rating = selectedRating.value;
-        data.comment = comment;
-        // Converti l'oggetto data in una stringa JSON e salvala nel compartimento
-        const jsonData = JSON.stringify(data);
-        // Salva la stringa JSON nel compartimento o esegui altre azioni necessarie
+        data.comment = comment;// Converte l'oggetto data in una stringa JSON e salvala
+        
+        const jsonData = JSON.stringify(data);// Salva la stringa JSON
+        
         Swal.fire('La tua valutazione è stata inviata!');
         commentsBox.value = '';// Pulisci il campo di commento
 
-        // Pulisci la selezione delle stelle
-        const stars = document.querySelectorAll('input[name="rating"]');
+        
+        const stars = document.querySelectorAll('input[name="rating"]'); // Pulisci la selezione delle stelle
         stars.forEach(star => {
             star.checked = false;
         });
 
-        // Disabilita il pulsante "Salva commento" dopo l'invio
-        salvaButton.disabled = true;
+        
+        salvaButton.disabled = true; // Disabilita il pulsante "Salva commento" dopo l'invio
     }
 });
 
