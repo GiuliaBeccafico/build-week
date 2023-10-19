@@ -108,12 +108,9 @@ let timerContent = document.getElementById('timer')
 
 
 
-let template = document.getElementsByTagName('template')[0];
-let copia = template.content.firstElementChild.cloneNode(true)
-let answres = copia.childNodes[5]
 
 
-console.dir(copia);
+
 
 //domande easy 
 fetch ('https://opentdb.com/api.php?amount=10&category=18&difficulty=easy')
@@ -135,7 +132,7 @@ console.log(hard);
 // start chart donuts js
 const chartData = {
   labels: ["Wrong", "Correct"],
-  data : []
+  data : [40, 60]
 }
 
 

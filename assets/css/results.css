@@ -154,11 +154,9 @@ border: none;
   
 }
 .details {
-    /* position: absolute;
-    width: 1000px;
-    height: 800px; */
-    /* top: 109px;
-    left: 100px; */
+    position: absolute;
+    bottom: 204px;
+    left: 469px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -168,26 +166,41 @@ border: none;
     color: white;
     font-family: var(--outfitFont);
 }
+
 .chartHeading{
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     font-family: "Outfit", sans-serif;
 }
 .chartPassed{
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     font-family: "Outfit", sans-serif;
-color: #00ffff;;
-
+    color: #00ffff;
 }
 .chartFooter{
     margin-top: 25px;
     color: #ebd2d2;
     padding: 8px;
-    font-size: 15px;
+    font-size: 11px;
 }
 
 .chartFooter span{
     display: block;
 }
 /* finish chart donuts css */
+@media screen and (max-width: 768px) {
+    .details {
+        position: static; /* Torna al posizionamento predefinito */
+        margin-top: 15px; /* Aggiungi spazio in alto invece di posizionamento assoluto */
+        text-align: center; /* Riposiziona il testo al centro */
+    }
+}
+@media screen and (min-width: 1000px) {
+    .details {
+        position: absolute; /* Riporta al posizionamento assoluto */
+        bottom: 330px; /* Regola il valore di 'bottom' in base alle dimensioni dello schermo */
+        left: 50.5%; /* Posiziona il contenuto al centro orizzontalmente */
+        transform: translateX(-50%); /* Centra orizzontalmente il contenuto */
+    }
+}
