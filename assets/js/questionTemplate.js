@@ -36,24 +36,29 @@ function start(count) {
                     btn.addEventListener('click', () => {
                         btn.classList.toggle('selectedAnswer')
                         let selectedAnswer = document.querySelectorAll('.selectedAnswer')
-                        if (selectedAnswer.length > 1) {
-                            Swal.fire({
-                                icon: 'error',
-                                title: 'Oops...',
-                                text: 'La risposta giusta è una sola :)',
-                                footer: '<a href="">Why do I have this issue?</a>'
-                            })
-                        }
+                        console.log(selectedAnswer);
+                        selectedAnswer.forEach(item => {
+                            answersGiven.push(item)
+                        })
                     })
                 })
 
-                nextButton.addEventListener('click', () => {
+                console.log(answersGiven);
 
-                    count++
-                    clearArea(wrap)
-                    if (count == easy.length) {
-                        alert('finito')
-                    } return showQuestions(count)
+                nextButton.addEventListener('click', () => {
+                    if (answersGiven.length >= 2) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'La risposta giusta è una sola :)',
+                        })
+                    } else {
+                        count++
+                        clearArea(wrap)
+                        if (count == easy.length) {
+                            alert('finito')
+                        } return showQuestions(count)
+                    }
                 })
             }
         })
@@ -108,18 +113,11 @@ function answerMaker(questions, index, target) {
     arr = arr.concat(questions[index]['incorrect_answers'])
     shuffleArray(arr)
     for (let i = 0; i <= arr.length - 1; i++) {
-        let answer = document.createElement('label')
-        let radio = document.createElement('input')
-        radio.value = i
-        radio.name = 'answer'
-        radio.id = `answer${i}`
-        radio.type = 'radio'
-        radio.style.display = 'none'
+        let answer = document.createElement('button')
         answer.classList.add('answer')
         answer.innerHTML = arr[i]
         answer.htmlFor = `answer${i}`
         target.append(answer)
-        target.append(radio)
     }
 }
 
