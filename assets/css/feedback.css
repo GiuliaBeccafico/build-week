@@ -68,21 +68,23 @@
   margin-bottom: 50px;
 }
 
+
 /*RATING STARS DESIGN BY DAVIDE*/
 
 .hidden {
   display: none;
 }
 
-.ratingStars svg path{
-  fill: var(--emptyStar);
-  
+
+.emptyStar{
+  fill: var(--emptyStar);  
 }
 
+.activeStar{
+  fill:var(--blueColor)
+}
 
-
-
-/*RATING STARS DESIGN BY SAMUELE*/
+/*FOOTER DESIGN BY SAMUELE*/
 
 
 .button {

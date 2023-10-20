@@ -1,5 +1,5 @@
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
-    container e font 
+    container font e colori 
     -------------------------------------------------------------------------------------> */
 :root {
     --interFont: "Inter", sans-serif;
@@ -19,31 +19,32 @@
 
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
-                header feedback page 
+                header welcome page 
             -------------------------------------------------------------------------------------> */
 .logo {
     width: 160px;
     height: 40px;
 }
-
+.main {
+    margin-bottom: 30px;
+}
 .header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 }
-
-
+.display{
+    display: none;
+}
 .hidden {
     visibility: hidden;
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
-                main feedback page 
+             Section title
                 -------------------------------------------------------------------------------------> */
 
-.main {
-    margin-bottom: 30px;
-}
+
 
 .title {
     margin-bottom: 40px;
@@ -55,6 +56,11 @@
     font-size: 60px;
     font-family: 'Outfit', sans-serif;
 }
+
+
+/* <!---------------------------------------------------------------------------------------------------------------------------------------
+             main section 
+                -------------------------------------------------------------------------------------> */
 
 li b {
     font-size: O.6rem;
@@ -96,14 +102,9 @@ li b {
 }
 
 /* <!---------------------------------------------------------------------------------------------------------------------------------------
-            footer feedback page 
+            footer section
             -------------------------------------------------------------------------------------> */
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .left {
     color: #dedee3;
@@ -111,25 +112,6 @@ li b {
     display: flex;
     align-items: center;
 }
-
-.button {
-    color: white;
-    border: 2px solid white;
-    background: none;
-    font-size: 1.2rem;
-    width: 13rem;
-    height: 3.5rem;
-    font-weight: bold;
-    background-image: url(../assets/bg.jpg);
-}
-
-.button.blueButton {
-    background: #00FFFF;
-    box-shadow: 2px 2px 30px #00FFFF;
-    color: #0b113b;
-    border: none;
-}
-
 #checkbox {
     display: none;
 }
@@ -152,7 +134,31 @@ li b {
     font-weight: bold;
 }
 
+
+/*  button section  */
+.button {
+    color: white;
+    border: 2px solid white;
+    background: none;
+    font-size: 1.2rem;
+    width: 13rem;
+    height: 3.5rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.button.blueButton {
+    background: #00FFFF;
+    box-shadow: 2px 2px 30px #00FFFF;
+    color: #0b113b;
+    border: none;
+    font-family: var(--outfitFont);
+}
+
+
+
 /* timer css */
+
 .base-timer {
     position: relative;
     height: 200px;
@@ -167,7 +173,7 @@ li b {
 
 /* The SVG path that displays the timer's progress */
 .base-timer__path-elapsed {
-    stroke-width: 8px;
+    stroke-width:5px;
     stroke: var(--grigioColor)
 }
 
@@ -182,7 +188,7 @@ li b {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 11px;
     color: white;
     font-family: var(--outfitFont);
 }
@@ -196,24 +202,13 @@ li b {
 }
 
 .base-timer__path-remaining {
-    /* Just as thick as the original ring */
     stroke-width: 7px;
-
-    /* Rounds the line endings to create a seamless circle */
     stroke-linecap: round;
-
-    /* Makes sure the animation starts at the top of the circle */
     transform: rotate(90deg);
     transform-origin: center;
-
-    /* One second aligns with the speed of the countdown timer */
-    /* transition: 1s linear all;
-       */
-    /* Allows the ring to change color when the color value updates */
     stroke: var(--violaColor)
 }
 
 .base-timer__svg {
-    /* Flips the svg and makes the animation to move left-to-right */
     transform: scaleX(1);
 }
