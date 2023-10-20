@@ -14,41 +14,53 @@ proceedButton.addEventListener('click', () => {
 })
 
 
-function start(count){
+function start(count) {
     fetch('https://opentdb.com/api.php?amount=10&category=18&difficulty=easy')
-    .then(res => res.json())
-    .then(domande => {
-        let easy = domande.results //tutte le domande in questo array
-        console.log(easy);
-        showQuestions(count)
-        function showQuestions(count) {
-            const nextButton = document.getElementById('nextButton')
-            const wrap = document.getElementById('contentWrap')
-            const answerArea = document.querySelector('#contentWrap').children[0].lastElementChild
-            let tempCount = count + 1
-            footer.firstElementChild.innerHTML = `Question ${tempCount}<span class="pink"> / ${easy.length}</span>`
-            disableButton(nextButton)
-            questionTitles(easy, count, wrap)
-            answerMaker(easy, count, answerArea)
-            console.log(correctAnswer(easy, count));
-            const radio = document.getElementsByTagName('input')
-            console.log(radio);
-            const answersBtn = document.querySelectorAll('.answer')
-            answersBtn.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    btn.classList.add ('selectedAnswer')
+        .then(res => res.json())
+        .then(domande => {
+            let easy = domande.results //tutte le domande in questo array
+            let answersGiven = []
+            correctAnswer(easy)
+            showQuestions(count)
+            function showQuestions(count) {
+                const nextButton = document.getElementById('nextButton')
+                const wrap = document.getElementById('contentWrap')
+                const answerArea = document.querySelector('#contentWrap').children[0].lastElementChild
+                let tempCount = count + 1
+                footer.firstElementChild.innerHTML = `Question ${tempCount}<span class="pink"> / ${easy.length}</span>`
+                // disableButton(nextButton)
+                questionTitles(easy, count, wrap)
+                answerMaker(easy, count, answerArea)
+                const answersBtn = document.querySelectorAll('.answer')
+                answersBtn.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        btn.classList.toggle('selectedAnswer')
+                        let selectedAnswer = document.querySelectorAll('.selectedAnswer')
+                        if (selectedAnswer.length > 1) {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'La risposta giusta è una sola :)',
+                                footer: '<a href="">Why do I have this issue?</a>'
+                            })
+                        }
+                    })
                 })
-            })
-            nextButton.addEventListener('click', () => {
-                count++
-                clearArea(wrap)
-                if (count == easy.length) {
-                    alert('finito')
-                } return showQuestions(count)
-            })
-        }})
-        
-    }
+
+                nextButton.addEventListener('click', () => {
+
+                    count++
+                    clearArea(wrap)
+                    if (count == easy.length) {
+                        alert('finito')
+                    } return showQuestions(count)
+                })
+            }
+        })
+
+}
+
+
 
 
 function cloneTemplate(target) {
@@ -91,7 +103,7 @@ function questionTitles(questions, index, target) {
 }
 
 function answerMaker(questions, index, target) {
-    // target.innerHTML = ''
+    target.innerHTML = ''
     let arr = [questions[index]['correct_answer']]
     arr = arr.concat(questions[index]['incorrect_answers'])
     shuffleArray(arr)
@@ -111,8 +123,12 @@ function answerMaker(questions, index, target) {
     }
 }
 
-function correctAnswer (questions, index) {
-    return questions[index]['correct_answer']
+function correctAnswer(questions) {
+    let correctArr = []
+    questions.forEach(item => {
+        correctArr.push(item['correct_answer'])
+    })
+    return correctArr
 }
 
 
@@ -125,10 +141,10 @@ function shuffleArray(array) {
     }
 }
 
-function disableButton (btn){
+function disableButton(btn) {
     btn.disabled = true
 }
-function activateButton (btn){
+function activateButton(btn) {
     btn.disabled = false
 }
 
