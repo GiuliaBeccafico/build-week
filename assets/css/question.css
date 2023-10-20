@@ -35,7 +35,7 @@
 }
 
 .logo {
-    width: 160;
+    width: 160px;
     height: 40px;
 }
 
@@ -44,7 +44,7 @@
     height: 115px
 }
 
-#header {
+.header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
@@ -53,15 +53,18 @@
 .questions {
     text-align: center;
     color: white;
-
 }
 
-.mainTitle {
+.mainTitle{
     font-size: 60px;
     font-family: var(--outfitFont);
 }
 
 .bold {
+    font-weight: bold;
+}
+
+.question p:last-of-type{
     font-weight: 600;
 }
 
@@ -73,6 +76,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 50px;
+    margin-bottom: 70px;
 }
 
 .answerContainer {
@@ -92,7 +96,7 @@
     border-bottom-style: hidden;
     border-inline-width: thin;
     width: 300px;
-
+    margin-bottom: 10px;
 }
 
 
@@ -104,7 +108,7 @@
 
 /************************************************ Footer ******************************/
 
-#footer {
+.footer {
     font-family: var(--interFont);
     color: white;
     display: flex;
@@ -123,5 +127,74 @@
     width: 13rem;
     height: 3.5rem;
     font-weight: bold;
-    background-image: url(../assets/bg.jpg);
+    background: rgba(255, 255, 255, 0.1);
 }
+
+.button.blueButton {
+    background: #00ffff;
+    box-shadow: 2px 2px 30px #00ffff;
+    color: #0b113b;
+    border: none;
+    font-family: var(--outfitFont);
+  }
+  
+/* timer css */
+.base-timer {
+    position: relative;
+    height: 200px;
+    width: 200px;
+  }
+  
+  /* Removes SVG styling that would hide the time label */
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  /* The SVG path that displays the timer's progress */
+  .base-timer__path-elapsed {
+    stroke-width: 8px;
+    stroke: grey
+  }
+
+  .base-timer__label {
+    position: absolute;
+    
+    /* Size should match the parent container */
+    width: 200px;
+    height: 200px;
+    
+    /* Keep the label aligned to the top */
+    top: 0;
+    
+    /* Create a flexible box that centers content vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* Sort of an arbitrary number; adjust to your liking */
+    font-size: 100px;
+  }
+
+  .base-timer__path-remaining {
+    /* Just as thick as the original ring */
+    stroke-width: 7px;
+  
+    /* Rounds the line endings to create a seamless circle */
+    stroke-linecap: round;
+  
+    /* Makes sure the animation starts at the top of the circle */
+    transform: rotate(90deg);
+    transform-origin: center;
+  
+    /* One second aligns with the speed of the countdown timer */
+    /* transition: 1s linear all;
+   */
+    /* Allows the ring to change color when the color value updates */
+    stroke: #d20094;
+  }
+  
+  .base-timer__svg {
+    /* Flips the svg and makes the animation to move left-to-right */
+    transform: scaleX(1);
+  }
