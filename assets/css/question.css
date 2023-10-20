@@ -1,0 +1,188 @@
+
+
+/************************************************** GENERAL SETTINGS ******************************************/
+:root {
+    --interFont: "Inter", sans-serif;
+    --outfitFont: "Outfit", sans-serif;
+    --blueColor: #00ffff;
+    --pinkColor: #d20094;
+}
+#container {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    padding: 40px 100px 100px 100px;
+    background-size: cover;
+}
+/********************************* settings del header **/
+
+.main {
+    margin-bottom: 70px;
+}
+
+.logo {
+    width: 160px;
+    height: 40px;
+}
+
+.timer {
+    width: 115px;
+    height: 115px
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+/****************************** SETTING DEL MAIN **************************/
+
+.questions {
+    text-align: center;
+    color: white;
+}
+
+.mainTitle{
+    font-size: 60px;
+    font-family: var(--outfitFont);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.question p:last-of-type{
+    font-weight: 600;
+}
+
+/****************************** ANSWERS BUTTONS **************************/
+
+
+.answers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    margin-bottom: 70px;
+}
+
+.answerContainer {
+    margin: 8px 15px;
+}
+
+
+.answer {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: 25px 60px;
+    border-radius: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-bottom-style: solid;
+    border-bottom-style: hidden;
+    border-inline-width: thin;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+
+.answer:hover {
+    background: rgb(210, 0, 148);
+    background: linear-gradient(144deg, rgb(117, 0, 82) 0%, rgb(39, 0, 34) 52%); 
+    transition: 0.5ms;
+}
+
+.radioButton:checked + label {
+    background: rgb(210, 0, 148);
+    background: linear-gradient(144deg, rgba(210, 0, 148, 1) 0%, rgba(144, 0, 128, 1) 52%);
+    transition: .5s
+  }
+/************************************************ Footer ******************************/
+
+.footer {
+    font-family: var(--interFont);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pink {
+    color: var(--pinkColor);
+}
+
+.button {
+    color: white;
+    border: 2px solid white;
+    background: none;
+    font-size: 1.2rem;
+    width: 13rem;
+    height: 3.5rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.button.blueButton {
+    background: #00ffff;
+    box-shadow: 2px 2px 30px #00ffff;
+    color: #0b113b;
+    border: none;
+    font-family: var(--outfitFont);
+  }
+
+
+  
+/* timer css */
+.base-timer {
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+/* Removes SVG styling that would hide the time label */
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+/* The SVG path that displays the timer's progress */
+.base-timer__path-elapsed {
+    stroke-width:5px;
+    stroke: var(--grigioColor)
+}
+
+.base-timer__label {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -2px;
+    left: -1px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 11px;
+    color: white;
+    font-family: var(--outfitFont);
+}
+
+.timerText {
+    font-family: 'Outfit';
+}
+
+#timer {
+    font-size: 6rem;
+}
+
+.base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    stroke: var(--violaColor)
+}
+
+.base-timer__svg {
+    transform: scaleX(1);
+}
