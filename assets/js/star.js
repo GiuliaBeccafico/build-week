@@ -69,7 +69,7 @@ function resetStelle() {
 commentsBox.addEventListener('input', () => {
     if (commentsBox.value.trim() !== '' && document.querySelector('input[name="rating"]:checked')) {
         salvaButton.disabled = false;
-        Swal.fire('Leave us a Feedback!')
+       
 
     } else {
         salvaButton.disabled = true;

@@ -35,6 +35,7 @@ proceedButton.addEventListener("click", () => {
   let count = 0;
   start(count);
   cloneTemplate(wrap);
+  startTimer()
 });
 
 function start(count) {
