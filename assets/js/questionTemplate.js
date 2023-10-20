@@ -26,9 +26,19 @@ function start(count){
             const wrap = document.getElementById('contentWrap')
             const answerArea = document.querySelector('#contentWrap').children[0].lastElementChild
             let tempCount = count + 1
+            footer.firstElementChild.innerHTML = `Question ${tempCount}<span class="pink"> / ${easy.length}</span>`
+            disableButton(nextButton)
             questionTitles(easy, count, wrap)
             answerMaker(easy, count, answerArea)
-            footer.firstElementChild.innerHTML = `Question ${tempCount}<span class="pink"> / ${easy.length}</span>`
+            console.log(correctAnswer(easy, count));
+            const radio = document.getElementsByTagName('input')
+            console.log(radio);
+            const answersBtn = document.querySelectorAll('.answer')
+            answersBtn.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btn.classList.add ('selectedAnswer')
+                })
+            })
             nextButton.addEventListener('click', () => {
                 count++
                 clearArea(wrap)
@@ -81,7 +91,7 @@ function questionTitles(questions, index, target) {
 }
 
 function answerMaker(questions, index, target) {
-    target.innerHTML = ''
+    // target.innerHTML = ''
     let arr = [questions[index]['correct_answer']]
     arr = arr.concat(questions[index]['incorrect_answers'])
     shuffleArray(arr)
@@ -90,16 +100,22 @@ function answerMaker(questions, index, target) {
         let radio = document.createElement('input')
         radio.value = i
         radio.name = 'answer'
-        radio.id = `rating${i}`
+        radio.id = `answer${i}`
         radio.type = 'radio'
         radio.style.display = 'none'
         answer.classList.add('answer')
         answer.innerHTML = arr[i]
-        answer.htmlFor = `rating${i}`
+        answer.htmlFor = `answer${i}`
         target.append(answer)
         target.append(radio)
     }
 }
+
+function correctAnswer (questions, index) {
+    return questions[index]['correct_answer']
+}
+
+
 
 
 function shuffleArray(array) {
@@ -109,7 +125,10 @@ function shuffleArray(array) {
     }
 }
 
-function disableButton (){
-    document.getElementById('nextButton').disabled = true
+function disableButton (btn){
+    btn.disabled = true
+}
+function activateButton (btn){
+    btn.disabled = false
 }
 
