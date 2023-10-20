@@ -1,13 +1,17 @@
 const proceedButton = document.getElementById('startButton')
 const header = document.querySelector('.header')
 let footer = document.querySelector('.footer')
+let questionFooter = document.getElementById('questionFooter')
 const welcomePage = document.getElementById('page1')
-
+questionFooter.style.display = 'none'
 
 
 proceedButton.addEventListener('click', () => {
     welcomePage.remove()
     cerchio.classList.remove('hidden')
+    questionFooter.style.display = 'flex'
+    questionFooter.style.width= '100%'
+    questionFooter.style.justifyContent = 'space-between'
     const wrap = document.getElementById('contentWrap')
     let count = 0
     start(count)
@@ -147,6 +151,7 @@ function disableButton(btn) {
 function activateButton(btn) {
     btn.disabled = false
 }
+
 
 
 // inizio timer 

@@ -144,7 +144,7 @@ li b {
     width: 13rem;
     height: 3.5rem;
     font-weight: bold;
-    background-image: url(../assets/bg.jpg);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .button.blueButton {
@@ -152,6 +152,7 @@ li b {
     box-shadow: 2px 2px 30px #00FFFF;
     color: #0b113b;
     border: none;
+    font-family: var(--outfitFont);
 }
 
 
