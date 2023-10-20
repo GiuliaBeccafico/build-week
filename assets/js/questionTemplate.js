@@ -47,11 +47,11 @@ function start(count) {
 
                 nextButton.addEventListener('click', () => {
                         count++
+                        clearArea(wrap)
                         if (count == easy.length) {
                             alert('finito')
                         } else {
                             showQuestions(count)
-                            clearArea(wrap)
                         }
                 })
             }
