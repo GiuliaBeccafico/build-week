@@ -1,3 +1,5 @@
+
+// da tenere 
 const proceedButton = document.getElementById("startButton");
 const header = document.querySelector(".header");
 let footer = document.querySelector(".footer");
@@ -11,7 +13,7 @@ feedbackPage.style.display ='none'
 let page2 = document.getElementById("page2");
 
 
-
+//da tenere 
 proceedButton.addEventListener("click", () => {
   welcomePage.remove();
   cerchio.classList.remove("hidden");
@@ -56,7 +58,7 @@ function start(count) {
     }
     
     
-
+//da tenere 
         nextButton.addEventListener("click", () => {
           count++;
           if (count == easy.length) {
