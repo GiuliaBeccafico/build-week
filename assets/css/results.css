@@ -1,272 +1,260 @@
-/* <!---------------------------------------------------------------------------------------------------------------------------------------
-    container/ font/ timer
-    -------------------------------------------------------------------------------------> */
+/* ***************************************************************************
+UNIVERSAL CSS
+****************************************************************************** */
 :root {
-    --interFont: "Inter", sans-serif;
-    --outfitFont: "Outfit", sans-serif;
-    --blueColor: #00ffff;
-    --pinkColor: #d20094;
+  --interFont: "Inter", sans-serif;
+  --outfitFont: "Outfit", sans-serif;
+  --blueColor: #00ffff;
+  --pinkColor: #d20094;
 }
 
 #container {
-    background-image: url(../img/bg.jpg);
-    background-repeat: no-repeat;
-    padding: 40px 100px 100px 100px;
-    background-size: cover;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  padding: 40px 100px 100px 100px;
+  background-size: cover;
 }
 
 .center {
-    text-align: center;
-}
-
-/* <!---------------------------------------------------------------------------------------------------------------------------------------
-       header feedback page 
-   -------------------------------------------------------------------------------------> */
-.logo {
-    width: 160px;
-    height: 40px;
-}
-
-.timer {
-    width: 115px;
-    height: 115px
+  text-align: center;
 }
 
 .hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 
-/* <!---------------------------------------------------------------------------------------------------------------------------------------
-    margin delle macroaree
-   -------------------------------------------------------------------------------------> */
+/* ***************************************************************************
+    HEADER E MAIN
+****************************************************************************** */
+
 .header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.logo {
+  width: 160px;
+  height: 40px;
+}
+
+.timer {
+  width: 115px;
+  height: 115px;
 }
 
 .main {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-/* <!---------------------------------------------------------------------------------------------------------------------------------------
-       section Title RESUlTS page 
-   -------------------------------------------------------------------------------------> */
-
-
+/* ***************************************************************************
+     TITLE SECTION RESULTS PAGE
+****************************************************************************** */
 
 .title {
-    color: white;
-    margin-bottom: 30px;
-
+  color: white;
+  margin-bottom: 30px;
 }
 
 .mainTitle {
-    font-size: 60px;
-    font-weight: bold;
-    margin-bottom: 0.8rem;
-    font-family: var(--interFont);
-    text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  font-family: var(--interFont);
+  text-align: center;
 }
 
 .description {
-    font-family: var(--interFont);
-    font-size: 2rem;
-    color:#dedee3;;
-    text-align: center;
+  font-family: var(--interFont);
+  font-size: 2rem;
+  color: #dedee3;
+  text-align: center;
 }
 
-/* <!---------------------------------------------------------------------------------------------------------------------------------------
-       percentuale risultati  results page 
-   -------------------------------------------------------------------------------------> */
+/* ***************************************************************************
+     MAIN RESULTS PAGE
+****************************************************************************** */
 #results {
-    display: flex;
-    color: white;
-    justify-content: space-evenly;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
 }
 
 .leftSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .rightSection {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
 }
 
-
 .sectionTitle {
-    font-size: 3.5rem;
-    font-family: var(--interFont);
+  font-size: 3.5rem;
+  font-family: var(--interFont);
 }
 
 .valueTitle {
-    font-size: 3.5rem;
-    font-family: var(--outfitFont);
-    font-weight: bold;
+  font-size: 3.5rem;
+  font-family: var(--outfitFont);
+  font-weight: bold;
 }
 
 .correctQuestions {
-    font-size: 1.2rem;
-    color: #cacbd4;
-    font-family: 'Outfit';
+  font-size: 1.2rem;
+  color: #cacbd4;
+  font-family: "Outfit";
 }
 
+/* ***************************************************************************
+    BUTTON 
+****************************************************************************** */
 
-
-
-
-
-
-/* <!---------------------------------------------------------------------------------------------------------------------------------------
-      BUTTON STYLE
-   -------------------------------------------------------------------------------------> */
-
- #divButton{
-    text-align: center;
-    margin-top: 3rem;
+#divButton {
+  text-align: center;
+  margin-top: 3rem;
 }
-
 
 .button {
-    color: white;
-    border: 2px solid white;
-    background: none;
-    font-size: 1.2rem;
-    width: 13rem;
-    height: 3.6rem;
-    font-weight: bold;
-
-
+  color: white;
+  border: 2px solid white;
+  background: none;
+  font-size: 1.2rem;
+  width: 13rem;
+  height: 3.6rem;
+  font-weight: bold;
 }
 
-.button.blueButton{
-background: #00FFFF;
-box-shadow: 2px 2px 30px #00FFFF;
-color: #0b113b;
-border: none;
+.button.blueButton {
+  background: #00ffff;
+  box-shadow: 2px 2px 30px #00ffff;
+  color: #0b113b;
+  border: none;
 }
 
-/* start chart donuts css */
-.chartContainer{
-    width: 400px;
-    z-index: 999
+button:hover {
+  cursor: pointer;
 }
-.programmingStats{
-   font-family: "Inter", sans-serif;
-  
+
+.blueButton {
+  cursor: pointer;
+}
+
+/* ***************************************************************************
+     START CHART DONUTS css
+****************************************************************************** */
+
+.chartContainer {
+  width: 400px;
+  z-index: 999;
+}
+.programmingStats {
+  font-family: "Inter", sans-serif;
 }
 .details {
-    position: relative;
-    bottom: 264px;
-    /* left: 0px; */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 14px;
-    color: white;
-    font-family: var(--outfitFont);
+  position: relative;
+  bottom: 264px;
+  /* left: 0px; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 14px;
+  color: white;
+  font-family: var(--outfitFont);
 }
 
-.chartHeading{
-    font-size: 23px;
-    font-weight: bold;
-    font-family: "Outfit", sans-serif;
+.chartHeading {
+  font-size: 23px;
+  font-weight: bold;
+  font-family: "Outfit", sans-serif;
 }
-.chartPassed{
-    font-size: 23px;
-    font-weight: bold;
-    font-family: "Outfit", sans-serif;
-    color: #00ffff;
+.chartPassed {
+  font-size: 23px;
+  font-weight: bold;
+  font-family: "Outfit", sans-serif;
+  color: #00ffff;
 }
-.chartFooter{
-    margin-top: 25px;
-    color: #ebd2d2;
-    padding: 8px;
-    font-size: 11px;
+.chartFooter {
+  margin-top: 25px;
+  color: #ebd2d2;
+  padding: 8px;
+  font-size: 11px;
 }
 
-.chartFooter span{
-    display: block;
+.chartFooter span {
+  display: block;
 }
-/* finish chart donuts css */
+/* ***************************************************************************
+     FINISH CHART DONUTS CSS
+****************************************************************************** */
 
-
-/* timer css */
+/* ***************************************************************************
+     TIMER START  CSS
+****************************************************************************** */
 .base-timer {
-    position: relative;
-    height: 200px;
-    width: 200px;
+  position: relative;
+  height: 200px;
+  width: 200px;
 }
 
 /* Removes SVG styling that would hide the time label */
 .base-timer__circle {
-    fill: none;
-    stroke: none;
+  fill: none;
+  stroke: none;
 }
 
 /* The SVG path that displays the timer's progress */
 .base-timer__path-elapsed {
-    stroke-width:5px;
-    stroke: var(--grigioColor)
+  stroke-width: 5px;
+  stroke: var(--grigioColor);
 }
 
 .base-timer__label {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    top: -2px;
-    left: -1px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 11px;
-    color: white;
-    font-family: var(--outfitFont);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: -2px;
+  left: -1px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 11px;
+  color: white;
+  font-family: var(--outfitFont);
 }
 
 .timerText {
-    font-family: 'Outfit';
+  font-family: "Outfit";
 }
 
 #timer {
-    font-size: 6rem;
+  font-size: 6rem;
 }
 
 .base-timer__path-remaining {
-    /* Just as thick as the original ring */
-    stroke-width: 7px;
-
-    /* Rounds the line endings to create a seamless circle */
-    stroke-linecap: round;
-
-    /* Makes sure the animation starts at the top of the circle */
-    transform: rotate(90deg);
-    transform-origin: center;
-
-    /* One second aligns with the speed of the countdown timer */
-    /* transition: 1s linear all;
-       */
-    /* Allows the ring to change color when the color value updates */
-    stroke: var(--violaColor)
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  stroke: var(--violaColor);
 }
 
 .base-timer__svg {
-    /* Flips the svg and makes the animation to move left-to-right */
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
-   
 
-.right{
-    text-align: center;
+.right {
+  text-align: center;
 }
+
+/* ***************************************************************************
+     TIMER FINISH  CSS
+****************************************************************************** */

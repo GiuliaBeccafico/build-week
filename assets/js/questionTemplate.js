@@ -112,24 +112,21 @@ function answerMaker (n){
 // js-script inizio
 
 
-let timerContent = document.getElementById('timer')
-
-
-
-let cerchio = document.querySelector(".base-timer").innerHTML;
-
-
+let timerContent = document.getElementById('timer') //sto selezionado la parte dove verrà inserito il numero del timer
+let cerchio = document.querySelector(".base-timer"); 
 let PercorsoSecondoCerchio = document.getElementById("base-timer-path-remaining");
 const raggio = 45;
 const lunghezzaCirconferenza = 2 * Math.PI * raggio;
 const FULL_DASH_ARRAY = lunghezzaCirconferenza;
-
 const TIME_LIMIT = 60;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 timerContent.innerText = timeLeft;
 let timerInterval = null;
 
+
+
+//
 function formatTimeLeft(time) {
   const minutes = Math.floor(time / 60);
   let seconds = time % 60;
@@ -140,6 +137,7 @@ function formatTimeLeft(time) {
 }
 
 
+//
 function startTimer() {
   if (timerInterval !== null) { // Controlla se il timer non è già in esecuzione
     clearInterval(timerInterval); // Ferma il timer se è in esecuzione
@@ -163,10 +161,10 @@ function startTimer() {
     }
   }, 1000);
 }
-
-
 startTimer();
 
+
+//
 function calculateTimeFraction() {
   return timeLeft / TIME_LIMIT;
 }
@@ -183,4 +181,3 @@ function calculateTimeFraction() {
   return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
 }
 calculateTimeFraction();
-// fine js timer
