@@ -87,8 +87,8 @@ internoChart(punteggio)
 
 
 // passaggio dalla result page alla feedback page
-const resultPage= document.getElementById('page3') //selezione dell'intera pagina results
-const feedbackPage = document.getElementById('page4')//selezione dell'intera pagina feeback
+let resultPage= document.getElementById('page3') //selezione dell'intera pagina results
+let feedbackPage = document.getElementById('page4')//selezione dell'intera pagina feeback
 let buttonResult= document.getElementById('rateUs') //bottone results page
 
 //al click sul bottone rimuove la pagina results e leva la classe hidden alla feedback page
