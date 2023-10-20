@@ -1,12 +1,10 @@
-const proceedButton = document.getElementById('proceed')
+const proceedButton = document.getElementById('startButton')
 const header = document.querySelector('.header')
 const footer = document.querySelector('.footer')
-header.style.display = 'none'
-footer.style.display = 'none'
+
+
 
 proceedButton.addEventListener('click', () => {
-    header.style.display = 'flex'
-    footer.style.display = 'flex'
     const wrap = document.getElementById('contentWrap')
     let count = 0
     start(count)
