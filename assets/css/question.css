@@ -106,6 +106,12 @@
     display: flex;
     justify-content: space-between;
 }
+.footerResults{
+    font-family: var(--interFont);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
 
 .pink {
     color: var(--pinkColor);

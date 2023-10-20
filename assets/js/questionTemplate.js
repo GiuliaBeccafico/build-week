@@ -9,9 +9,20 @@ const resultPage = document.getElementById("page3");
 const feedbackPage = document.getElementById("page4");
 resultPage.style.display = "none";
 feedbackPage.style.display = "none";
+let rateUs= document.getElementById('rateUs')
+
+
 
 const rightAnswers = [];
 let answersGiven = [];
+
+
+
+rateUs.addEventListener('click', () => {
+  resultPage.remove()
+  feedbackPage.style.display = 'block'
+})
+
 
 //da tenere
 proceedButton.addEventListener("click", () => {
@@ -53,7 +64,6 @@ function start(count) {
             questionFooter.style.display = 'none'
             cerchio.classList.add("hidden");
             footer.style.display = "block";
-            console.log(answerCheck(answersGiven, rightAnswers));
           } else {
             showQuestions(count);
           }
