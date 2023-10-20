@@ -10,7 +10,7 @@ const feedbackPage = document.getElementById("page4");
 resultPage.style.display = "none";
 feedbackPage.style.display = "none";
 let rateUs= document.getElementById('rateUs')
-
+const checkbox = document.getElementById('checkbox')
 
 
 const rightAnswers = [];
@@ -26,16 +26,26 @@ rateUs.addEventListener('click', () => {
 
 //da tenere
 proceedButton.addEventListener("click", () => {
-  welcomePage.remove();
-  cerchio.classList.remove("hidden");
-  questionFooter.style.display = "flex";
-  questionFooter.style.width = "100%";
-  questionFooter.style.justifyContent = "space-between";
-  const wrap = document.getElementById("contentWrap");
-  let count = 0;
-  start(count);
-  cloneTemplate(wrap);
-  startTimer()
+
+  if (checkbox.checked) {
+    welcomePage.remove();
+    cerchio.classList.remove("hidden");
+    questionFooter.style.display = "flex";
+    questionFooter.style.width = "100%";
+    questionFooter.style.justifyContent = "space-between";
+    const wrap = document.getElementById("contentWrap");
+    let count = 0;
+    start(count);
+    cloneTemplate(wrap);
+    startTimer()
+  } else {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please, agree to the Terms!',
+      
+    })
+  }
 });
 
 function start(count) {

@@ -126,7 +126,7 @@ li b {
 }
 
 #checkbox:checked+.customCheckbox {
-    background-color: white;
+    background-color: var(--violaColor);
     color: #fff;
 }
 
