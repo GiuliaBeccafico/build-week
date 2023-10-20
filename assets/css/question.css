@@ -1,15 +1,4 @@
-.star {
-    fill: #0b113b
-}
 
-.blueStar {
-    fill: #00FFFF;
-    transition: 3ms;
-}
-
-#rating {
-    padding: 10px 0;
-}
 
 /************************************************** GENERAL SETTINGS ******************************************/
 :root {
@@ -18,17 +7,13 @@
     --blueColor: #00ffff;
     --pinkColor: #d20094;
 }
-
-/********************************* settings del main **/
-
-
-
 #container {
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     padding: 40px 100px 100px 100px;
     background-size: cover;
 }
+/********************************* settings del header **/
 
 .main {
     margin-bottom: 70px;
@@ -49,6 +34,8 @@
     justify-content: space-between;
     margin-bottom: 70px;
 }
+
+/****************************** SETTING DEL MAIN **************************/
 
 .questions {
     text-align: center;
@@ -137,6 +124,8 @@
     border: none;
     font-family: var(--outfitFont);
   }
+
+
   
 /* timer css */
 .base-timer {
@@ -182,24 +171,13 @@
 }
 
 .base-timer__path-remaining {
-    /* Just as thick as the original ring */
     stroke-width: 7px;
-
-    /* Rounds the line endings to create a seamless circle */
     stroke-linecap: round;
-
-    /* Makes sure the animation starts at the top of the circle */
     transform: rotate(90deg);
     transform-origin: center;
-
-    /* One second aligns with the speed of the countdown timer */
-    /* transition: 1s linear all;
-       */
-    /* Allows the ring to change color when the color value updates */
     stroke: var(--violaColor)
 }
 
 .base-timer__svg {
-    /* Flips the svg and makes the animation to move left-to-right */
     transform: scaleX(1);
 }
