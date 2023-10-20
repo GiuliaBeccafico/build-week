@@ -9,32 +9,37 @@ proceedButton.addEventListener('click', () => {
     footer.style.display = 'flex'
     const wrap = document.getElementById('contentWrap')
     let count = 0
-    showQuestions(count)
+    start(count)
     cloneTemplate(wrap)
 })
 
 
-function showQuestions(count) {
-    const nextButton = document.getElementById('nextButton')
-    const wrap = document.getElementById('contentWrap')
+function start(count){
     fetch('https://opentdb.com/api.php?amount=10&category=18&difficulty=easy')
     .then(res => res.json())
     .then(domande => {
         let easy = domande.results //tutte le domande in questo array
         console.log(easy);
-        const answerArea = document.querySelector('#contentWrap').children[0].lastElementChild
+        showQuestions(count)
+        function showQuestions(count) {
+            const nextButton = document.getElementById('nextButton')
+            const wrap = document.getElementById('contentWrap')
+            const answerArea = document.querySelector('#contentWrap').children[0].lastElementChild
+            let tempCount = count + 1
             questionTitles(easy, count, wrap)
             answerMaker(easy, count, answerArea)
-            footer.firstElementChild.innerHTML = `Question ${count}<span class="pink"> / ${easy.length}</span>`     
+            footer.firstElementChild.innerHTML = `Question ${tempCount}<span class="pink"> / ${easy.length}</span>`
             nextButton.addEventListener('click', () => {
-                    count++
-                    clearArea(wrap)
-                    if (count == easy.length){
-                        alert('finito')
-                    } return showQuestions(count)
-                })
-        })
-}
+                count++
+                clearArea(wrap)
+                if (count == easy.length) {
+                    alert('finito')
+                } return showQuestions(count)
+            })
+        }})
+        
+    }
+
 
 function cloneTemplate(target) {
     const temp = document.getElementById('questionsTemplate')
@@ -45,17 +50,17 @@ function cloneTemplate(target) {
 
 function clearArea(element) {
     var nodes = element.childNodes;
-    for(var i = 0; i < nodes.length; i++) {
+    for (var i = 0; i < nodes.length; i++) {
         var node = nodes[i];
         // if it's a text node, remove it
-        if(node.nodeType == Node.TEXT_NODE) {
+        if (node.nodeType == Node.TEXT_NODE) {
             node.parentNode.removeChild(node);
             i--; // have to update our incrementor since we just removed a node from childNodes
         } else
-        // if it's an element, repeat this process
-        if(node.nodeType == Node.ELEMENT_NODE) {
-            clearArea(node);
-        }
+            // if it's an element, repeat this process
+            if (node.nodeType == Node.ELEMENT_NODE) {
+                clearArea(node);
+            }
     }
 }
 
@@ -80,9 +85,9 @@ function answerMaker(questions, index, target) {
     let arr = [questions[index]['correct_answer']]
     arr = arr.concat(questions[index]['incorrect_answers'])
     shuffleArray(arr)
-    for (let i = 0; i <= arr.length-1; i++) {
+    for (let i = 0; i <= arr.length - 1; i++) {
         let answer = document.createElement('label')
-        let radio = document.createElement ('input')
+        let radio = document.createElement('input')
         radio.value = i
         radio.name = 'answer'
         radio.id = `rating${i}`
@@ -104,11 +109,7 @@ function shuffleArray(array) {
     }
 }
 
-// function disableButton (){
-//     document.getElementById('nextButton').disabled = true
-// }
+function disableButton (){
+    document.getElementById('nextButton').disabled = true
+}
 
-// function enableButton (target){
-//     if
-//     ldocument.getElementById('nextButton').disableButton = true
-// }
