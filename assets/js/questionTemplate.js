@@ -73,7 +73,7 @@ function start(count) {
         });
       }
     )};
-
+    
 
 function cloneTemplate(target) {
   const temp = document.getElementById("questionsTemplate");
@@ -84,7 +84,7 @@ const header = document.querySelector('.header')
 const footer = document.querySelector('.footer')
 header.style.display = 'none'
 footer.style.display = 'none'
-
+}
 proceedButton.addEventListener('click', () => {
     header.style.display = 'flex'
     footer.style.display = 'flex'
