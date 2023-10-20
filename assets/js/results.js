@@ -1,11 +1,12 @@
 // // costanti per la creazione ed il funzionamento della donuts chart
-
-const maxPunteggio = 10; //punteggio massimo dei quiz
-const punteggio = 8; //sarà dato dall'accumulo delle domande
-const risposteCorrette = punteggio * 10; //punteggio in centesimi
-const rispSbagliate = maxPunteggio - punteggio; //calcolo risposte sbalgiate
-const percentualeSbagliate = rispSbagliate * 10;//risposte sbagliate in percentuale
-const leftPercentuale = document.querySelector(".leftSection .valueTitle"); //sezione dove verrà inserita la Perccentuale di risposte corrette
+function results() {
+  
+  const maxPunteggio = 10; //punteggio massimo dei quiz
+  let punteggio = localStorage.getItem('punteggio'); //sarà dato dall'accumulo delle domande
+  const risposteCorrette = punteggio * 10; //punteggio in centesimi
+  const rispSbagliate = maxPunteggio - punteggio; //calcolo risposte sbalgiate
+  const percentualeSbagliate = rispSbagliate * 10;//risposte sbagliate in percentuale
+  const leftPercentuale = document.querySelector(".leftSection .valueTitle"); //sezione dove verrà inserita la Perccentuale di risposte corrette
 const rightPercentuale = document.querySelector('.rightSection .valueTitle')//sezione dove verrà inserita la Perccentuale di risposte sbagliate
 const fractionQuestionsLeft = document.querySelector('.leftSection .correctQuestions') //sezione dove verrà inserita la Frazione delle risposte corrette
 const fractionQuestionsRight = document.querySelector('.rightSection .correctQuestions') //sezione dove verrà inserita la Frazione di risposte corrette
@@ -61,7 +62,7 @@ correctAnswers(punteggio)
 function frazione(rispCorr) { 
     fractionQuestionsLeft.innerText = `${punteggio}/${maxPunteggio} questions`
     fractionQuestionsRight.innerText = `${rispSbagliate}/${maxPunteggio} questions`
-}
+  }
 frazione(punteggio)
 
 //funzione per mandare a schermo il messaggio di "Congratulations" se il risultato sarà maggiore o uguale di 6/60, altrimenti il messaggio di "Fail" se inferiore al 60
@@ -84,16 +85,16 @@ internoChart(punteggio)
 
 // finish chart donuts js
 
+}
 
-
+{
 // passaggio dalla result page alla feedback page
-let resultPage= document.getElementById('page3') //selezione dell'intera pagina results
 let feedbackPage = document.getElementById('page4')//selezione dell'intera pagina feeback
 let buttonResult= document.getElementById('rateUs') //bottone results page
 
 //al click sul bottone rimuove la pagina results e leva la classe hidden alla feedback page
 buttonResult.addEventListener('click', ()=> {
- resultPage.remove()
+  resultPage.remove()
 feedbackPage.classList.remove('hidden')
 })
 
@@ -104,14 +105,14 @@ let buttonFeedback = document.querySelector('.footer .blueButton') //button feeb
 
 //al click sul bottone si aprirà uno sweet alert
 buttonFeedback.addEventListener('click', function () {
-    Swal.fire({
-        title: 'La Build-Week non è per niente stressante.Lo afferma Davide, 30 anni',
-        text: 'Scherziamo, dai!! Ne ha 25',
-        imageUrl: 'https://i.imgflip.com/2jsesx.jpg',
-        imageWidth: 480,
-        imageHeight: 414,
-        imageAlt: 'Custom image',
-      })
+  Swal.fire({
+    title: 'La Build-Week non è per niente stressante.Lo afferma Davide, 30 anni',
+    text: 'Scherziamo, dai!! Ne ha 25',
+    imageUrl: 'https://i.imgflip.com/2jsesx.jpg',
+    imageWidth: 480,
+    imageHeight: 414,
+    imageAlt: 'Custom image',
+  })
 })
 
-
+}

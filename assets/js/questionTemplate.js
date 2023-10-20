@@ -13,9 +13,13 @@ let rateUs= document.getElementById('rateUs')
 const checkbox = document.getElementById('checkbox')
 
 
-const rightAnswers = [];
+// const rightAnswers = [];
 let answersGiven = [];
 
+
+function points(arr, arr2) {
+return  arr.filter ((p) => arr2.includes(p) ).length
+}
 
 
 rateUs.addEventListener('click', () => {
@@ -48,12 +52,20 @@ proceedButton.addEventListener("click", () => {
   }
 });
 
+
+function nextQuestion(count) {
+ if (timeleft == 0) {
+   startTimer()
+showQuestionsCount(count)
+ }
+}
+
 function start(count) {
   fetch("https://opentdb.com/api.php?amount=10&category=18&difficulty=easy")
     .then((res) => res.json())
     .then((domande) => {
       let easy = domande.results; //tutte le domande in questo array
-      rightAnswers.push(correctAnswer(easy));
+      let rightAnswers = (correctAnswer(easy));
       showQuestions(count);
       function showQuestions(count) {
         const nextButton = document.getElementById("nextButton");
@@ -68,8 +80,10 @@ function start(count) {
           count++;
           startTimer()
           answerStorage();
-          console.log(answersGiven);
           if (count == easy.length) {
+           let punteggio = points(rightAnswers, answersGiven)
+           localStorage.setItem("punteggio",punteggio)
+           results()
             wrap.innerHTML = ' '
             resultPage.style.display = "block";
             questionFooter.style.display = 'none'
@@ -84,8 +98,9 @@ function start(count) {
 }
 
 function answerStorage() {
-  const radio = document.querySelector(".radioButton:checked")
-    .nextElementSibling.innerHTML;
+  const radio = document.querySelector(".radioButton:checked");
+  if(radio)
+   document.querySelector(".radioButton:checked").nextElementSibling.innerHTML;
   answersGiven.push(radio);
 }
 
