@@ -2,7 +2,8 @@
 function results() {
   
   const maxPunteggio = 10; //punteggio massimo dei quiz
-  let punteggio = localStorage.getItem('punteggio'); //sarà dato dall'accumulo delle domande
+  let punteggio = localStorage.getItem('punteggio');
+ //sarà dato dall'accumulo delle domande
   const risposteCorrette = punteggio * 10; //punteggio in centesimi
   const rispSbagliate = maxPunteggio - punteggio; //calcolo risposte sbalgiate
   const percentualeSbagliate = rispSbagliate * 10;//risposte sbagliate in percentuale
@@ -87,7 +88,7 @@ internoChart(punteggio)
 
 }
 
-{
+
 // passaggio dalla result page alla feedback page
 let feedbackPage = document.getElementById('page4')//selezione dell'intera pagina feeback
 let buttonResult= document.getElementById('rateUs') //bottone results page
@@ -101,9 +102,9 @@ feedbackPage.classList.remove('hidden')
 
 
 
-let buttonFeedback = document.querySelector('.footer .blueButton') //button feeback page
+let buttonFeedback = document.getElementById('moreInfo') //button feeback page
 
-//al click sul bottone si aprirà uno sweet alert
+// al click sul bottone si aprirà uno sweet alert
 buttonFeedback.addEventListener('click', function () {
   Swal.fire({
     title: 'La Build-Week non è per niente stressante.Lo afferma Davide, 30 anni',
@@ -115,4 +116,4 @@ buttonFeedback.addEventListener('click', function () {
   })
 })
 
-}
+
