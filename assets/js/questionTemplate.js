@@ -201,7 +201,7 @@ function activateButton(btn) {
 function results(punti) {
   
   const maxPunteggio = 10; //punteggio massimo dei quiz
-  let punteggio = punti
+  let punteggio = 7
  //sarà dato dall'accumulo delle domande
   const risposteCorrette = punteggio * 10; //punteggio in centesimi
   const rispSbagliate = maxPunteggio - punteggio; //calcolo risposte sbalgiate
