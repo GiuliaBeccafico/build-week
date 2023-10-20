@@ -40,7 +40,7 @@ proceedButton.addEventListener("click", () => {
     startTimer()
   } else {
     Swal.fire({
-      icon: 'error',
+     
       title: 'Oops...',
       text: 'Please, agree to the Terms!',
       
