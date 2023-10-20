@@ -46,19 +46,13 @@ function start(count) {
                 console.log(answersGiven);
 
                 nextButton.addEventListener('click', () => {
-                    if (answersGiven.length >= 2) {
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Oops...',
-                            text: 'La risposta giusta è una sola :)',
-                        })
-                    } else {
                         count++
-                        clearArea(wrap)
                         if (count == easy.length) {
                             alert('finito')
-                        } return showQuestions(count)
-                    }
+                        } else {
+                            showQuestions(count)
+                            clearArea(wrap)
+                        }
                 })
             }
         })
