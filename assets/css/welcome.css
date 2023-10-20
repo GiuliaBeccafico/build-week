@@ -47,7 +47,7 @@
 
 
 .title {
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 
 .welcomeTitle {
@@ -126,7 +126,7 @@ li b {
 }
 
 #checkbox:checked+.customCheckbox {
-    background-color: white;
+    background-color: var(--violaColor);
     color: #fff;
 }
 
