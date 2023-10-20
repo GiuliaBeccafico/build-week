@@ -89,15 +89,15 @@
 
 .answer:hover {
     background: rgb(210, 0, 148);
-    background: linear-gradient(144deg, rgba(210, 0, 148, 1) 0%, rgba(144, 0, 128, 1) 52%);
+    background: linear-gradient(144deg, rgb(117, 0, 82) 0%, rgb(39, 0, 34) 52%); 
     transition: 0.5ms;
 }
 
-.selectedAnswer {
+.radioButton:checked + label {
     background: rgb(210, 0, 148);
-    background: linear-gradient(144deg, rgb(117, 0, 82) 0%, rgb(39, 0, 34) 52%);
-    transition: 0.5ms;
-}
+    background: linear-gradient(144deg, rgba(210, 0, 148, 1) 0%, rgba(144, 0, 128, 1) 52%);
+    transition: .5s
+  }
 /************************************************ Footer ******************************/
 
 .footer {
