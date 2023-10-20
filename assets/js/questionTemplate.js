@@ -1,8 +1,11 @@
 const proceedButton = document.getElementById('proceed')
 const header = document.querySelector('.header')
 const footer = document.querySelector('.footer')
+const rightAnswers = []
+let answersGiven = []
 header.style.display = 'none'
 footer.style.display = 'none'
+
 
 proceedButton.addEventListener('click', () => {
     header.style.display = 'flex'
@@ -19,8 +22,7 @@ function start(count) {
         .then(res => res.json())
         .then(domande => {
             let easy = domande.results //tutte le domande in questo array
-            let answersGiven = []
-            correctAnswer(easy)
+            rightAnswers.push(correctAnswer(easy))
             showQuestions(count)
             function showQuestions(count) {
                 const nextButton = document.getElementById('nextButton')
@@ -31,36 +33,44 @@ function start(count) {
                 // disableButton(nextButton)
                 questionTitles(easy, count, wrap)
                 answerMaker(easy, count, answerArea)
-                const answersBtn = document.querySelectorAll('.answer')
-                answersBtn.forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        btn.classList.toggle('selectedAnswer')
-                        let selectedAnswer = document.querySelectorAll('.selectedAnswer')
-                        console.log(selectedAnswer);
-                        selectedAnswer.forEach(item => {
-                            answersGiven.push(item)
-                        })
-                    })
-                })
-                console.log(answersGiven);
+                 
+                // const answersBtn = document.querySelectorAll('.answer')
+
+                      
 
                 nextButton.addEventListener('click', () => {
                         count++
-                      0
+                        answerStorage()                        
+                        console.log(answersGiven);
+                        // answersGiven.push(document.querySelector(`label[for=radio]`))
+                        // console.log(answersGiven);
                         if (count == easy.length) {
-                            alert('finito')
+                            
+                            console.log(answerCheck(answersGiven, rightAnswers));
                         } else {
                             showQuestions(count)
-                            
                         }
                 })
             }
         })
-
 }
 
+function answerStorage (){
+    const radio = document.querySelector('.radioButton:checked').nextElementSibling.innerHTML
+    answersGiven.push(radio)
+}
 
+function answerCheck (given, correct) {
+    let points = 0;
+    given.forEach(element => {
+        correct.forEach( element2 => {
+            if (element === element2){
+                points++
+            } return points
+        })
+    });
 
+}
 
 function cloneTemplate(target) {
     const temp = document.getElementById('questionsTemplate')
@@ -107,10 +117,18 @@ function answerMaker(questions, index, target) {
     arr = arr.concat(questions[index]['incorrect_answers'])
     shuffleArray(arr)
     for (let i = 0; i <= arr.length - 1; i++) {
-        let answer = document.createElement('button')
+        let answer = document.createElement('label')
+        let radio = document.createElement('input')
+        radio.id = `answer${i}`
+        radio.type = 'radio'
+        radio.value = i 
+        radio.name = 'answerValue'
+        radio.classList.add('radioButton')
+        radio.style.display = 'none'
         answer.classList.add('answer')
         answer.innerHTML = arr[i]
         answer.htmlFor = `answer${i}`
+        target.append(radio )
         target.append(answer)
     }
 }
