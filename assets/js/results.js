@@ -114,9 +114,3 @@ buttonFeedback.addEventListener('click', function () {
       })
 })
 
-let data = {
-  rating: null,
-  comment: ""
-};
-
-const jsonData = JSON.stringify(data);// Salva la stringa JSON
