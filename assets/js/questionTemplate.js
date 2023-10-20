@@ -42,16 +42,16 @@ function start(count) {
                         })
                     })
                 })
-
                 console.log(answersGiven);
 
                 nextButton.addEventListener('click', () => {
                         count++
+                      0
                         if (count == easy.length) {
                             alert('finito')
                         } else {
                             showQuestions(count)
-                            clearArea(wrap)
+                            
                         }
                 })
             }
