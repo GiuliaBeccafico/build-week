@@ -58,6 +58,7 @@ function nextQuestion(count) {
    startTimer()
 showQuestionsCount(count)
  }
+
 }
 
 function start(count) {
@@ -80,6 +81,7 @@ function start(count) {
           count++;
           startTimer()
           answerStorage();
+          nextQuestion();
           if (count == easy.length) {
             wrap.innerHTML = ' '
            resultPage.style.display = "block";
